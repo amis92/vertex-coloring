@@ -15,8 +15,11 @@ namespace VertexColoring.Graphs
                 addEdgeVertex(edge, edge.Vertex1);
                 addEdgeVertex(edge, edge.Vertex2);
             }
-            IncidentEdges = graph.Vertices.ToImmutableSortedDictionary(v => v, v => incidentEdgesMutable.TryGetValue(v, out var set) ? (IImmutableSet<Edge>)set.ToImmutableHashSet() : ImmutableHashSet.Create<Edge>());
-            AdjacentVertices = graph.Vertices.ToImmutableSortedDictionary(v => v, v => (IImmutableSet<Vertex>)IncidentEdges[v].Select(e => e.OtherVertex(v)).ToImmutableHashSet());
+            IncidentEdges = graph.Vertices
+                .ToImmutableSortedDictionary(
+                v => v,
+                v => incidentEdgesMutable.TryGetValue(v, out var set) ? (IImmutableSet<Edge>)set.ToImmutableHashSet() : ImmutableHashSet.Create<Edge>());
+            AdjacentVertices = CreateAdjacentVertices();
 
             void addEdgeVertex(Edge edge, Vertex vertex)
             {
@@ -26,11 +29,20 @@ namespace VertexColoring.Graphs
                 }
                 else
                 {
-                    edgeSet = new HashSet<Edge>();
-                    edgeSet.Add(edge);
+                    edgeSet = new HashSet<Edge>
+                    {
+                        edge
+                    };
                     incidentEdgesMutable.Add(vertex, edgeSet);
                 }
             }
+        }
+
+        public GraphAdjacency(InducedSubgraph subgraph)
+        {
+            Graph = subgraph.Subgraph;
+            IncidentEdges = Graph.Vertices.ToImmutableSortedDictionary(v => v, v => subgraph.OriginalAdjacency.IncidentEdges[v].Except(subgraph.RemovedEdges));
+            AdjacentVertices = CreateAdjacentVertices();
         }
 
         public Graph Graph { get; }
@@ -38,5 +50,10 @@ namespace VertexColoring.Graphs
         public IImmutableDictionary<Vertex, IImmutableSet<Vertex>> AdjacentVertices { get; }
 
         public IImmutableDictionary<Vertex, IImmutableSet<Edge>> IncidentEdges { get; }
+
+        private IImmutableDictionary<Vertex, IImmutableSet<Vertex>> CreateAdjacentVertices()
+        {
+            return Graph.Vertices.ToImmutableSortedDictionary(v => v, v => (IImmutableSet<Vertex>)IncidentEdges[v].Select(e => e.OtherVertex(v)).ToImmutableHashSet());
+        }
     }
 }

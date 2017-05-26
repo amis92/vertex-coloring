@@ -13,5 +13,7 @@ namespace VertexColoring.Graphs
         public Graph Graph { get; }
         
         public ImmutableSortedDictionary<long, Vertex> Vertices { get; }
+
+        public Vertex this[long id] => Vertices[id];
     }
 }
