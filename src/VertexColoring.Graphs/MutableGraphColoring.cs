@@ -2,9 +2,9 @@
 
 namespace VertexColoring.Graphs
 {
-    public sealed class GraphColoringMutable
+    public sealed class MutableGraphColoring
     {
-        public GraphColoringMutable(Graph graph)
+        public MutableGraphColoring(Graph graph)
         {
             Graph = graph;
         }

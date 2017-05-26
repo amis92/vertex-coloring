@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Immutable;
+using System.IO;
 
 namespace VertexColoring.Graphs
 {
@@ -28,6 +29,15 @@ namespace VertexColoring.Graphs
                 code = Vertices.GetHashCode() + Edges.GetHashCode() * 31;
             }
             return code;
+        }
+
+        public override string ToString()
+        {
+            using (var writer = new StringWriter())
+            {
+                writer.WriteGraphAsTgf(this);
+                return writer.ToString();
+            }
         }
 
         public static bool operator ==(Graph left, Graph right)

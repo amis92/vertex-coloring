@@ -7,7 +7,7 @@ namespace VertexColoring.Graphs
 {
     public static class GraphColoringExtensions
     {
-        public static GraphColoring ToImmutable(this GraphColoringMutable coloring)
+        public static GraphColoring ToImmutable(this MutableGraphColoring coloring)
         {
             return new GraphColoring(coloring.Graph, coloring.VertexColors.ToImmutableDictionary());
         }

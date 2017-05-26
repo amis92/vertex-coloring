@@ -2,6 +2,7 @@
 // WARNING any changes made to this file will be lost when generator is run again
 
 using System.Collections.Immutable;
+using System.Linq;
 
 namespace VertexColoring.Graphs
 {

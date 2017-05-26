@@ -2,11 +2,13 @@
 // WARNING any changes made to this file will be lost when generator is run again
 
 using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace VertexColoring.Graphs
 {
     [System.CodeDom.Compiler.GeneratedCode("RecordGenerator", "0.1.1.29")]
-    partial class Edge : IEquatable<Edge>, IComparable<Edge>
+    partial class Edge : IEquatable<Edge>, IComparable<Edge>, IEnumerable<Vertex>
     {
         public Edge(Vertex Vertex1, Vertex Vertex2, string Label)
         {

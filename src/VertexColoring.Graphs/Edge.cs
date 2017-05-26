@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace VertexColoring.Graphs
 {
     [Record]
-    public sealed partial class Edge : IEquatable<Edge>, IComparable<Edge>
+    public sealed partial class Edge : IEquatable<Edge>, IComparable<Edge>, IEnumerable<Vertex>
     {
         public Vertex Vertex1 { get; }
 
@@ -16,6 +18,12 @@ namespace VertexColoring.Graphs
             return Vertex1.Id < Vertex2.Id ? (Vertex1.Id, Vertex2.Id) : (Vertex2.Id, Vertex1.Id);
         }
 
+        private bool HasSameVertices(Edge otherNotNull)
+        {
+            return Vertex1 == otherNotNull.Vertex1 && Vertex2 == otherNotNull.Vertex2
+                || Vertex1 == otherNotNull.Vertex2 && Vertex2 == otherNotNull.Vertex1;
+        }
+
         public bool Equals(Edge other)
         {
             return other != null && (ReferenceEquals(this, other) || HasSameVertices(other));
@@ -24,11 +32,6 @@ namespace VertexColoring.Graphs
         public override bool Equals(object obj)
         {
             return ReferenceEquals(this, obj) || (obj is Edge other && HasSameVertices(other));
-        }
-
-        private bool HasSameVertices(Edge otherNotNull)
-        {
-            return Vertex1 == otherNotNull.Vertex1 && Vertex2 == otherNotNull.Vertex2 || Vertex1 == otherNotNull.Vertex2 && Vertex2 == otherNotNull.Vertex1;
         }
 
         public override int GetHashCode()
@@ -53,6 +56,14 @@ namespace VertexColoring.Graphs
             var diffOn1 = x1.CompareTo(y1);
             return diffOn1 != 0 ? diffOn1 : x2.CompareTo(y2);
         }
+
+        public IEnumerator<Vertex> GetEnumerator()
+        {
+            yield return Vertex1;
+            yield return Vertex2;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
         public static bool operator==(Edge left, Edge right)
         {
