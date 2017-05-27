@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using TextTableFormatter;
 using VertexColoring.Graphs;
 
 namespace VertexColoring.BenchmarkApp
 {
-    class MeasurementPrinter
+    static class MeasurementPrinter
     {
-        public static void PrintSummary(IEnumerable<Measurement> measurements)
+        public static void WriteSummaryTable(this TextWriter writer, IEnumerable<Measurement> measurements)
         {
             // | Vertices | Algorithm | Duration [ms] |
-            var table = new TextTable(3);
-            table.AddCell("Vertices");
-            table.AddCell("Algorithm");
-            table.AddCell("Duration [ms]");
+            var table = new TextTable(3, TableBordersStyle.CLASSIC, TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS);
+
+            var rightAlignmentStyle = new CellStyle(CellHorizontalAlignment.Right);
+
+            table.AddCell(" Vertices ");
+            table.AddCell(" Algorithm ");
+            table.AddCell(" Duration (ms) ");
 
             var groups = measurements
                 .GroupBy(m => m.Coloring.Graph.Vertices.Count)
@@ -26,30 +30,30 @@ namespace VertexColoring.BenchmarkApp
                 {
                     var durationAvg = group.Average(m => m.Duration.TotalMilliseconds);
                     // vertices
-                    table.AddCell(sizeGroups.key.ToString());
+                    table.AddCell($" {sizeGroups.key} ", rightAlignmentStyle);
                     // algorithm
-                    table.AddCell(group.Key);
+                    table.AddCell($" {group.Key} ");
                     // duration
-                    table.AddCell(durationAvg.ToString());
+                    table.AddCell($" {durationAvg} ", rightAlignmentStyle);
                 }
             }
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("Summary:");
-            Console.WriteLine("========");
-            Console.WriteLine();
+            writer.WriteLine();
+            writer.WriteLine();
+            writer.WriteLine("Summary:");
+            writer.WriteLine("========");
+            writer.WriteLine();
             foreach (var line in table.RenderAsStringArray())
             {
-                Console.WriteLine(line);
+                writer.WriteLine(line);
             }
-            Console.WriteLine();
+            writer.WriteLine();
         }
 
-        public static void Print(Measurement measurement)
+        public static void Write(this TextWriter writer, Measurement measurement)
         {
             var m = measurement;
-            Console.WriteLine($"Calculated '{m.AlgorithmName}' for '{m.Filename}'" +
+            writer.WriteLine($"Calculated '{m.AlgorithmName}' for '{m.Filename}'" +
                 $" in {m.Duration} ({m.Duration.TotalMilliseconds}ms)," +
                 $" total color cost: {m.Coloring.SummaryCost()}" +
                 $" (for {m.Coloring.Graph.Vertices.Count} vertices)");

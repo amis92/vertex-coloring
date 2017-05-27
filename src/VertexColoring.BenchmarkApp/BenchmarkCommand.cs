@@ -33,11 +33,17 @@ namespace VertexColoring.BenchmarkApp
         public void Run()
         {
             var runner = new BenchmarkRunner(Sizes, Options.Number, Options.Filename);
+            runner.Log = Log;
             runner.Run();
         }
 
         private class ConsoleLogger : ILogger
         {
+            public void Write(string message)
+            {
+                Console.Write(message);
+            }
+
             public void WriteLine(string message)
             {
                 Console.WriteLine(message);

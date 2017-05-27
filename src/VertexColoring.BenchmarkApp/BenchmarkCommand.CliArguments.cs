@@ -32,6 +32,10 @@ namespace VertexColoring.BenchmarkApp
             [OptionParameter(ShortName: 'n', LongName: "number")]
             [Help("Number of graphs to benchmark (for each pair of 'v' and 'e' values). Default 1.")]
             public int Number { get; set; } = 1;
+
+            [OptionParameter(ShortName: 'o', LongName: "output")]
+            [Help("File to save summary to.")]
+            public string OutputFilename { get; set; }
         }
     }
 }

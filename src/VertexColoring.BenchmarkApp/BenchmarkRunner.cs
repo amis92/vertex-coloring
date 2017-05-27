@@ -45,13 +45,19 @@ namespace VertexColoring.BenchmarkApp
                     Benchmark.VertexCount = size.vertices;
                     Benchmark.EdgeCount = size.edges;
 
+                    Log?.Write($"Coloring '{Benchmark.Filename}': Loading... ");
+
                     Benchmark.Setup();
+
+                    Log?.Write("Loaded! Preparing... ");
 
                     // prep-run
                     greedySimple();
                     greedyLF();
                     greedySF();
                     greedyGIS();
+
+                    Log?.WriteLine("Prepared! Coloring... ");
 
                     // target runs (measured)
                     RunCore(greedySimple, "1. Greedy Simple");
@@ -60,7 +66,7 @@ namespace VertexColoring.BenchmarkApp
                     RunCore(greedyGIS, "4. G.I.S.");
                 }
             }
-            MeasurementPrinter.PrintSummary(Measurements);
+            Console.Out.WriteSummaryTable(Measurements);
         }
 
         private void RunCore(Func<GraphColoring> color, string algorithmName)
@@ -77,7 +83,7 @@ namespace VertexColoring.BenchmarkApp
                 Coloring = coloring,
                 Filename = Benchmark.Filename
             };
-            MeasurementPrinter.Print(measurement);
+            Console.Out.Write(measurement);
             Measurements.Add(measurement);
         }
     }
