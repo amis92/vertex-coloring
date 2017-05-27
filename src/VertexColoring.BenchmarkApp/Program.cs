@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Running;
+using System;
 
 namespace VertexColoring.BenchmarkApp
 {
@@ -6,7 +9,7 @@ namespace VertexColoring.BenchmarkApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BenchmarkRunner.Run<ColoringBenchmark>(DefaultConfig.Instance.With(new ColorSumDiagnoser()));
         }
     }
 }
