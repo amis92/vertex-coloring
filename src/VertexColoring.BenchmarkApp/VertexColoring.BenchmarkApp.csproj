@@ -6,10 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.10.6" />
+    <PackageReference Include="EntryPoint" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TextTableFormatter\TextTableFormatter.csproj" />
     <ProjectReference Include="..\VertexColoring.Algorithms\VertexColoring.Algorithms.csproj" />
     <ProjectReference Include="..\VertexColoring.Graphs\VertexColoring.Graphs.csproj" />
   </ItemGroup>

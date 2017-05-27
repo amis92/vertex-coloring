@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexColoring.Algorithms.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexColoring.GraphGenerator", "src\VertexColoring.GraphGenerator\VertexColoring.GraphGenerator.csproj", "{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextTableFormatter", "src\TextTableFormatter\TextTableFormatter.csproj", "{8E376875-F255-4B43-9006-F8CA9822EE4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E376875-F255-4B43-9006-F8CA9822EE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E376875-F255-4B43-9006-F8CA9822EE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E376875-F255-4B43-9006-F8CA9822EE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E376875-F255-4B43-9006-F8CA9822EE4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +66,6 @@ Global
 		{2B7C918F-6A3A-4EDB-BA53-FF7E750030E9} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
 		{58DB9DB9-1981-4C35-82DC-86FD4DBB54F4} = {529D5DA6-85AD-4DF4-9836-ACE530D26A32}
 		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
+		{8E376875-F255-4B43-9006-F8CA9822EE4D} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
 	EndGlobalSection
 EndGlobal
