@@ -14,6 +14,8 @@ namespace VertexColoring.Cli
             Options = options;
             Log = new Logger(Options.Debug ? Console.Out : null, Console.Out);
             Filename = FixFilename(options.OutputFilename);
+            Watch = new Stopwatch();
+            Random = Options.RandomSeed.HasValue ? new Random(Options.RandomSeed.Value) : new Random();
         }
 
         private CliArguments Options { get; }
@@ -21,6 +23,10 @@ namespace VertexColoring.Cli
         private Logger Log { get; }
 
         private string Filename { get; }
+
+        private Stopwatch Watch { get; }
+
+        private Random Random { get; }
 
         public static void Execute(string[] args)
         {
@@ -41,14 +47,14 @@ namespace VertexColoring.Cli
             Log.Debug?.WriteLine($"{i}. Generating random graph with {Options.VertexCount} vertices" +
                 $" and {Options.EdgeCount} edges.");
 
-            var watch = Stopwatch.StartNew();
-            var graph = Generator.RandomConnectedGraph(Options.VertexCount, Options.EdgeCount);
-            watch.Stop();
+            Watch.Restart();
+            var graph = Generator.RandomConnectedGraph(Options.VertexCount, Options.EdgeCount, Random);
+            Watch.Stop();
             var filename = string.Format(Options.OutputFilename, i, Options.VertexCount, Options.EdgeCount);
 
             Log.Debug?.WriteLine($"{i}. Generated {graph.Edges.Count} edges" +
                 $" ({Options.EdgeCount - graph.Edges.Count} were duplicated).");
-            Log.Debug?.WriteLine($"{i}. Generated in {watch.ElapsedMilliseconds}ms.");
+            Log.Debug?.WriteLine($"{i}. Generated in {Watch.ElapsedMilliseconds}ms.");
             Log.Debug?.WriteLine($"{i}. Saving to '{filename}'.");
 
             SaveGraph(graph, filename);

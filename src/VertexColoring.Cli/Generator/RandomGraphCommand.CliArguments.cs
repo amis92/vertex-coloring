@@ -34,6 +34,10 @@ namespace VertexColoring.Cli
             [OptionParameter(ShortName: 'n', LongName: "number")]
             [Help("Number of graphs to generate. Default 1.")]
             public int Number { get; set; } = 1;
+
+            [OptionParameter(ShortName: 's', LongName: "seed")]
+            [Help("Random seed. Provide to get deterministic output.")]
+            public int? RandomSeed { get; set; }
         }
     }
 }
