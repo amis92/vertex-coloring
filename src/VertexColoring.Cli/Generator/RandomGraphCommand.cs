@@ -14,7 +14,6 @@ namespace VertexColoring.Cli
             Options = options;
             Log = new Logger(Options.Debug ? Console.Out : null, Console.Out);
             Filename = FixFilename(options.OutputFilename);
-            Watch = new Stopwatch();
             Random = Options.RandomSeed.HasValue ? new Random(Options.RandomSeed.Value) : new Random();
         }
 
@@ -24,7 +23,7 @@ namespace VertexColoring.Cli
 
         private string Filename { get; }
 
-        private Stopwatch Watch { get; }
+        private Stopwatch Watch { get; } = new Stopwatch();
 
         private Random Random { get; }
 

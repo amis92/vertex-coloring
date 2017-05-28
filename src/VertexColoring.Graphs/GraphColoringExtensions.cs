@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Linq;
-using System.Text;
 
 namespace VertexColoring.Graphs
 {
@@ -16,6 +13,11 @@ namespace VertexColoring.Graphs
         public static int SummaryCost(this GraphColoring coloring)
         {
             return coloring.VertexColors.Sum(c => c.Value);
+        }
+
+        public static int ColorsUsed(this GraphColoring coloring)
+        {
+            return coloring.VertexColors.Values.Distinct().Count();
         }
     }
 }

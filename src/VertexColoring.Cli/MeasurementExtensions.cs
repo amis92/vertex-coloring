@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using TextTableFormatter;
+using VertexColoring.Graphs;
 
 namespace VertexColoring.Cli
 {
@@ -10,7 +11,7 @@ namespace VertexColoring.Cli
         public static void WriteSummaryTable(this TextWriter writer, IEnumerable<Measurement> measurements)
         {
             // | Vertices | Algorithm | Duration [ms] |
-            var table = new TextTable(3, TableBordersStyle.CLASSIC, TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS);
+            var table = new TextTable(4, TableBordersStyle.CLASSIC, TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS);
             
             var leftAlignmentStyle = new CellStyle(
                 CellHorizontalAlignment.Left,
@@ -26,7 +27,8 @@ namespace VertexColoring.Cli
 
             table.AddCell(" Vertices ", leftAlignmentStyle);
             table.AddCell(" Algorithm ", leftAlignmentStyle);
-            table.AddCell(" Duration [ms] ", leftAlignmentStyle);
+            table.AddCell(" Avg. Duration [ms] ", leftAlignmentStyle);
+            table.AddCell(" Avg. Total cost ", leftAlignmentStyle);
 
             var groups = measurements
                 .GroupBy(m => m.Coloring.Graph.Vertices.Count)
@@ -37,12 +39,15 @@ namespace VertexColoring.Cli
                 foreach (var group in sizeGroups.items)
                 {
                     var durationAvg = group.Average(m => m.Duration.TotalMilliseconds);
+                    var avgCost = (decimal) group.Average(m => m.Coloring.SummaryCost());
                     // vertices
                     table.AddCell($" {sizeGroups.key} ", rightAlignmentStyle);
                     // algorithm
                     table.AddCell($" {group.Key} ", leftAlignmentStyle);
                     // duration
                     table.AddCell($" {durationAvg} ", rightAlignmentStyle);
+                    // total color cost
+                    table.AddCell($" {avgCost} ", rightAlignmentStyle);
                 }
             }
 

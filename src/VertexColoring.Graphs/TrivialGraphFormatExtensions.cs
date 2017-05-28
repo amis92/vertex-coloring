@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
-using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace VertexColoring.Graphs
@@ -10,16 +9,25 @@ namespace VertexColoring.Graphs
     {
         public static void WriteGraphAsTgf(this TextWriter writer, Graph graph)
         {
-            var vertices = graph.Vertices.ToList();
-            vertices.Sort();
-            var edges = graph.Edges.ToList();
-            edges.Sort();
-            foreach (var vertex in vertices)
+            foreach (var vertex in graph.Vertices)
             {
                 writer.WriteLine(vertex.ToString());
             }
             writer.WriteLine("#");
-            foreach (var edge in edges)
+            foreach (var edge in graph.Edges)
+            {
+                writer.WriteLine(edge.ToString());
+            }
+        }
+        public static void WriteColoringAsTgf(this TextWriter writer, GraphColoring coloring)
+        {
+            var graph = coloring.Graph;
+            foreach (var vertex in graph.Vertices)
+            {
+                writer.WriteLine($"{vertex.Id} {coloring[vertex]} {vertex.Label}");
+            }
+            writer.WriteLine("#");
+            foreach (var edge in graph.Edges)
             {
                 writer.WriteLine(edge.ToString());
             }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 
@@ -11,12 +10,9 @@ namespace VertexColoring.Cli
         {
             Options = options;
             Log = new Logger(Options.Debug ? Console.Out : null, Console.Out);
-            Sizes = options.VertexCount.Zip(options.EdgeCount, (v, e) => (vertices: v, edges: e)).ToList();
         }
 
         private CliArguments Options { get; }
-
-        private List<(int vertices, int edges)> Sizes { get; }
 
         private Logger Log { get; }
 
@@ -33,7 +29,7 @@ namespace VertexColoring.Cli
         public void Run()
         {
             var runner = new BenchmarkRunner(
-                Sizes,
+                Options.VertexCounts.Zip(Options.EdgeCounts, (v, e) => (vertices: v, edges: e)),
                 Options.Number,
                 Options.Filename,
                 Options.Algorithms.Distinct().ToImmutableArray())

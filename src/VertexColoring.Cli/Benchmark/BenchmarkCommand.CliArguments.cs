@@ -14,11 +14,11 @@ namespace VertexColoring.Cli
 
             [OptionParameter(ShortName: 'v', LongName: "vertexCounts")]
             [Help("Vertex counts, must be non-negative.")]
-            public List<int> VertexCount { get; set; } = new List<int>();
+            public List<int> VertexCounts { get; set; } = new List<int>();
 
             [OptionParameter(ShortName: 'e', LongName: "edgeCounts")]
             [Help("Edge counts, must be greater than v - 1 and non-negative.")]
-            public List<int> EdgeCount { get; set; } = new List<int>();
+            public List<int> EdgeCounts { get; set; } = new List<int>();
 
             [OptionParameter(ShortName: 'f', LongName: "filename")]
             [Help("Filename path format with {0} for graph index (0..n)." +
@@ -34,12 +34,10 @@ namespace VertexColoring.Cli
             [Help("Number of graphs to benchmark (for each pair of 'v' and 'e' values). Default 1.")]
             public int Number { get; set; } = 1;
 
-            [OptionParameter(ShortName: 'o', LongName: "output")]
-            [Help("File to save summary to.")]
-            public string OutputFilename { get; set; }
-
             [OptionParameter(ShortName: 'a', LongName: "algorithms")]
-            [Help("Algorithms to benchmark.")]
+            [Help("Algorithms to use. (0/Simple (Simple Greedy), 1/LF (Largest First greedy)," +
+                " 2/SF (Smallest First greedy), 3/GIS (Greedy Independent Sets). e.g. '-a=0,3,4' or '-a 0,SF,GIS')." +
+                " Default is all.")]
             public List<Algorithm> Algorithms { get; set; }
                 = new[] { Algorithm.Simple, Algorithm.LF, Algorithm.SF, Algorithm.GIS }.ToList();
         }

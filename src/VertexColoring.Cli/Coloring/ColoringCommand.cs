@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Collections.Immutable;
+using System.Linq;
 
 namespace VertexColoring.Cli
 {
@@ -14,9 +14,7 @@ namespace VertexColoring.Cli
 
         private CliArguments Options { get; }
 
-        private List<(int vertices, int edges)> Sizes { get; }
-
-        private Logger Log { get; }
+        public Logger Log { get; set; }
 
         public static void Execute(string[] args)
         {
@@ -30,7 +28,16 @@ namespace VertexColoring.Cli
 
         public void Run()
         {
-            // TODO
+            var runner = new ColoringRunner(
+                Options.VertexCounts.Zip(Options.EdgeCounts, (v, e) => (vertices: v, edges: e)),
+                Options.Number,
+                Options.Filename,
+                Options.OutputFilename,
+                Options.Algorithms.Distinct().ToImmutableArray())
+            {
+                Log = Log
+            };
+            runner.Run();
         }
     }
 }

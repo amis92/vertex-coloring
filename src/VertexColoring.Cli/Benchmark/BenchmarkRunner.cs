@@ -1,93 +1,52 @@
 ﻿using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Diagnostics;
-using System.Linq;
 
 namespace VertexColoring.Cli
 {
-    class BenchmarkRunner
+    class BenchmarkRunner : BaseColoringRunner
     {
-        public BenchmarkRunner(List<(int vertices, int edges)> sizes, int number, string filenameFormat, ImmutableArray<Algorithm> algorithms)
+        public BenchmarkRunner(
+            IEnumerable<(int vertices, int edges)> sizes,
+            int number,
+            string filenameFormat,
+            IEnumerable<Algorithm> algorithms)
+            : base(sizes, number, filenameFormat, algorithms)
         {
-            Algorithms = algorithms;
-            Sizes = sizes.Any() ? sizes : new[] { (0,0) }.ToList();
-            Number = number;
-            Benchmark = new ColoringRunner
-            {
-                FilenameFormat = filenameFormat
-            };
         }
 
         public Logger Log { get; set; }
 
-        private List<(int vertices, int edges)> Sizes { get; }
-
-        private int Number { get; }
-
-        private ColoringRunner Benchmark { get; }
-
-        private List<Measurement> Measurements { get; } = new List<Measurement>();
-
-        private Stopwatch Watch { get; } = new Stopwatch();
-
-        private ImmutableArray<Algorithm> Algorithms { get; }
-
-        public void Run()
+        public override void Run()
         {
-            for (int i = 0; i < Number; i++)
-            {
-                foreach (var size in Sizes)
-                {
-                    Benchmark.Index = i;
-                    Benchmark.VertexCount = size.vertices;
-                    Benchmark.EdgeCount = size.edges;
-
-                    Log.Debug?.Write($"Coloring '{Benchmark.Filename}': Loading... ");
-
-                    Benchmark.Setup();
-
-                    Log.Debug?.Write("Loaded! Preparing... ");
-
-                    // prep-run
-                    foreach (var algorithm in Algorithms)
-                    {
-                        RunNotMeasured(algorithm);
-                    }
-
-                    Log.Debug?.WriteLine("Prepared! Coloring... ");
-                    
-                    foreach (var algorithm in Algorithms)
-                    {
-                        RunMeasured(algorithm);
-                    }
-                }
-            }
+            base.Run();
             Log.Info?.WriteSummaryTable(Measurements);
         }
 
-        private void RunNotMeasured(Algorithm algorithm)
+        protected override void RunLoop(int i, int vertices, int edges)
         {
-            Benchmark.Algorithm = algorithm;
-            var coloring = Benchmark.Color();
-        }
+            Runner.Index = i;
+            Runner.VertexCount = vertices;
+            Runner.EdgeCount = edges;
 
-        private void RunMeasured(Algorithm algorithm)
-        {
-            Benchmark.Algorithm = algorithm;
-            Watch.Restart();
+            Log.Debug?.Write($"Coloring '{Runner.Filename}': Loading... ");
 
-            var coloring = Benchmark.Color();
+            Runner.Setup();
 
-            Watch.Stop();
-            var measurement = new Measurement
+            Log.Debug?.Write("Loaded! Preparing... ");
+
+            // prep-run
+            foreach (var algorithm in Algorithms)
             {
-                Algorithm = Benchmark.Algorithm,
-                Duration = Watch.Elapsed,
-                Coloring = coloring,
-                Filename = Benchmark.Filename
-            };
-            Log.Info?.Write(measurement);
-            Measurements.Add(measurement);
+                RunNotMeasured(algorithm);
+            }
+
+            Log.Debug?.WriteLine("Prepared! Coloring... ");
+
+            foreach (var algorithm in Algorithms)
+            {
+                var measurement = RunMeasured(algorithm);
+                Log.Info?.WriteLine(measurement);
+                Measurements.Add(measurement);
+            }
         }
     }
 }
