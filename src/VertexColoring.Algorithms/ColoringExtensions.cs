@@ -7,20 +7,44 @@ using VertexColoring.Graphs;
 
 namespace VertexColoring.Algorithms
 {
+    /// <summary>
+    /// Provides <see cref="Graph"/> extension methods that calculate vertex coloring using different algorithms.
+    /// </summary>
     public static class ColoringExtensions
     {
+        /// <summary>
+        /// Colors graph vertices greedily processing them in order of <see cref="Graph.Vertices"/>.
+        /// </summary>
+        /// <param name="graph">Graph to be colored.</param>
+        /// <returns>Vertex coloring of provided graph.</returns>
         public static GraphColoring ColorGreedily(this Graph graph)
         {
             var adjacency = new GraphAdjacency(graph);
             return graph.ColorGreedily(adjacency);
         }
 
+        /// <summary>
+        /// Colors graph vertices greedily processing them in order of <see cref="Graph.Vertices"/>.
+        /// </summary>
+        /// <param name="graph">Graph to be colored.</param>
+        /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
+        /// when doing multiple colorings.</param>
+        /// <returns>Vertex coloring of provided graph.</returns>
         public static GraphColoring ColorGreedily(this Graph graph, GraphAdjacency adjacency)
         {
             return graph.ColorGreedilyWithVertexOrder(graph.Vertices, adjacency);
         }
 
-        public static GraphColoring ColorGreedilyWithVertexOrder(this Graph graph, IEnumerable<Vertex> verticesOrdered, GraphAdjacency adjacency)
+        /// <summary>
+        /// Colors graph vertices greedily processing them in order of <paramref name="verticesOrdered"/>.
+        /// </summary>
+        /// <param name="graph">Graph to be colored.</param>
+        /// <param name="verticesOrdered">Ordering of graph vertices to use in algorithm.</param>
+        /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
+        /// when doing multiple colorings.</param>
+        /// <returns>Vertex coloring of provided graph.</returns>
+        public static GraphColoring ColorGreedilyWithVertexOrder(this Graph graph, IEnumerable<Vertex> verticesOrdered,
+            GraphAdjacency adjacency)
         {
             var maxDegree = adjacency.AdjacentVertices.Max(p => p.Value.Count);
             var colors = Enumerable.Range(1, maxDegree + 2);
@@ -35,6 +59,13 @@ namespace VertexColoring.Algorithms
             return coloring.ToImmutable();
         }
 
+        /// <summary>
+        /// Colors graph vertices greedily processing them in descending order of vertex degree.
+        /// </summary>
+        /// <param name="graph">Graph to be colored.</param>
+        /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
+        /// when doing multiple colorings.</param>
+        /// <returns>Vertex coloring of provided graph.</returns>
         public static GraphColoring ColorLargestFirst(this Graph graph, GraphAdjacency adjacency)
         {
             var verticesLf = graph.Vertices
@@ -45,6 +76,13 @@ namespace VertexColoring.Algorithms
             return graph.ColorGreedilyWithVertexOrder(verticesLf, adjacency);
         }
 
+        /// <summary>
+        /// Colors graph vertices greedily processing them in ascending order of vertex degree.
+        /// </summary>
+        /// <param name="graph">Graph to be colored.</param>
+        /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
+        /// when doing multiple colorings.</param>
+        /// <returns>Vertex coloring of provided graph.</returns>
         public static GraphColoring ColorSmallestFirst(this Graph graph, GraphAdjacency adjacency)
         {
             var verticesLf = graph.Vertices
@@ -55,11 +93,34 @@ namespace VertexColoring.Algorithms
             return graph.ColorGreedilyWithVertexOrder(verticesLf, adjacency);
         }
 
+        /// <summary>
+        /// Colors graph using G.I.S (Greedy Independent Sets) algorithm. See remarks.
+        /// </summary>
+        /// <param name="graph">Graph to be colored.</param>
+        /// <returns>Vertex coloring of provided graph.</returns>
+        /// <remarks>
+        /// GIS algorithm:
+        /// <list type="ol">
+        /// <item>Take induced subgraph S by removing all colored vertices from base graph G.</item>
+        /// <item>Take from S a vertex v with maximum degree and color it.</item>'
+        /// <item>S:= Subgraph induced from S with removed vertex v.</item>
+        /// <item>If S is not empty, return to 2.</item>
+        /// <item>Increase color.</item>
+        /// <item>If not all vertices are colored, return to 1.</item>
+        /// </list>
+        /// </remarks>
         public static GraphColoring ColorGreedyIndependentSets(this Graph graph)
         {
             return graph.ColorGreedyIndependentSets(graph.Adjacency());
         }
 
+        /// <summary>
+        /// Colors graph using G.I.S (Greedy Independent Sets) algorithm. See remarks in <see cref="ColorGreedyIndependentSets(Graph)"/>.
+        /// </summary>
+        /// <param name="graph">Graph to be colored.</param>
+        /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
+        /// when doing multiple colorings.</param>
+        /// <returns>Vertex coloring of provided graph.</returns>
         public static GraphColoring ColorGreedyIndependentSets(this Graph graph, GraphAdjacency adjacency)
         {
             var maxDegree = adjacency.AdjacentVertices.Max(p => p.Value.Count);
@@ -81,6 +142,13 @@ namespace VertexColoring.Algorithms
             return coloring.ToImmutable();
         }
 
+        /// <summary>
+        /// Optimizes color weights by grouping vertices by color, ordering the groups by count,
+        /// and assigning colors in rising order to groups of vertices as ordered,
+        /// so that the largest group has the smallest color.
+        /// </summary>
+        /// <param name="coloring">Coloring to be optimized.</param>
+        /// <returns>A new, optimized coloring (new instance).</returns>
         public static GraphColoring OptimizeByWeighting(this GraphColoring coloring)
         {
             var colors = coloring.VertexColors
