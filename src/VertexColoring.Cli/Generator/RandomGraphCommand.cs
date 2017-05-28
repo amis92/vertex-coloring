@@ -2,6 +2,8 @@
 using VertexColoring.Graphs;
 using System.Diagnostics;
 using System.IO;
+using System.Collections.Immutable;
+using System.Linq;
 
 namespace VertexColoring.Cli
 {
@@ -15,6 +17,8 @@ namespace VertexColoring.Cli
             Log = new Logger(Options.Debug ? Console.Out : null, Console.Out);
             Filename = FixFilename(options.OutputFilename);
             Random = Options.RandomSeed.HasValue ? new Random(Options.RandomSeed.Value) : new Random();
+            var sizesImmutable = Options.VertexCounts.Zip(Options.EdgeCounts, (v, e) => (v, e)).ToImmutableArray();
+            Sizes =  sizesImmutable.Any() ? sizesImmutable : new[] { (0, 0) }.ToImmutableArray();
         }
 
         private CliArguments Options { get; }
@@ -27,6 +31,8 @@ namespace VertexColoring.Cli
 
         private Random Random { get; }
 
+        private ImmutableArray<(int vertices, int edges)> Sizes { get; }
+
         public static void Execute(string[] args)
         {
             var options = EntryPoint.Cli.Parse<CliArguments>(args);
@@ -37,24 +43,27 @@ namespace VertexColoring.Cli
         {
             for (int i = 0; i < Options.Number; i++)
             {
-                GenerateGraph(i);
+                foreach (var size in Sizes)
+                {
+                    GenerateGraph(i, size.vertices, size.edges);
+                }
             }
         }
 
-        private void GenerateGraph(int i)
+        private void GenerateGraph(int i, int vertices, int edges)
         {
-            Log.Debug?.WriteLine($"{i}. Generating random graph with {Options.VertexCount} vertices" +
-                $" and {Options.EdgeCount} edges.");
+            Log.Debug?.WriteLine($"{i}. Generating random graph with {vertices} vertices" +
+                $" and {edges} edges.");
 
             Watch.Restart();
-            var graph = Generator.RandomConnectedGraph(Options.VertexCount, Options.EdgeCount, Random);
+            var graph = Generator.RandomConnectedGraph(vertices, edges, Random);
             Watch.Stop();
-            var filename = string.Format(Options.OutputFilename, i, Options.VertexCount, Options.EdgeCount);
+            var filename = string.Format(Options.OutputFilename, i, vertices, edges);
 
             Log.Debug?.WriteLine($"{i}. Generated {graph.Edges.Count} edges" +
-                $" ({Options.EdgeCount - graph.Edges.Count} were duplicated).");
+                $" ({edges - graph.Edges.Count} were duplicated).");
             Log.Debug?.WriteLine($"{i}. Generated in {Watch.ElapsedMilliseconds}ms.");
-            Log.Debug?.WriteLine($"{i}. Saving to '{filename}'.");
+            Log.Info?.WriteLine($"{i}. Saving '{filename}'.");
 
             SaveGraph(graph, filename);
 

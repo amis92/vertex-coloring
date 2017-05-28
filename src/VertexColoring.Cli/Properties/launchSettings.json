@@ -2,7 +2,7 @@
   "profiles": {
     "VertexColoring.Cli": {
       "commandName": "Project",
-      "commandLineArgs": "-d -o graph-colored-{3}.tgf"
+      "commandLineArgs": "-d"
     }
   }
 }

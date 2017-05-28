@@ -23,8 +23,8 @@ namespace VertexColoring.Cli
             [OptionParameter(ShortName: 'f', LongName: "filename")]
             [Help("Filename path format with {0} for graph index (0..n)." +
                 " Additional usable parameters: {1} - vertexCount, {2} - edgeCount." +
-                " Default graph{0}.tgf")]
-            public string Filename { get; set; } = "graph{0}.tgf";
+                " Default graph-v{1}-e{2}-{0}.tgf")]
+            public string Filename { get; set; } = "graph-v{1}-e{2}-{0}.tgf";
 
             [Option(ShortName: 'd', LongName: "debug")]
             [Help("Verbose behavior. Prints detailed output of performed operations when set.")]
