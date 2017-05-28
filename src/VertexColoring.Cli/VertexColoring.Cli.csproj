@@ -6,6 +6,11 @@
     <AssemblyName>vertexcoloring</AssemblyName>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Publish|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Amadevus.RecordGenerator" Version="0.1.1" />
     <PackageReference Include="EntryPoint" Version="1.2.1" />
