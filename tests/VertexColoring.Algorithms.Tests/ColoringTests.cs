@@ -105,11 +105,11 @@ namespace VertexColoring.Algorithms.Tests
 
             var coloring = graph.ToImmutable().ColorGreedily();
 
-            var originalCost = coloring.SummaryCost();
+            var originalCost = coloring.SummaryCost;
 
             var optimizedColoring = coloring.OptimizeByWeighting();
 
-            var optimizedCost = optimizedColoring.SummaryCost();
+            var optimizedCost = optimizedColoring.SummaryCost;
 
             Assert.Equal(5, originalCost);
             Assert.Equal(4, optimizedCost);

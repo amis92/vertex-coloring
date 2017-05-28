@@ -10,11 +10,6 @@ namespace VertexColoring.Graphs
             return new GraphColoring(coloring.Graph, coloring.VertexColors.ToImmutableDictionary());
         }
 
-        public static int SummaryCost(this GraphColoring coloring)
-        {
-            return coloring.VertexColors.Sum(c => c.Value);
-        }
-
         public static int ColorsUsed(this GraphColoring coloring)
         {
             return coloring.VertexColors.Values.Distinct().Count();

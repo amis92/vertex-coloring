@@ -31,7 +31,7 @@ namespace VertexColoring.Cli
             public bool Debug { get; set; } = false;
 
             [OptionParameter(ShortName: 'n', LongName: "number")]
-            [Help("Number of graphs to benchmark (for each pair of 'v' and 'e' values). Default 1.")]
+            [Help("Number of graphs to process (for each pair of 'v' and 'e' values). Default 1.")]
             public int Number { get; set; } = 1;
 
             [OptionParameter(ShortName: 'a', LongName: "algorithms")]
@@ -40,6 +40,11 @@ namespace VertexColoring.Cli
                 " Default is all.")]
             public List<Algorithm> Algorithms { get; set; }
                 = new[] { Algorithm.Simple, Algorithm.LF, Algorithm.SF, Algorithm.GIS }.ToList();
+
+            [OptionParameter(ShortName: 'b', LongName: "baseline")]
+            [Help("Baseline algorithm. Results of other colorings are compared to this one" +
+                " and percentage difference is calculated. Default is Simple.")]
+            public Algorithm Baseline { get; set; } = Algorithm.Simple;
         }
     }
 }

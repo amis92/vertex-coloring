@@ -14,7 +14,7 @@ namespace VertexColoring.Cli
         {
             return $"Calculated '{Algorithm}' for '{Filename}'" +
                 $" in {Duration} ({Duration.TotalMilliseconds}ms)," +
-                $" total color cost: {Coloring.SummaryCost()}" +
+                $" total color cost: {Coloring.SummaryCost}" +
                 $" (for {Coloring.Graph.Vertices.Count} vertices)";
         }
     }

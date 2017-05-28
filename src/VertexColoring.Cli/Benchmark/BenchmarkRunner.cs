@@ -15,10 +15,12 @@ namespace VertexColoring.Cli
 
         public Logger Log { get; set; }
 
+        public Algorithm Baseline { get; set; }
+
         public override void Run()
         {
             base.Run();
-            Log.Info?.WriteSummaryTable(Measurements);
+            Log.Info?.WriteSummaryTable(Measurements, Baseline);
         }
 
         protected override void RunLoop(int i, int vertices, int edges)

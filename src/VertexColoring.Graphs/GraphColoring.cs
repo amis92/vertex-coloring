@@ -19,5 +19,8 @@ namespace VertexColoring.Graphs
         {
             get => VertexColors.Keys.FirstOrDefault(v => v.Id == vertexId) is Vertex vertex && VertexColors.TryGetValue(vertex, out var color) ? color : default(int?);
         }
+
+        private int? _summaryCost;
+        public int SummaryCost => (_summaryCost ?? (_summaryCost = VertexColors.Sum(c => c.Value))).Value;
     }
 }

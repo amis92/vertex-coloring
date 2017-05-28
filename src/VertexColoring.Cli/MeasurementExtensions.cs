@@ -1,17 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
 using TextTableFormatter;
-using VertexColoring.Graphs;
 
 namespace VertexColoring.Cli
 {
     static class MeasurementExtensions
     {
-        public static void WriteSummaryTable(this TextWriter writer, IEnumerable<Measurement> measurements)
+        public static void WriteSummaryTable(this TextWriter writer, IEnumerable<Measurement> measurements, Algorithm? baseline = default(Algorithm?))
         {
-            // | Vertices | Algorithm | Duration [ms] |
-            var table = new TextTable(4, TableBordersStyle.CLASSIC, TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS);
+            // | Vertices | Algorithm | Avg. Duration [ms] | Avg. Total cost | Avg. Diff to <baseline> |
+            var table = new TextTable(baseline is null ? 4 : 5);
             
             var leftAlignmentStyle = new CellStyle(
                 CellHorizontalAlignment.Left,
@@ -29,25 +29,45 @@ namespace VertexColoring.Cli
             table.AddCell(" Algorithm ", leftAlignmentStyle);
             table.AddCell(" Avg. Duration [ms] ", leftAlignmentStyle);
             table.AddCell(" Avg. Total cost ", leftAlignmentStyle);
+            if (baseline != null)
+            {
+                table.AddCell($" Avg. Diff to {baseline} ");
+            }
 
             var groups = measurements
                 .GroupBy(m => m.Coloring.Graph.Vertices.Count)
-                .Select(g => (key: g.Key, items: g.GroupBy(m => m.Algorithm)));
+                .ToImmutableArray();
+                
 
-            foreach (var sizeGroups in groups)
+            foreach (var sizeGroup in groups)
             {
-                foreach (var group in sizeGroups.items)
+                var avgDiff = sizeGroup
+                    .GroupBy(m => m.Filename)
+                    .SelectMany(g => {
+                        var baseCost = g.FirstOrDefault(m => m.Algorithm == baseline)?.Coloring.SummaryCost ?? 1;
+                        return g.Select(m => (measurement: m, diff: ((double)m.Coloring.SummaryCost / baseCost) - 1));
+                    })
+                    .GroupBy(t => t.measurement.Algorithm)
+                    .ToDictionary(g => g.Key, g => g.Average(t => t.diff));
+
+
+                foreach (var algorithmGroup in sizeGroup.GroupBy(m => m.Algorithm))
                 {
-                    var durationAvg = group.Average(m => m.Duration.TotalMilliseconds);
-                    var avgCost = (decimal) group.Average(m => m.Coloring.SummaryCost());
+                    var durationAvg = algorithmGroup.Average(m => m.Duration.TotalMilliseconds);
+                    var avgCost = (decimal) algorithmGroup.Average(m => m.Coloring.SummaryCost);
                     // vertices
-                    table.AddCell($" {sizeGroups.key} ", rightAlignmentStyle);
+                    table.AddCell($" {sizeGroup.Key} ", rightAlignmentStyle);
                     // algorithm
-                    table.AddCell($" {group.Key} ", leftAlignmentStyle);
+                    table.AddCell($" {algorithmGroup.Key} ", leftAlignmentStyle);
                     // duration
                     table.AddCell($" {durationAvg} ", rightAlignmentStyle);
                     // total color cost
                     table.AddCell($" {avgCost} ", rightAlignmentStyle);
+                    if (baseline != null)
+                    {
+                        // diff to baseline
+                        table.AddCell($" {(decimal)avgDiff[algorithmGroup.Key]:P} ", rightAlignmentStyle);
+                    }
                 }
             }
 

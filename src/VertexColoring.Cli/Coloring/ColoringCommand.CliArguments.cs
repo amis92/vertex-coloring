@@ -31,8 +31,15 @@ namespace VertexColoring.Cli
             public bool Debug { get; set; } = false;
 
             [OptionParameter(ShortName: 'n', LongName: "number")]
-            [Help("Number of graphs to color (for each pair of 'v' and 'e' values). Default 1.")]
+            [Help("Number of graphs to process (for each pair of 'v' and 'e' values). Default 1.")]
             public int Number { get; set; } = 1;
+
+            [OptionParameter(ShortName: 'a', LongName: "algorithms")]
+            [Help("Algorithms to use. (0/Simple (Simple Greedy), 1/LF (Largest First greedy)," +
+                " 2/SF (Smallest First greedy), 3/GIS (Greedy Independent Sets). e.g. '-a=0,3,4' or '-a 0,SF,GIS')." +
+                " Default is all.")]
+            public List<Algorithm> Algorithms { get; set; }
+                = new[] { Algorithm.Simple, Algorithm.LF, Algorithm.SF, Algorithm.GIS }.ToList();
 
             [OptionParameter(ShortName: 'o', LongName: "output")]
             [Help("File to save result to, formatted in the same way as 'filename' parameter," +
@@ -41,13 +48,6 @@ namespace VertexColoring.Cli
                 " are prepended with numeric color (1..k), e.g. vertex '123 Label' is saved as" +
                 " '123 5 Label' (color id=5). Default is not to save.")]
             public string OutputFilename { get; set; }
-
-            [OptionParameter(ShortName: 'a', LongName: "algorithms")]
-            [Help("Algorithms to use. (0/Simple (Simple Greedy), 1/LF (Largest First greedy)," +
-                " 2/SF (Smallest First greedy), 3/GIS (Greedy Independent Sets). e.g. '-a=0,3,4' or '-a 0,SF,GIS')." +
-                " Default is all.")]
-            public List<Algorithm> Algorithms { get; set; }
-                = new[] { Algorithm.Simple, Algorithm.LF, Algorithm.SF, Algorithm.GIS }.ToList();
         }
     }
 }

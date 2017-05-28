@@ -34,7 +34,8 @@ namespace VertexColoring.Cli
                 Options.Filename,
                 Options.Algorithms.Distinct().ToImmutableArray())
             {
-                Log = Log
+                Log = Log,
+                Baseline = Options.Baseline
             };
             runner.Run();
         }
