@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\VertexColoring.Algorithms\VertexColoring.Algorithms.csproj" />
-    <ProjectReference Include="..\src\VertexColoring.Graphs\VertexColoring.Graphs.csproj" />
+    <ProjectReference Include="..\..\src\VertexColoring.Algorithms\VertexColoring.Algorithms.csproj" />
+    <ProjectReference Include="..\..\src\VertexColoring.Graphs\VertexColoring.Graphs.csproj" />
   </ItemGroup>
 
   <ItemGroup>

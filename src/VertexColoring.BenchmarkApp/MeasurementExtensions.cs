@@ -7,18 +7,28 @@ using VertexColoring.Graphs;
 
 namespace VertexColoring.BenchmarkApp
 {
-    static class MeasurementPrinter
+    static class MeasurementExtensions
     {
         public static void WriteSummaryTable(this TextWriter writer, IEnumerable<Measurement> measurements)
         {
             // | Vertices | Algorithm | Duration [ms] |
             var table = new TextTable(3, TableBordersStyle.CLASSIC, TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS);
+            
+            var leftAlignmentStyle = new CellStyle(
+                CellHorizontalAlignment.Left,
+                CellTextTrimmingStyle.Dots,
+                CellNullStyle.EmptyString,
+                removeTerminalFormats: false /*otherwise '[' creates weird char sequence which is appended to cell*/);
 
-            var rightAlignmentStyle = new CellStyle(CellHorizontalAlignment.Right);
+            var rightAlignmentStyle = new CellStyle(
+                CellHorizontalAlignment.Right,
+                CellTextTrimmingStyle.Dots,
+                CellNullStyle.EmptyString,
+                removeTerminalFormats: false /*otherwise '[' creates weird char sequence which is appended to cell*/);
 
-            table.AddCell(" Vertices ");
-            table.AddCell(" Algorithm ");
-            table.AddCell(" Duration (ms) ");
+            table.AddCell(" Vertices ", leftAlignmentStyle);
+            table.AddCell(" Algorithm ", leftAlignmentStyle);
+            table.AddCell(" Duration [ms] ", leftAlignmentStyle);
 
             var groups = measurements
                 .GroupBy(m => m.Coloring.Graph.Vertices.Count)
@@ -32,7 +42,7 @@ namespace VertexColoring.BenchmarkApp
                     // vertices
                     table.AddCell($" {sizeGroups.key} ", rightAlignmentStyle);
                     // algorithm
-                    table.AddCell($" {group.Key} ");
+                    table.AddCell($" {group.Key} ", leftAlignmentStyle);
                     // duration
                     table.AddCell($" {durationAvg} ", rightAlignmentStyle);
                 }
@@ -48,15 +58,6 @@ namespace VertexColoring.BenchmarkApp
                 writer.WriteLine(line);
             }
             writer.WriteLine();
-        }
-
-        public static void Write(this TextWriter writer, Measurement measurement)
-        {
-            var m = measurement;
-            writer.WriteLine($"Calculated '{m.AlgorithmName}' for '{m.Filename}'" +
-                $" in {m.Duration} ({m.Duration.TotalMilliseconds}ms)," +
-                $" total color cost: {m.Coloring.SummaryCost()}" +
-                $" (for {m.Coloring.Graph.Vertices.Count} vertices)");
         }
     }
 }

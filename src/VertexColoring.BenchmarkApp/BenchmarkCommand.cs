@@ -10,7 +10,7 @@ namespace VertexColoring.BenchmarkApp
         public BenchmarkCommand(CliArguments options)
         {
             Options = options;
-            Log = Options.Debug ? new ConsoleLogger() : null;
+            Log = new Logger(Options.Debug ? Console.Out : null, Console.Out);
             Sizes = options.VertexCount.Zip(options.EdgeCount, (v, e) => (vertices: v, edges: e)).ToList();
         }
 
@@ -18,7 +18,7 @@ namespace VertexColoring.BenchmarkApp
 
         private List<(int vertices, int edges)> Sizes { get; }
 
-        private ConsoleLogger Log { get; }
+        private Logger Log { get; }
 
         public static void Execute(string[] args)
         {
@@ -32,26 +32,11 @@ namespace VertexColoring.BenchmarkApp
 
         public void Run()
         {
-            var runner = new BenchmarkRunner(Sizes, Options.Number, Options.Filename);
-            runner.Log = Log;
+            var runner = new BenchmarkRunner(Sizes, Options.Number, Options.Filename)
+            {
+                Log = Log
+            };
             runner.Run();
-        }
-
-        private class ConsoleLogger : ILogger
-        {
-            public void Write(string message)
-            {
-                Console.Write(message);
-            }
-
-            public void WriteLine(string message)
-            {
-                Console.WriteLine(message);
-            }
-            public void WriteLine(object obj)
-            {
-                Console.WriteLine(obj);
-            }
         }
     }
 }
