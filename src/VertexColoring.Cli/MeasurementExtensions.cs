@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using TextTableFormatter;
-using VertexColoring.Graphs;
 
-namespace VertexColoring.BenchmarkApp
+namespace VertexColoring.Cli
 {
     static class MeasurementExtensions
     {
@@ -32,7 +30,7 @@ namespace VertexColoring.BenchmarkApp
 
             var groups = measurements
                 .GroupBy(m => m.Coloring.Graph.Vertices.Count)
-                .Select(g => (key: g.Key, items: g.GroupBy(m => m.AlgorithmName)));
+                .Select(g => (key: g.Key, items: g.GroupBy(m => m.Algorithm)));
 
             foreach (var sizeGroups in groups)
             {

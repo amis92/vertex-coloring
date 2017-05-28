@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace VertexColoring.Cli
+﻿namespace VertexColoring.Cli
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var commands = EntryPoint.Cli.Execute<CliCommands>(args);
         }
     }
 }

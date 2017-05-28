@@ -1,13 +1,13 @@
 ﻿using EntryPoint;
 using System.Collections.Generic;
 
-namespace VertexColoring.BenchmarkApp
+namespace VertexColoring.Cli
 {
-    sealed partial class BenchmarkCommand
+    sealed partial class ColoringCommand
     {
         public class CliArguments : BaseCliArguments
         {
-            public CliArguments() : base("benchmark")
+            public CliArguments() : base("color")
             {
             }
 

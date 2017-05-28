@@ -1,10 +1,9 @@
 ﻿using System;
-using EntryPoint;
 using VertexColoring.Graphs;
 using System.Diagnostics;
 using System.IO;
 
-namespace VertexColoring.GraphGenerator
+namespace VertexColoring.Cli
 {
     sealed partial class RandomGraphCommand
     {
@@ -13,19 +12,19 @@ namespace VertexColoring.GraphGenerator
         public RandomGraphCommand(CliArguments options)
         {
             Options = options;
-            Log = Options.Debug ? new ConsoleLogger() : null;
+            Log = new Logger(Options.Debug ? Console.Out : null, Console.Out);
             Filename = FixFilename(options.OutputFilename);
         }
 
         private CliArguments Options { get; }
 
-        private ConsoleLogger Log { get; }
+        private Logger Log { get; }
 
         private string Filename { get; }
 
         public static void Execute(string[] args)
         {
-            var options = Cli.Parse<CliArguments>(args);
+            var options = EntryPoint.Cli.Parse<CliArguments>(args);
             new RandomGraphCommand(options).Run();
         }
 
@@ -39,7 +38,7 @@ namespace VertexColoring.GraphGenerator
 
         private void GenerateGraph(int i)
         {
-            Log?.WriteLine($"{i}. Generating random graph with {Options.VertexCount} vertices" +
+            Log.Debug?.WriteLine($"{i}. Generating random graph with {Options.VertexCount} vertices" +
                 $" and {Options.EdgeCount} edges.");
 
             var watch = Stopwatch.StartNew();
@@ -47,14 +46,14 @@ namespace VertexColoring.GraphGenerator
             watch.Stop();
             var filename = string.Format(Options.OutputFilename, i, Options.VertexCount, Options.EdgeCount);
 
-            Log?.WriteLine($"{i}. Generated {graph.Edges.Count} edges" +
+            Log.Debug?.WriteLine($"{i}. Generated {graph.Edges.Count} edges" +
                 $" ({Options.EdgeCount - graph.Edges.Count} were duplicated).");
-            Log?.WriteLine($"{i}. Generated in {watch.ElapsedMilliseconds}ms.");
-            Log?.WriteLine($"{i}. Saving to '{filename}'.");
+            Log.Debug?.WriteLine($"{i}. Generated in {watch.ElapsedMilliseconds}ms.");
+            Log.Debug?.WriteLine($"{i}. Saving to '{filename}'.");
 
             SaveGraph(graph, filename);
 
-            Log?.WriteLine($"{i}. Saved.");
+            Log.Debug?.WriteLine($"{i}. Saved.");
         }
 
         private static void SaveGraph(Graph graph, string filename)
@@ -78,14 +77,6 @@ namespace VertexColoring.GraphGenerator
                 filename = filename + TgfFileExtension;
             }
             return filename;
-        }
-
-        private class ConsoleLogger
-        {
-            public void WriteLine(string message)
-            {
-                Console.WriteLine(message);
-            }
         }
     }
 }

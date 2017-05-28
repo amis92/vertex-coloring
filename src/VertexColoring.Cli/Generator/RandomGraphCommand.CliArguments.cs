@@ -1,6 +1,6 @@
 ﻿using EntryPoint;
 
-namespace VertexColoring.GraphGenerator
+namespace VertexColoring.Cli
 {
     partial class RandomGraphCommand
     {

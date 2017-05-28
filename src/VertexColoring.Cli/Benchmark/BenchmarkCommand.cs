@@ -1,9 +1,9 @@
-﻿using EntryPoint;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 
-namespace VertexColoring.BenchmarkApp
+namespace VertexColoring.Cli
 {
     sealed partial class BenchmarkCommand
     {
@@ -22,7 +22,7 @@ namespace VertexColoring.BenchmarkApp
 
         public static void Execute(string[] args)
         {
-            var options = Cli.Parse<CliArguments>(args);
+            var options = EntryPoint.Cli.Parse<CliArguments>(args);
             new BenchmarkCommand(options).Run();
 #if DEBUG
             Console.WriteLine("Press enter to exit...");
@@ -32,7 +32,11 @@ namespace VertexColoring.BenchmarkApp
 
         public void Run()
         {
-            var runner = new BenchmarkRunner(Sizes, Options.Number, Options.Filename)
+            var runner = new BenchmarkRunner(
+                Sizes,
+                Options.Number,
+                Options.Filename,
+                Options.Algorithms.Distinct().ToImmutableArray())
             {
                 Log = Log
             };

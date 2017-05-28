@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "VertexColoring.BenchmarkApp": {
-      "commandName": "Project",
-      "commandLineArgs": "-d"
-    }
-  }
-}

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexColoring.BenchmarkApp", "src\VertexColoring.BenchmarkApp\VertexColoring.BenchmarkApp.csproj", "{746D6296-46F9-4F92-BD1B-CC0CD77F99D0}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BA9CED21-0658-4680-805C-C9A0FFF8A67C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexColoring.Graphs", "src\VertexColoring.Graphs\VertexColoring.Graphs.csproj", "{154DE8DD-E0AA-4766-A9E2-0F6D157A0DC1}"
@@ -14,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexColoring.Graphs.Tests", "tests\VertexColoring.Graphs.Tests\VertexColoring.Graphs.Tests.csproj", "{A6588FDF-0A8F-4C86-9734-F11C0480E35C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexColoring.Algorithms", "src\VertexColoring.Algorithms\VertexColoring.Algorithms.csproj", "{2B7C918F-6A3A-4EDB-BA53-FF7E750030E9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VertexColoring.GraphGenerator", "src\VertexColoring.GraphGenerator\VertexColoring.GraphGenerator.csproj", "{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextTableFormatter", "src\TextTableFormatter\TextTableFormatter.csproj", "{8E376875-F255-4B43-9006-F8CA9822EE4D}"
 EndProject
@@ -29,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{746D6296-46F9-4F92-BD1B-CC0CD77F99D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{746D6296-46F9-4F92-BD1B-CC0CD77F99D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{746D6296-46F9-4F92-BD1B-CC0CD77F99D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{746D6296-46F9-4F92-BD1B-CC0CD77F99D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{154DE8DD-E0AA-4766-A9E2-0F6D157A0DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{154DE8DD-E0AA-4766-A9E2-0F6D157A0DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{154DE8DD-E0AA-4766-A9E2-0F6D157A0DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,10 +37,6 @@ Global
 		{2B7C918F-6A3A-4EDB-BA53-FF7E750030E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B7C918F-6A3A-4EDB-BA53-FF7E750030E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B7C918F-6A3A-4EDB-BA53-FF7E750030E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E376875-F255-4B43-9006-F8CA9822EE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E376875-F255-4B43-9006-F8CA9822EE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E376875-F255-4B43-9006-F8CA9822EE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -66,11 +54,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{746D6296-46F9-4F92-BD1B-CC0CD77F99D0} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
 		{154DE8DD-E0AA-4766-A9E2-0F6D157A0DC1} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
 		{A6588FDF-0A8F-4C86-9734-F11C0480E35C} = {529D5DA6-85AD-4DF4-9836-ACE530D26A32}
 		{2B7C918F-6A3A-4EDB-BA53-FF7E750030E9} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
-		{3B5052B3-E9E3-4C8D-90B8-8ADC669ADF60} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
 		{8E376875-F255-4B43-9006-F8CA9822EE4D} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
 		{B3069286-5FB7-4484-A158-2653AE6DBBB1} = {529D5DA6-85AD-4DF4-9836-ACE530D26A32}
 		{0C9EA31D-2AFE-4174-B543-1073C86FCBDD} = {BA9CED21-0658-4680-805C-C9A0FFF8A67C}
