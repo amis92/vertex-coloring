@@ -11,7 +11,9 @@ namespace VertexColoring.Cli
         public static void WriteSummaryTable(this TextWriter writer, IEnumerable<Measurement> measurements, Algorithm? baseline = default(Algorithm?))
         {
             // | Vertices | Algorithm | Avg. Duration [ms] | Avg. Total cost | Avg. Diff to <baseline> |
-            var table = new TextTable(baseline is null ? 4 : 5);
+            var isBaseline = baseline != null;
+            var columnCount = isBaseline ? 5 : 4;
+            var table = new TextTable(columnCount);
             
             var leftAlignmentStyle = new CellStyle(
                 CellHorizontalAlignment.Left,
@@ -60,13 +62,21 @@ namespace VertexColoring.Cli
                     // algorithm
                     table.AddCell($" {algorithmGroup.Key} ", leftAlignmentStyle);
                     // duration
-                    table.AddCell($" {durationAvg} ", rightAlignmentStyle);
+                    table.AddCell($" {durationAvg:N5} ", rightAlignmentStyle);
                     // total color cost
-                    table.AddCell($" {avgCost} ", rightAlignmentStyle);
+                    table.AddCell($" {avgCost:N2} ", rightAlignmentStyle);
                     if (baseline != null)
                     {
                         // diff to baseline
-                        table.AddCell($" {(decimal)avgDiff[algorithmGroup.Key]:P} ", rightAlignmentStyle);
+                        table.AddCell($" {(decimal)avgDiff[algorithmGroup.Key]:P2} ", rightAlignmentStyle);
+                    }
+                }
+                if (sizeGroup != groups.Last())
+                {
+                    // add empty row
+                    for (int i = 0; i < columnCount; i++)
+                    {
+                        table.AddCell(null);
                     }
                 }
             }

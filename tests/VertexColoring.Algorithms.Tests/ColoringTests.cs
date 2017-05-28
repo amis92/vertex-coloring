@@ -115,10 +115,10 @@ namespace VertexColoring.Algorithms.Tests
             Assert.Equal(4, optimizedCost);
         }
 
-        [Fact]
+        [Fact(Skip = "Measuring performace, not really test")]
         public void TimeTest()
         {
-            var graph = Generator.RandomConnectedGraph(5000, 20000);
+            var graph = Generator.RandomConnectedGraph(1000, 4000);
             var greedyColoring = graph.ColorGreedily();
             greedyColoring.OptimizeByWeighting();
             var gisColoring = graph.ColorGreedyIndependentSets();
