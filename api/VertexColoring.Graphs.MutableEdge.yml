@@ -1,0 +1,353 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.MutableEdge
+  commentId: T:VertexColoring.Graphs.MutableEdge
+  id: MutableEdge
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.MutableEdge.GetEnumerator
+  - VertexColoring.Graphs.MutableEdge.Label
+  - VertexColoring.Graphs.MutableEdge.ToString
+  - VertexColoring.Graphs.MutableEdge.Vertex1
+  - VertexColoring.Graphs.MutableEdge.Vertex2
+  langs:
+  - csharp
+  - vb
+  name: MutableEdge
+  nameWithType: MutableEdge
+  fullName: VertexColoring.Graphs.MutableEdge
+  type: Class
+  source:
+    id: MutableEdge
+    path: ''
+    startLine: 2993
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nA mutable version of <xref href=\"VertexColoring.Graphs.Edge\" data-throw-if-not-resolved=\"false\"></xref>. Easily transformable to immutable instance\nusing the <xref href=\"VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge)\" data-throw-if-not-resolved=\"false\"></xref> extension method.\nCan be enumerated same as immutable instance.\n"
+  example: []
+  syntax:
+    content: 'public sealed class MutableEdge : IEnumerable<MutableVertex>'
+    content.vb: >-
+      Public NotInheritable Class MutableEdge
+
+          Inherits IEnumerable(Of MutableVertex)
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: VertexColoring.Graphs.MutableEdge.Vertex1
+  commentId: P:VertexColoring.Graphs.MutableEdge.Vertex1
+  id: Vertex1
+  parent: VertexColoring.Graphs.MutableEdge
+  langs:
+  - csharp
+  - vb
+  name: Vertex1
+  nameWithType: MutableEdge.Vertex1
+  fullName: VertexColoring.Graphs.MutableEdge.Vertex1
+  type: Property
+  source:
+    id: Vertex1
+    path: ''
+    startLine: 2998
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets or sets one end of the edge.\n"
+  example: []
+  syntax:
+    content: public MutableVertex Vertex1 { get; set; }
+    parameters: []
+    return:
+      type: VertexColoring.Graphs.MutableVertex
+    content.vb: Public Property Vertex1 As MutableVertex
+  overload: VertexColoring.Graphs.MutableEdge.Vertex1*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.MutableEdge.Vertex2
+  commentId: P:VertexColoring.Graphs.MutableEdge.Vertex2
+  id: Vertex2
+  parent: VertexColoring.Graphs.MutableEdge
+  langs:
+  - csharp
+  - vb
+  name: Vertex2
+  nameWithType: MutableEdge.Vertex2
+  fullName: VertexColoring.Graphs.MutableEdge.Vertex2
+  type: Property
+  source:
+    id: Vertex2
+    path: ''
+    startLine: 3003
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets or sets other end of the edge.\n"
+  example: []
+  syntax:
+    content: public MutableVertex Vertex2 { get; set; }
+    parameters: []
+    return:
+      type: VertexColoring.Graphs.MutableVertex
+    content.vb: Public Property Vertex2 As MutableVertex
+  overload: VertexColoring.Graphs.MutableEdge.Vertex2*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.MutableEdge.Label
+  commentId: P:VertexColoring.Graphs.MutableEdge.Label
+  id: Label
+  parent: VertexColoring.Graphs.MutableEdge
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: MutableEdge.Label
+  fullName: VertexColoring.Graphs.MutableEdge.Label
+  type: Property
+  source:
+    id: Label
+    path: ''
+    startLine: 3008
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets or sets an arbitrary label.\n"
+  example: []
+  syntax:
+    content: public string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Label As String
+  overload: VertexColoring.Graphs.MutableEdge.Label*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.MutableEdge.ToString
+  commentId: M:VertexColoring.Graphs.MutableEdge.ToString
+  id: ToString
+  parent: VertexColoring.Graphs.MutableEdge
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: MutableEdge.ToString()
+  fullName: VertexColoring.Graphs.MutableEdge.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 3010
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: VertexColoring.Graphs.MutableEdge.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VertexColoring.Graphs.MutableEdge.GetEnumerator
+  commentId: M:VertexColoring.Graphs.MutableEdge.GetEnumerator
+  id: GetEnumerator
+  parent: VertexColoring.Graphs.MutableEdge
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: MutableEdge.GetEnumerator()
+  fullName: VertexColoring.Graphs.MutableEdge.GetEnumerator()
+  type: Method
+  source:
+    id: GetEnumerator
+    path: ''
+    startLine: 3015
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public IEnumerator<MutableVertex> GetEnumerator()
+    return:
+      type: IEnumerator{VertexColoring.Graphs.MutableVertex}
+    content.vb: Public Function GetEnumerator As IEnumerator(Of MutableVertex)
+  overload: VertexColoring.Graphs.MutableEdge.GetEnumerator*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VertexColoring.Graphs.Edge
+  commentId: T:VertexColoring.Graphs.Edge
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Edge
+  nameWithType: Edge
+  fullName: VertexColoring.Graphs.Edge
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge)
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.MutableEdge.Vertex1*
+  commentId: Overload:VertexColoring.Graphs.MutableEdge.Vertex1
+  isExternal: false
+  name: Vertex1
+  nameWithType: MutableEdge.Vertex1
+  fullName: VertexColoring.Graphs.MutableEdge.Vertex1
+- uid: VertexColoring.Graphs.MutableVertex
+  commentId: T:VertexColoring.Graphs.MutableVertex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableVertex
+  nameWithType: MutableVertex
+  fullName: VertexColoring.Graphs.MutableVertex
+- uid: VertexColoring.Graphs.MutableEdge.Vertex2*
+  commentId: Overload:VertexColoring.Graphs.MutableEdge.Vertex2
+  isExternal: false
+  name: Vertex2
+  nameWithType: MutableEdge.Vertex2
+  fullName: VertexColoring.Graphs.MutableEdge.Vertex2
+- uid: VertexColoring.Graphs.MutableEdge.Label*
+  commentId: Overload:VertexColoring.Graphs.MutableEdge.Label
+  isExternal: false
+  name: Label
+  nameWithType: MutableEdge.Label
+  fullName: VertexColoring.Graphs.MutableEdge.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: VertexColoring.Graphs.MutableEdge.ToString*
+  commentId: Overload:VertexColoring.Graphs.MutableEdge.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: MutableEdge.ToString
+  fullName: VertexColoring.Graphs.MutableEdge.ToString
+- uid: VertexColoring.Graphs.MutableEdge.GetEnumerator*
+  commentId: Overload:VertexColoring.Graphs.MutableEdge.GetEnumerator
+  isExternal: false
+  name: GetEnumerator
+  nameWithType: MutableEdge.GetEnumerator
+  fullName: VertexColoring.Graphs.MutableEdge.GetEnumerator
+- uid: IEnumerator{VertexColoring.Graphs.MutableVertex}
+  commentId: '!:IEnumerator{VertexColoring.Graphs.MutableVertex}'
+  definition: IEnumerator`1
+  name: IEnumerator<MutableVertex>
+  nameWithType: IEnumerator<MutableVertex>
+  fullName: IEnumerator<VertexColoring.Graphs.MutableVertex>
+  nameWithType.vb: IEnumerator(Of MutableVertex)
+  fullName.vb: IEnumerator(Of VertexColoring.Graphs.MutableVertex)
+  name.vb: IEnumerator(Of MutableVertex)
+  spec.csharp:
+  - uid: IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerator`1
+  isExternal: true
+  name: IEnumerator<>
+  nameWithType: IEnumerator<>
+  fullName: IEnumerator<>
+  nameWithType.vb: IEnumerator(Of )
+  fullName.vb: IEnumerator(Of )
+  name.vb: IEnumerator(Of )
+  spec.csharp:
+  - uid: IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: IEnumerator
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerator`1
+    name: IEnumerator
+    nameWithType: IEnumerator
+    fullName: IEnumerator
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )

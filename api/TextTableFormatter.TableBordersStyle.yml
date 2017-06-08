@@ -1,0 +1,2647 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter.TableBordersStyle
+  commentId: T:TextTableFormatter.TableBordersStyle
+  id: TableBordersStyle
+  parent: TextTableFormatter
+  children:
+  - TextTableFormatter.TableBordersStyle.#ctor
+  - TextTableFormatter.TableBordersStyle.ASTERISKS
+  - TextTableFormatter.TableBordersStyle.BLANKS
+  - TextTableFormatter.TableBordersStyle.Bottom
+  - TextTableFormatter.TableBordersStyle.BottomCenterCorner
+  - TextTableFormatter.TableBordersStyle.BottomLeftCorner
+  - TextTableFormatter.TableBordersStyle.BottomRightCorner
+  - TextTableFormatter.TableBordersStyle.Center
+  - TextTableFormatter.TableBordersStyle.CenterWidth
+  - TextTableFormatter.TableBordersStyle.CLASSIC
+  - TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE
+  - TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_LIGHT_WIDE
+  - TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_WIDE
+  - TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT
+  - TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT_WIDE
+  - TextTableFormatter.TableBordersStyle.CLASSIC_WIDE
+  - TextTableFormatter.TableBordersStyle.DEMO
+  - TextTableFormatter.TableBordersStyle.DESIGN_CAFE
+  - TextTableFormatter.TableBordersStyle.DESIGN_CAFE_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_CASUAL
+  - TextTableFormatter.TableBordersStyle.DESIGN_CASUAL_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN
+  - TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY
+  - TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_DIM
+  - TextTableFormatter.TableBordersStyle.DESIGN_DIM_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_DOTS
+  - TextTableFormatter.TableBordersStyle.DESIGN_DOTS_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_FORMAL
+  - TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE
+  - TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_PAPYRUS
+  - TextTableFormatter.TableBordersStyle.DESIGN_SLASH
+  - TextTableFormatter.TableBordersStyle.DESIGN_SLASH_WIDE
+  - TextTableFormatter.TableBordersStyle.DESIGN_TUBES
+  - TextTableFormatter.TableBordersStyle.DESIGN_TUBES_WIDE
+  - TextTableFormatter.TableBordersStyle.DOTS
+  - TextTableFormatter.TableBordersStyle.HEAVY
+  - TextTableFormatter.TableBordersStyle.HEAVY_TOP_AND_BOTTOM
+  - TextTableFormatter.TableBordersStyle.HORIZONTAL_ONLY
+  - TextTableFormatter.TableBordersStyle.HorizontalWidth
+  - TextTableFormatter.TableBordersStyle.Left
+  - TextTableFormatter.TableBordersStyle.LeftWidth
+  - TextTableFormatter.TableBordersStyle.LowerColumnSpan
+  - TextTableFormatter.TableBordersStyle.Middle
+  - TextTableFormatter.TableBordersStyle.MiddleCenterCorner
+  - TextTableFormatter.TableBordersStyle.MiddleLeftCorner
+  - TextTableFormatter.TableBordersStyle.MiddleRightCorner
+  - TextTableFormatter.TableBordersStyle.Right
+  - TextTableFormatter.TableBordersStyle.RightWidth
+  - TextTableFormatter.TableBordersStyle.Top
+  - TextTableFormatter.TableBordersStyle.TopCenterCorner
+  - TextTableFormatter.TableBordersStyle.TopLeftCorner
+  - TextTableFormatter.TableBordersStyle.TopRightCorner
+  - TextTableFormatter.TableBordersStyle.UNICODE_BOX
+  - TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER
+  - TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER_WIDE
+  - TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER
+  - TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER_WIDE
+  - TextTableFormatter.TableBordersStyle.UNICODE_BOX_WIDE
+  - TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX
+  - TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX_WIDE
+  - TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX
+  - TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX_WIDE
+  - TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX
+  - TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX_WIDE
+  - TextTableFormatter.TableBordersStyle.UpperColumnSpan
+  langs:
+  - csharp
+  - vb
+  name: TableBordersStyle
+  nameWithType: TableBordersStyle
+  fullName: TextTableFormatter.TableBordersStyle
+  type: Class
+  source:
+    id: TableBordersStyle
+    path: ''
+    startLine: 444
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRepresents a table borders style\n"
+  example: []
+  syntax:
+    content: public class TableBordersStyle
+    content.vb: Public Class TableBordersStyle
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TextTableFormatter.TableBordersStyle.DEMO
+  commentId: F:TextTableFormatter.TableBordersStyle.DEMO
+  id: DEMO
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DEMO
+  nameWithType: TableBordersStyle.DEMO
+  fullName: TextTableFormatter.TableBordersStyle.DEMO
+  type: Field
+  source:
+    id: DEMO
+    path: ''
+    startLine: 446
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DEMO
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DEMO As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.BLANKS
+  commentId: F:TextTableFormatter.TableBordersStyle.BLANKS
+  id: BLANKS
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: BLANKS
+  nameWithType: TableBordersStyle.BLANKS
+  fullName: TextTableFormatter.TableBordersStyle.BLANKS
+  type: Field
+  source:
+    id: BLANKS
+    path: ''
+    startLine: 447
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle BLANKS
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared BLANKS As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DOTS
+  commentId: F:TextTableFormatter.TableBordersStyle.DOTS
+  id: DOTS
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DOTS
+  nameWithType: TableBordersStyle.DOTS
+  fullName: TextTableFormatter.TableBordersStyle.DOTS
+  type: Field
+  source:
+    id: DOTS
+    path: ''
+    startLine: 448
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DOTS
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DOTS As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.ASTERISKS
+  commentId: F:TextTableFormatter.TableBordersStyle.ASTERISKS
+  id: ASTERISKS
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: ASTERISKS
+  nameWithType: TableBordersStyle.ASTERISKS
+  fullName: TextTableFormatter.TableBordersStyle.ASTERISKS
+  type: Field
+  source:
+    id: ASTERISKS
+    path: ''
+    startLine: 449
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle ASTERISKS
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared ASTERISKS As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.HORIZONTAL_ONLY
+  commentId: F:TextTableFormatter.TableBordersStyle.HORIZONTAL_ONLY
+  id: HORIZONTAL_ONLY
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: HORIZONTAL_ONLY
+  nameWithType: TableBordersStyle.HORIZONTAL_ONLY
+  fullName: TextTableFormatter.TableBordersStyle.HORIZONTAL_ONLY
+  type: Field
+  source:
+    id: HORIZONTAL_ONLY
+    path: ''
+    startLine: 450
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle HORIZONTAL_ONLY
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared HORIZONTAL_ONLY As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.CLASSIC
+  commentId: F:TextTableFormatter.TableBordersStyle.CLASSIC
+  id: CLASSIC
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CLASSIC
+  nameWithType: TableBordersStyle.CLASSIC
+  fullName: TextTableFormatter.TableBordersStyle.CLASSIC
+  type: Field
+  source:
+    id: CLASSIC
+    path: ''
+    startLine: 451
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle CLASSIC
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared CLASSIC As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.CLASSIC_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.CLASSIC_WIDE
+  id: CLASSIC_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CLASSIC_WIDE
+  nameWithType: TableBordersStyle.CLASSIC_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.CLASSIC_WIDE
+  type: Field
+  source:
+    id: CLASSIC_WIDE
+    path: ''
+    startLine: 452
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle CLASSIC_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared CLASSIC_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT
+  commentId: F:TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT
+  id: CLASSIC_LIGHT
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CLASSIC_LIGHT
+  nameWithType: TableBordersStyle.CLASSIC_LIGHT
+  fullName: TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT
+  type: Field
+  source:
+    id: CLASSIC_LIGHT
+    path: ''
+    startLine: 453
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle CLASSIC_LIGHT
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared CLASSIC_LIGHT As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT_WIDE
+  id: CLASSIC_LIGHT_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CLASSIC_LIGHT_WIDE
+  nameWithType: TableBordersStyle.CLASSIC_LIGHT_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.CLASSIC_LIGHT_WIDE
+  type: Field
+  source:
+    id: CLASSIC_LIGHT_WIDE
+    path: ''
+    startLine: 454
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle CLASSIC_LIGHT_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared CLASSIC_LIGHT_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE
+  commentId: F:TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE
+  id: CLASSIC_COMPATIBLE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CLASSIC_COMPATIBLE
+  nameWithType: TableBordersStyle.CLASSIC_COMPATIBLE
+  fullName: TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE
+  type: Field
+  source:
+    id: CLASSIC_COMPATIBLE
+    path: ''
+    startLine: 455
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle CLASSIC_COMPATIBLE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared CLASSIC_COMPATIBLE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_WIDE
+  id: CLASSIC_COMPATIBLE_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CLASSIC_COMPATIBLE_WIDE
+  nameWithType: TableBordersStyle.CLASSIC_COMPATIBLE_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_WIDE
+  type: Field
+  source:
+    id: CLASSIC_COMPATIBLE_WIDE
+    path: ''
+    startLine: 456
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle CLASSIC_COMPATIBLE_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared CLASSIC_COMPATIBLE_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_LIGHT_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_LIGHT_WIDE
+  id: CLASSIC_COMPATIBLE_LIGHT_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CLASSIC_COMPATIBLE_LIGHT_WIDE
+  nameWithType: TableBordersStyle.CLASSIC_COMPATIBLE_LIGHT_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.CLASSIC_COMPATIBLE_LIGHT_WIDE
+  type: Field
+  source:
+    id: CLASSIC_COMPATIBLE_LIGHT_WIDE
+    path: ''
+    startLine: 457
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle CLASSIC_COMPATIBLE_LIGHT_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared CLASSIC_COMPATIBLE_LIGHT_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.HEAVY
+  commentId: F:TextTableFormatter.TableBordersStyle.HEAVY
+  id: HEAVY
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: HEAVY
+  nameWithType: TableBordersStyle.HEAVY
+  fullName: TextTableFormatter.TableBordersStyle.HEAVY
+  type: Field
+  source:
+    id: HEAVY
+    path: ''
+    startLine: 458
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle HEAVY
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared HEAVY As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.HEAVY_TOP_AND_BOTTOM
+  commentId: F:TextTableFormatter.TableBordersStyle.HEAVY_TOP_AND_BOTTOM
+  id: HEAVY_TOP_AND_BOTTOM
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: HEAVY_TOP_AND_BOTTOM
+  nameWithType: TableBordersStyle.HEAVY_TOP_AND_BOTTOM
+  fullName: TextTableFormatter.TableBordersStyle.HEAVY_TOP_AND_BOTTOM
+  type: Field
+  source:
+    id: HEAVY_TOP_AND_BOTTOM
+    path: ''
+    startLine: 459
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle HEAVY_TOP_AND_BOTTOM
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared HEAVY_TOP_AND_BOTTOM As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_FORMAL
+  id: DESIGN_FORMAL
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_FORMAL
+  nameWithType: TableBordersStyle.DESIGN_FORMAL
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL
+  type: Field
+  source:
+    id: DESIGN_FORMAL
+    path: ''
+    startLine: 460
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_FORMAL
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_FORMAL As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE
+  id: DESIGN_FORMAL_INVERSE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_FORMAL_INVERSE
+  nameWithType: TableBordersStyle.DESIGN_FORMAL_INVERSE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE
+  type: Field
+  source:
+    id: DESIGN_FORMAL_INVERSE
+    path: ''
+    startLine: 461
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_FORMAL_INVERSE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_FORMAL_INVERSE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CASUAL
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CASUAL
+  id: DESIGN_CASUAL
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CASUAL
+  nameWithType: TableBordersStyle.DESIGN_CASUAL
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CASUAL
+  type: Field
+  source:
+    id: DESIGN_CASUAL
+    path: ''
+    startLine: 462
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CASUAL
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CASUAL As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CAFE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CAFE
+  id: DESIGN_CAFE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CAFE
+  nameWithType: TableBordersStyle.DESIGN_CAFE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CAFE
+  type: Field
+  source:
+    id: DESIGN_CAFE
+    path: ''
+    startLine: 463
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CAFE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CAFE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_SLASH
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_SLASH
+  id: DESIGN_SLASH
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_SLASH
+  nameWithType: TableBordersStyle.DESIGN_SLASH
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_SLASH
+  type: Field
+  source:
+    id: DESIGN_SLASH
+    path: ''
+    startLine: 464
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_SLASH
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_SLASH As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_TUBES
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_TUBES
+  id: DESIGN_TUBES
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_TUBES
+  nameWithType: TableBordersStyle.DESIGN_TUBES
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_TUBES
+  type: Field
+  source:
+    id: DESIGN_TUBES
+    path: ''
+    startLine: 465
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_TUBES
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_TUBES As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_DOTS
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_DOTS
+  id: DESIGN_DOTS
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_DOTS
+  nameWithType: TableBordersStyle.DESIGN_DOTS
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_DOTS
+  type: Field
+  source:
+    id: DESIGN_DOTS
+    path: ''
+    startLine: 466
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_DOTS
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_DOTS As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_DIM
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_DIM
+  id: DESIGN_DIM
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_DIM
+  nameWithType: TableBordersStyle.DESIGN_DIM
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_DIM
+  type: Field
+  source:
+    id: DESIGN_DIM
+    path: ''
+    startLine: 467
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_DIM
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_DIM As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN
+  id: DESIGN_CURTAIN
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CURTAIN
+  nameWithType: TableBordersStyle.DESIGN_CURTAIN
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN
+  type: Field
+  source:
+    id: DESIGN_CURTAIN
+    path: ''
+    startLine: 468
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CURTAIN
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CURTAIN As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY
+  id: DESIGN_CURTAIN_HEAVY
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CURTAIN_HEAVY
+  nameWithType: TableBordersStyle.DESIGN_CURTAIN_HEAVY
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY
+  type: Field
+  source:
+    id: DESIGN_CURTAIN_HEAVY
+    path: ''
+    startLine: 469
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CURTAIN_HEAVY
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CURTAIN_HEAVY As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_PAPYRUS
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_PAPYRUS
+  id: DESIGN_PAPYRUS
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_PAPYRUS
+  nameWithType: TableBordersStyle.DESIGN_PAPYRUS
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_PAPYRUS
+  type: Field
+  source:
+    id: DESIGN_PAPYRUS
+    path: ''
+    startLine: 470
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_PAPYRUS
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_PAPYRUS As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_WIDE
+  id: DESIGN_FORMAL_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_FORMAL_WIDE
+  nameWithType: TableBordersStyle.DESIGN_FORMAL_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_WIDE
+  type: Field
+  source:
+    id: DESIGN_FORMAL_WIDE
+    path: ''
+    startLine: 471
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_FORMAL_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_FORMAL_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE_WIDE
+  id: DESIGN_FORMAL_INVERSE_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_FORMAL_INVERSE_WIDE
+  nameWithType: TableBordersStyle.DESIGN_FORMAL_INVERSE_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_FORMAL_INVERSE_WIDE
+  type: Field
+  source:
+    id: DESIGN_FORMAL_INVERSE_WIDE
+    path: ''
+    startLine: 472
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_FORMAL_INVERSE_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_FORMAL_INVERSE_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CASUAL_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CASUAL_WIDE
+  id: DESIGN_CASUAL_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CASUAL_WIDE
+  nameWithType: TableBordersStyle.DESIGN_CASUAL_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CASUAL_WIDE
+  type: Field
+  source:
+    id: DESIGN_CASUAL_WIDE
+    path: ''
+    startLine: 473
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CASUAL_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CASUAL_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CAFE_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CAFE_WIDE
+  id: DESIGN_CAFE_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CAFE_WIDE
+  nameWithType: TableBordersStyle.DESIGN_CAFE_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CAFE_WIDE
+  type: Field
+  source:
+    id: DESIGN_CAFE_WIDE
+    path: ''
+    startLine: 474
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CAFE_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CAFE_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_SLASH_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_SLASH_WIDE
+  id: DESIGN_SLASH_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_SLASH_WIDE
+  nameWithType: TableBordersStyle.DESIGN_SLASH_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_SLASH_WIDE
+  type: Field
+  source:
+    id: DESIGN_SLASH_WIDE
+    path: ''
+    startLine: 475
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_SLASH_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_SLASH_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_TUBES_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_TUBES_WIDE
+  id: DESIGN_TUBES_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_TUBES_WIDE
+  nameWithType: TableBordersStyle.DESIGN_TUBES_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_TUBES_WIDE
+  type: Field
+  source:
+    id: DESIGN_TUBES_WIDE
+    path: ''
+    startLine: 476
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_TUBES_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_TUBES_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_DOTS_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_DOTS_WIDE
+  id: DESIGN_DOTS_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_DOTS_WIDE
+  nameWithType: TableBordersStyle.DESIGN_DOTS_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_DOTS_WIDE
+  type: Field
+  source:
+    id: DESIGN_DOTS_WIDE
+    path: ''
+    startLine: 477
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_DOTS_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_DOTS_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_DIM_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_DIM_WIDE
+  id: DESIGN_DIM_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_DIM_WIDE
+  nameWithType: TableBordersStyle.DESIGN_DIM_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_DIM_WIDE
+  type: Field
+  source:
+    id: DESIGN_DIM_WIDE
+    path: ''
+    startLine: 478
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_DIM_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_DIM_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_WIDE
+  id: DESIGN_CURTAIN_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CURTAIN_WIDE
+  nameWithType: TableBordersStyle.DESIGN_CURTAIN_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_WIDE
+  type: Field
+  source:
+    id: DESIGN_CURTAIN_WIDE
+    path: ''
+    startLine: 479
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CURTAIN_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CURTAIN_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY_WIDE
+  id: DESIGN_CURTAIN_HEAVY_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: DESIGN_CURTAIN_HEAVY_WIDE
+  nameWithType: TableBordersStyle.DESIGN_CURTAIN_HEAVY_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.DESIGN_CURTAIN_HEAVY_WIDE
+  type: Field
+  source:
+    id: DESIGN_CURTAIN_HEAVY_WIDE
+    path: ''
+    startLine: 480
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle DESIGN_CURTAIN_HEAVY_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared DESIGN_CURTAIN_HEAVY_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_BOX
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_BOX
+  id: UNICODE_BOX
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_BOX
+  nameWithType: TableBordersStyle.UNICODE_BOX
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_BOX
+  type: Field
+  source:
+    id: UNICODE_BOX
+    path: ''
+    startLine: 481
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_BOX
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_BOX As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX
+  id: UNICODE_ROUND_BOX
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_ROUND_BOX
+  nameWithType: TableBordersStyle.UNICODE_ROUND_BOX
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX
+  type: Field
+  source:
+    id: UNICODE_ROUND_BOX
+    path: ''
+    startLine: 482
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_ROUND_BOX
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_ROUND_BOX As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX
+  id: UNICODE_HEAVY_BOX
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_HEAVY_BOX
+  nameWithType: TableBordersStyle.UNICODE_HEAVY_BOX
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX
+  type: Field
+  source:
+    id: UNICODE_HEAVY_BOX
+    path: ''
+    startLine: 483
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_HEAVY_BOX
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_HEAVY_BOX As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER
+  id: UNICODE_BOX_HEAVY_BORDER
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_BOX_HEAVY_BORDER
+  nameWithType: TableBordersStyle.UNICODE_BOX_HEAVY_BORDER
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER
+  type: Field
+  source:
+    id: UNICODE_BOX_HEAVY_BORDER
+    path: ''
+    startLine: 484
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_BOX_HEAVY_BORDER
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_BOX_HEAVY_BORDER As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX
+  id: UNICODE_DOUBLE_BOX
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_DOUBLE_BOX
+  nameWithType: TableBordersStyle.UNICODE_DOUBLE_BOX
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX
+  type: Field
+  source:
+    id: UNICODE_DOUBLE_BOX
+    path: ''
+    startLine: 485
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_DOUBLE_BOX
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_DOUBLE_BOX As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER
+  id: UNICODE_BOX_DOUBLE_BORDER
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_BOX_DOUBLE_BORDER
+  nameWithType: TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER
+  type: Field
+  source:
+    id: UNICODE_BOX_DOUBLE_BORDER
+    path: ''
+    startLine: 486
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_BOX_DOUBLE_BORDER
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_BOX_DOUBLE_BORDER As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_BOX_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_BOX_WIDE
+  id: UNICODE_BOX_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_BOX_WIDE
+  nameWithType: TableBordersStyle.UNICODE_BOX_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_BOX_WIDE
+  type: Field
+  source:
+    id: UNICODE_BOX_WIDE
+    path: ''
+    startLine: 487
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_BOX_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_BOX_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX_WIDE
+  id: UNICODE_ROUND_BOX_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_ROUND_BOX_WIDE
+  nameWithType: TableBordersStyle.UNICODE_ROUND_BOX_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_ROUND_BOX_WIDE
+  type: Field
+  source:
+    id: UNICODE_ROUND_BOX_WIDE
+    path: ''
+    startLine: 488
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_ROUND_BOX_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_ROUND_BOX_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX_WIDE
+  id: UNICODE_HEAVY_BOX_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_HEAVY_BOX_WIDE
+  nameWithType: TableBordersStyle.UNICODE_HEAVY_BOX_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_HEAVY_BOX_WIDE
+  type: Field
+  source:
+    id: UNICODE_HEAVY_BOX_WIDE
+    path: ''
+    startLine: 489
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_HEAVY_BOX_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_HEAVY_BOX_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER_WIDE
+  id: UNICODE_BOX_HEAVY_BORDER_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_BOX_HEAVY_BORDER_WIDE
+  nameWithType: TableBordersStyle.UNICODE_BOX_HEAVY_BORDER_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_BOX_HEAVY_BORDER_WIDE
+  type: Field
+  source:
+    id: UNICODE_BOX_HEAVY_BORDER_WIDE
+    path: ''
+    startLine: 490
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_BOX_HEAVY_BORDER_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_BOX_HEAVY_BORDER_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX_WIDE
+  id: UNICODE_DOUBLE_BOX_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_DOUBLE_BOX_WIDE
+  nameWithType: TableBordersStyle.UNICODE_DOUBLE_BOX_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_DOUBLE_BOX_WIDE
+  type: Field
+  source:
+    id: UNICODE_DOUBLE_BOX_WIDE
+    path: ''
+    startLine: 491
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_DOUBLE_BOX_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_DOUBLE_BOX_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER_WIDE
+  commentId: F:TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER_WIDE
+  id: UNICODE_BOX_DOUBLE_BORDER_WIDE
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UNICODE_BOX_DOUBLE_BORDER_WIDE
+  nameWithType: TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER_WIDE
+  fullName: TextTableFormatter.TableBordersStyle.UNICODE_BOX_DOUBLE_BORDER_WIDE
+  type: Field
+  source:
+    id: UNICODE_BOX_DOUBLE_BORDER_WIDE
+    path: ''
+    startLine: 492
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableBordersStyle UNICODE_BOX_DOUBLE_BORDER_WIDE
+    return:
+      type: TextTableFormatter.TableBordersStyle
+    content.vb: Public Shared UNICODE_BOX_DOUBLE_BORDER_WIDE As TableBordersStyle
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableBordersStyle.BottomCenterCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.BottomCenterCorner
+  id: BottomCenterCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: BottomCenterCorner
+  nameWithType: TableBordersStyle.BottomCenterCorner
+  fullName: TextTableFormatter.TableBordersStyle.BottomCenterCorner
+  type: Property
+  source:
+    id: BottomCenterCorner
+    path: ''
+    startLine: 499
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the bottom-center corner\n"
+  example: []
+  syntax:
+    content: public string BottomCenterCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BottomCenterCorner As String
+  overload: TextTableFormatter.TableBordersStyle.BottomCenterCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.BottomLeftCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.BottomLeftCorner
+  id: BottomLeftCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: BottomLeftCorner
+  nameWithType: TableBordersStyle.BottomLeftCorner
+  fullName: TextTableFormatter.TableBordersStyle.BottomLeftCorner
+  type: Property
+  source:
+    id: BottomLeftCorner
+    path: ''
+    startLine: 504
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the bottom-left corner\n"
+  example: []
+  syntax:
+    content: public string BottomLeftCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BottomLeftCorner As String
+  overload: TextTableFormatter.TableBordersStyle.BottomLeftCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.Bottom
+  commentId: P:TextTableFormatter.TableBordersStyle.Bottom
+  id: Bottom
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: TableBordersStyle.Bottom
+  fullName: TextTableFormatter.TableBordersStyle.Bottom
+  type: Property
+  source:
+    id: Bottom
+    path: ''
+    startLine: 509
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the bottom\n"
+  example: []
+  syntax:
+    content: public string Bottom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Bottom As String
+  overload: TextTableFormatter.TableBordersStyle.Bottom*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.BottomRightCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.BottomRightCorner
+  id: BottomRightCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: BottomRightCorner
+  nameWithType: TableBordersStyle.BottomRightCorner
+  fullName: TextTableFormatter.TableBordersStyle.BottomRightCorner
+  type: Property
+  source:
+    id: BottomRightCorner
+    path: ''
+    startLine: 514
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the bottom-right corner\n"
+  example: []
+  syntax:
+    content: public string BottomRightCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BottomRightCorner As String
+  overload: TextTableFormatter.TableBordersStyle.BottomRightCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.Center
+  commentId: P:TextTableFormatter.TableBordersStyle.Center
+  id: Center
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: TableBordersStyle.Center
+  fullName: TextTableFormatter.TableBordersStyle.Center
+  type: Property
+  source:
+    id: Center
+    path: ''
+    startLine: 519
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the center\n"
+  example: []
+  syntax:
+    content: public string Center { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Center As String
+  overload: TextTableFormatter.TableBordersStyle.Center*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.Left
+  commentId: P:TextTableFormatter.TableBordersStyle.Left
+  id: Left
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: TableBordersStyle.Left
+  fullName: TextTableFormatter.TableBordersStyle.Left
+  type: Property
+  source:
+    id: Left
+    path: ''
+    startLine: 524
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the left\n"
+  example: []
+  syntax:
+    content: public string Left { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Left As String
+  overload: TextTableFormatter.TableBordersStyle.Left*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.MiddleCenterCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.MiddleCenterCorner
+  id: MiddleCenterCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: MiddleCenterCorner
+  nameWithType: TableBordersStyle.MiddleCenterCorner
+  fullName: TextTableFormatter.TableBordersStyle.MiddleCenterCorner
+  type: Property
+  source:
+    id: MiddleCenterCorner
+    path: ''
+    startLine: 529
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the middle-center corner\n"
+  example: []
+  syntax:
+    content: public string MiddleCenterCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MiddleCenterCorner As String
+  overload: TextTableFormatter.TableBordersStyle.MiddleCenterCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.Middle
+  commentId: P:TextTableFormatter.TableBordersStyle.Middle
+  id: Middle
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: Middle
+  nameWithType: TableBordersStyle.Middle
+  fullName: TextTableFormatter.TableBordersStyle.Middle
+  type: Property
+  source:
+    id: Middle
+    path: ''
+    startLine: 534
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the middle\n"
+  example: []
+  syntax:
+    content: public string Middle { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Middle As String
+  overload: TextTableFormatter.TableBordersStyle.Middle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.MiddleLeftCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.MiddleLeftCorner
+  id: MiddleLeftCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: MiddleLeftCorner
+  nameWithType: TableBordersStyle.MiddleLeftCorner
+  fullName: TextTableFormatter.TableBordersStyle.MiddleLeftCorner
+  type: Property
+  source:
+    id: MiddleLeftCorner
+    path: ''
+    startLine: 539
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the middle-left corner\n"
+  example: []
+  syntax:
+    content: public string MiddleLeftCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MiddleLeftCorner As String
+  overload: TextTableFormatter.TableBordersStyle.MiddleLeftCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.MiddleRightCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.MiddleRightCorner
+  id: MiddleRightCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: MiddleRightCorner
+  nameWithType: TableBordersStyle.MiddleRightCorner
+  fullName: TextTableFormatter.TableBordersStyle.MiddleRightCorner
+  type: Property
+  source:
+    id: MiddleRightCorner
+    path: ''
+    startLine: 544
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the middle-right corner\n"
+  example: []
+  syntax:
+    content: public string MiddleRightCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MiddleRightCorner As String
+  overload: TextTableFormatter.TableBordersStyle.MiddleRightCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.Right
+  commentId: P:TextTableFormatter.TableBordersStyle.Right
+  id: Right
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: TableBordersStyle.Right
+  fullName: TextTableFormatter.TableBordersStyle.Right
+  type: Property
+  source:
+    id: Right
+    path: ''
+    startLine: 549
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the right\n"
+  example: []
+  syntax:
+    content: public string Right { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Right As String
+  overload: TextTableFormatter.TableBordersStyle.Right*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.Top
+  commentId: P:TextTableFormatter.TableBordersStyle.Top
+  id: Top
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: TableBordersStyle.Top
+  fullName: TextTableFormatter.TableBordersStyle.Top
+  type: Property
+  source:
+    id: Top
+    path: ''
+    startLine: 554
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the top\n"
+  example: []
+  syntax:
+    content: public string Top { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Top As String
+  overload: TextTableFormatter.TableBordersStyle.Top*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.TopCenterCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.TopCenterCorner
+  id: TopCenterCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: TopCenterCorner
+  nameWithType: TableBordersStyle.TopCenterCorner
+  fullName: TextTableFormatter.TableBordersStyle.TopCenterCorner
+  type: Property
+  source:
+    id: TopCenterCorner
+    path: ''
+    startLine: 559
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the top-center corner\n"
+  example: []
+  syntax:
+    content: public string TopCenterCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TopCenterCorner As String
+  overload: TextTableFormatter.TableBordersStyle.TopCenterCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.TopLeftCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.TopLeftCorner
+  id: TopLeftCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: TopLeftCorner
+  nameWithType: TableBordersStyle.TopLeftCorner
+  fullName: TextTableFormatter.TableBordersStyle.TopLeftCorner
+  type: Property
+  source:
+    id: TopLeftCorner
+    path: ''
+    startLine: 564
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the top-left corner\n"
+  example: []
+  syntax:
+    content: public string TopLeftCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TopLeftCorner As String
+  overload: TextTableFormatter.TableBordersStyle.TopLeftCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.TopRightCorner
+  commentId: P:TextTableFormatter.TableBordersStyle.TopRightCorner
+  id: TopRightCorner
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: TopRightCorner
+  nameWithType: TableBordersStyle.TopRightCorner
+  fullName: TextTableFormatter.TableBordersStyle.TopRightCorner
+  type: Property
+  source:
+    id: TopRightCorner
+    path: ''
+    startLine: 569
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the top-right corner\n"
+  example: []
+  syntax:
+    content: public string TopRightCorner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TopRightCorner As String
+  overload: TextTableFormatter.TableBordersStyle.TopRightCorner*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.UpperColumnSpan
+  commentId: P:TextTableFormatter.TableBordersStyle.UpperColumnSpan
+  id: UpperColumnSpan
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: UpperColumnSpan
+  nameWithType: TableBordersStyle.UpperColumnSpan
+  fullName: TextTableFormatter.TableBordersStyle.UpperColumnSpan
+  type: Property
+  source:
+    id: UpperColumnSpan
+    path: ''
+    startLine: 574
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the upper column span\n"
+  example: []
+  syntax:
+    content: public string UpperColumnSpan { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property UpperColumnSpan As String
+  overload: TextTableFormatter.TableBordersStyle.UpperColumnSpan*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.LowerColumnSpan
+  commentId: P:TextTableFormatter.TableBordersStyle.LowerColumnSpan
+  id: LowerColumnSpan
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: LowerColumnSpan
+  nameWithType: TableBordersStyle.LowerColumnSpan
+  fullName: TextTableFormatter.TableBordersStyle.LowerColumnSpan
+  type: Property
+  source:
+    id: LowerColumnSpan
+    path: ''
+    startLine: 579
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the lower column span\n"
+  example: []
+  syntax:
+    content: public string LowerColumnSpan { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LowerColumnSpan As String
+  overload: TextTableFormatter.TableBordersStyle.LowerColumnSpan*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.LeftWidth
+  commentId: P:TextTableFormatter.TableBordersStyle.LeftWidth
+  id: LeftWidth
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: LeftWidth
+  nameWithType: TableBordersStyle.LeftWidth
+  fullName: TextTableFormatter.TableBordersStyle.LeftWidth
+  type: Property
+  source:
+    id: LeftWidth
+    path: ''
+    startLine: 584
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the left width\n"
+  example: []
+  syntax:
+    content: public int LeftWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property LeftWidth As Integer
+  overload: TextTableFormatter.TableBordersStyle.LeftWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.HorizontalWidth
+  commentId: P:TextTableFormatter.TableBordersStyle.HorizontalWidth
+  id: HorizontalWidth
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: HorizontalWidth
+  nameWithType: TableBordersStyle.HorizontalWidth
+  fullName: TextTableFormatter.TableBordersStyle.HorizontalWidth
+  type: Property
+  source:
+    id: HorizontalWidth
+    path: ''
+    startLine: 589
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the horizontal width\n"
+  example: []
+  syntax:
+    content: public int HorizontalWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HorizontalWidth As Integer
+  overload: TextTableFormatter.TableBordersStyle.HorizontalWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.CenterWidth
+  commentId: P:TextTableFormatter.TableBordersStyle.CenterWidth
+  id: CenterWidth
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: CenterWidth
+  nameWithType: TableBordersStyle.CenterWidth
+  fullName: TextTableFormatter.TableBordersStyle.CenterWidth
+  type: Property
+  source:
+    id: CenterWidth
+    path: ''
+    startLine: 594
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the center width\n"
+  example: []
+  syntax:
+    content: public int CenterWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CenterWidth As Integer
+  overload: TextTableFormatter.TableBordersStyle.CenterWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.RightWidth
+  commentId: P:TextTableFormatter.TableBordersStyle.RightWidth
+  id: RightWidth
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: RightWidth
+  nameWithType: TableBordersStyle.RightWidth
+  fullName: TextTableFormatter.TableBordersStyle.RightWidth
+  type: Property
+  source:
+    id: RightWidth
+    path: ''
+    startLine: 599
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the right width\n"
+  example: []
+  syntax:
+    content: public int RightWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property RightWidth As Integer
+  overload: TextTableFormatter.TableBordersStyle.RightWidth*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableBordersStyle.#ctor
+  commentId: M:TextTableFormatter.TableBordersStyle.#ctor
+  id: '#ctor'
+  parent: TextTableFormatter.TableBordersStyle
+  langs:
+  - csharp
+  - vb
+  name: TableBordersStyle()
+  nameWithType: TableBordersStyle.TableBordersStyle()
+  fullName: TextTableFormatter.TableBordersStyle.TableBordersStyle()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 604
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public TableBordersStyle()
+    content.vb: Public Sub New
+  overload: TextTableFormatter.TableBordersStyle.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TextTableFormatter.TableBordersStyle
+  commentId: T:TextTableFormatter.TableBordersStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: TableBordersStyle
+  nameWithType: TableBordersStyle
+  fullName: TextTableFormatter.TableBordersStyle
+- uid: TextTableFormatter.TableBordersStyle.BottomCenterCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.BottomCenterCorner
+  isExternal: false
+  name: BottomCenterCorner
+  nameWithType: TableBordersStyle.BottomCenterCorner
+  fullName: TextTableFormatter.TableBordersStyle.BottomCenterCorner
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TextTableFormatter.TableBordersStyle.BottomLeftCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.BottomLeftCorner
+  isExternal: false
+  name: BottomLeftCorner
+  nameWithType: TableBordersStyle.BottomLeftCorner
+  fullName: TextTableFormatter.TableBordersStyle.BottomLeftCorner
+- uid: TextTableFormatter.TableBordersStyle.Bottom*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.Bottom
+  isExternal: false
+  name: Bottom
+  nameWithType: TableBordersStyle.Bottom
+  fullName: TextTableFormatter.TableBordersStyle.Bottom
+- uid: TextTableFormatter.TableBordersStyle.BottomRightCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.BottomRightCorner
+  isExternal: false
+  name: BottomRightCorner
+  nameWithType: TableBordersStyle.BottomRightCorner
+  fullName: TextTableFormatter.TableBordersStyle.BottomRightCorner
+- uid: TextTableFormatter.TableBordersStyle.Center*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.Center
+  isExternal: false
+  name: Center
+  nameWithType: TableBordersStyle.Center
+  fullName: TextTableFormatter.TableBordersStyle.Center
+- uid: TextTableFormatter.TableBordersStyle.Left*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.Left
+  isExternal: false
+  name: Left
+  nameWithType: TableBordersStyle.Left
+  fullName: TextTableFormatter.TableBordersStyle.Left
+- uid: TextTableFormatter.TableBordersStyle.MiddleCenterCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.MiddleCenterCorner
+  isExternal: false
+  name: MiddleCenterCorner
+  nameWithType: TableBordersStyle.MiddleCenterCorner
+  fullName: TextTableFormatter.TableBordersStyle.MiddleCenterCorner
+- uid: TextTableFormatter.TableBordersStyle.Middle*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.Middle
+  isExternal: false
+  name: Middle
+  nameWithType: TableBordersStyle.Middle
+  fullName: TextTableFormatter.TableBordersStyle.Middle
+- uid: TextTableFormatter.TableBordersStyle.MiddleLeftCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.MiddleLeftCorner
+  isExternal: false
+  name: MiddleLeftCorner
+  nameWithType: TableBordersStyle.MiddleLeftCorner
+  fullName: TextTableFormatter.TableBordersStyle.MiddleLeftCorner
+- uid: TextTableFormatter.TableBordersStyle.MiddleRightCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.MiddleRightCorner
+  isExternal: false
+  name: MiddleRightCorner
+  nameWithType: TableBordersStyle.MiddleRightCorner
+  fullName: TextTableFormatter.TableBordersStyle.MiddleRightCorner
+- uid: TextTableFormatter.TableBordersStyle.Right*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.Right
+  isExternal: false
+  name: Right
+  nameWithType: TableBordersStyle.Right
+  fullName: TextTableFormatter.TableBordersStyle.Right
+- uid: TextTableFormatter.TableBordersStyle.Top*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.Top
+  isExternal: false
+  name: Top
+  nameWithType: TableBordersStyle.Top
+  fullName: TextTableFormatter.TableBordersStyle.Top
+- uid: TextTableFormatter.TableBordersStyle.TopCenterCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.TopCenterCorner
+  isExternal: false
+  name: TopCenterCorner
+  nameWithType: TableBordersStyle.TopCenterCorner
+  fullName: TextTableFormatter.TableBordersStyle.TopCenterCorner
+- uid: TextTableFormatter.TableBordersStyle.TopLeftCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.TopLeftCorner
+  isExternal: false
+  name: TopLeftCorner
+  nameWithType: TableBordersStyle.TopLeftCorner
+  fullName: TextTableFormatter.TableBordersStyle.TopLeftCorner
+- uid: TextTableFormatter.TableBordersStyle.TopRightCorner*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.TopRightCorner
+  isExternal: false
+  name: TopRightCorner
+  nameWithType: TableBordersStyle.TopRightCorner
+  fullName: TextTableFormatter.TableBordersStyle.TopRightCorner
+- uid: TextTableFormatter.TableBordersStyle.UpperColumnSpan*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.UpperColumnSpan
+  isExternal: false
+  name: UpperColumnSpan
+  nameWithType: TableBordersStyle.UpperColumnSpan
+  fullName: TextTableFormatter.TableBordersStyle.UpperColumnSpan
+- uid: TextTableFormatter.TableBordersStyle.LowerColumnSpan*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.LowerColumnSpan
+  isExternal: false
+  name: LowerColumnSpan
+  nameWithType: TableBordersStyle.LowerColumnSpan
+  fullName: TextTableFormatter.TableBordersStyle.LowerColumnSpan
+- uid: TextTableFormatter.TableBordersStyle.LeftWidth*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.LeftWidth
+  isExternal: false
+  name: LeftWidth
+  nameWithType: TableBordersStyle.LeftWidth
+  fullName: TextTableFormatter.TableBordersStyle.LeftWidth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: TextTableFormatter.TableBordersStyle.HorizontalWidth*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.HorizontalWidth
+  isExternal: false
+  name: HorizontalWidth
+  nameWithType: TableBordersStyle.HorizontalWidth
+  fullName: TextTableFormatter.TableBordersStyle.HorizontalWidth
+- uid: TextTableFormatter.TableBordersStyle.CenterWidth*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.CenterWidth
+  isExternal: false
+  name: CenterWidth
+  nameWithType: TableBordersStyle.CenterWidth
+  fullName: TextTableFormatter.TableBordersStyle.CenterWidth
+- uid: TextTableFormatter.TableBordersStyle.RightWidth*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.RightWidth
+  isExternal: false
+  name: RightWidth
+  nameWithType: TableBordersStyle.RightWidth
+  fullName: TextTableFormatter.TableBordersStyle.RightWidth
+- uid: TextTableFormatter.TableBordersStyle.#ctor*
+  commentId: Overload:TextTableFormatter.TableBordersStyle.#ctor
+  isExternal: false
+  name: TableBordersStyle
+  nameWithType: TableBordersStyle.TableBordersStyle
+  fullName: TextTableFormatter.TableBordersStyle.TableBordersStyle

@@ -1,0 +1,848 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.Generator
+  commentId: T:VertexColoring.Graphs.Generator
+  id: Generator
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph,IEnumerable{VertexColoring.Graphs.MutableVertex})
+  - VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph,VertexColoring.Graphs.MutableVertex[])
+  - VertexColoring.Graphs.Generator.Connecting(VertexColoring.Graphs.MutableVertex,VertexColoring.Graphs.MutableVertex)
+  - VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32,System.Int32)
+  - VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32,System.Int32,Random)
+  - VertexColoring.Graphs.Generator.VerticesInIdRange(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: Generator
+  nameWithType: Generator
+  fullName: VertexColoring.Graphs.Generator
+  type: Class
+  source:
+    id: Generator
+    path: ''
+    startLine: 2481
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nProvides methods for creating graphs, including random graphs.\n"
+  example: []
+  syntax:
+    content: public static class Generator
+    content.vb: Public Module Generator
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph,VertexColoring.Graphs.MutableVertex[])
+  commentId: M:VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph,VertexColoring.Graphs.MutableVertex[])
+  id: ConnectAll(VertexColoring.Graphs.MutableGraph,VertexColoring.Graphs.MutableVertex[])
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.Generator
+  langs:
+  - csharp
+  - vb
+  name: ConnectAll(MutableGraph, MutableVertex[])
+  nameWithType: Generator.ConnectAll(MutableGraph, MutableVertex[])
+  fullName: VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph, VertexColoring.Graphs.MutableVertex[])
+  type: Method
+  source:
+    id: ConnectAll
+    path: ''
+    startLine: 2488
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nAdds to <span class=\"paramref\">graph</span> new edges connecting each of <span class=\"paramref\">vertices</span> with every other.\n"
+  example: []
+  syntax:
+    content: public static void ConnectAll(this MutableGraph graph, params MutableVertex[] vertices)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.MutableGraph
+      description: Graph to add edges to.
+    - id: vertices
+      type: VertexColoring.Graphs.MutableVertex[]
+      description: Vertices to connect with new edges.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ConnectAll(graph As MutableGraph, ParamArray vertices As MutableVertex())
+  overload: VertexColoring.Graphs.Generator.ConnectAll*
+  nameWithType.vb: Generator.ConnectAll(MutableGraph, MutableVertex())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph, VertexColoring.Graphs.MutableVertex())
+  name.vb: ConnectAll(MutableGraph, MutableVertex())
+- uid: VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph,IEnumerable{VertexColoring.Graphs.MutableVertex})
+  commentId: M:VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph,IEnumerable{VertexColoring.Graphs.MutableVertex})
+  id: ConnectAll(VertexColoring.Graphs.MutableGraph,IEnumerable{VertexColoring.Graphs.MutableVertex})
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.Generator
+  langs:
+  - csharp
+  - vb
+  name: ConnectAll(MutableGraph, IEnumerable<MutableVertex>)
+  nameWithType: Generator.ConnectAll(MutableGraph, IEnumerable<MutableVertex>)
+  fullName: VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph, IEnumerable<VertexColoring.Graphs.MutableVertex>)
+  type: Method
+  source:
+    id: ConnectAll
+    path: ''
+    startLine: 2498
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nAdds to <span class=\"paramref\">graph</span> new edges connecting each of <span class=\"paramref\">vertices</span> with every other.\n"
+  example: []
+  syntax:
+    content: public static void ConnectAll(this MutableGraph graph, IEnumerable<MutableVertex> vertices)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.MutableGraph
+      description: Graph to add edges to.
+    - id: vertices
+      type: IEnumerable{VertexColoring.Graphs.MutableVertex}
+      description: Vertices to connect with new edges.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub ConnectAll(graph As MutableGraph, vertices As IEnumerable(Of MutableVertex))
+  overload: VertexColoring.Graphs.Generator.ConnectAll*
+  nameWithType.vb: Generator.ConnectAll(MutableGraph, IEnumerable(Of MutableVertex))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VertexColoring.Graphs.Generator.ConnectAll(VertexColoring.Graphs.MutableGraph, IEnumerable(Of VertexColoring.Graphs.MutableVertex))
+  name.vb: ConnectAll(MutableGraph, IEnumerable(Of MutableVertex))
+- uid: VertexColoring.Graphs.Generator.Connecting(VertexColoring.Graphs.MutableVertex,VertexColoring.Graphs.MutableVertex)
+  commentId: M:VertexColoring.Graphs.Generator.Connecting(VertexColoring.Graphs.MutableVertex,VertexColoring.Graphs.MutableVertex)
+  id: Connecting(VertexColoring.Graphs.MutableVertex,VertexColoring.Graphs.MutableVertex)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.Generator
+  langs:
+  - csharp
+  - vb
+  name: Connecting(MutableVertex, MutableVertex)
+  nameWithType: Generator.Connecting(MutableVertex, MutableVertex)
+  fullName: VertexColoring.Graphs.Generator.Connecting(VertexColoring.Graphs.MutableVertex, VertexColoring.Graphs.MutableVertex)
+  type: Method
+  source:
+    id: Connecting
+    path: ''
+    startLine: 2509
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates new edge connecting given vertices.\n"
+  example: []
+  syntax:
+    content: public static MutableEdge Connecting(this MutableVertex v1, MutableVertex v2)
+    parameters:
+    - id: v1
+      type: VertexColoring.Graphs.MutableVertex
+      description: Vertex to be connected be new edge.
+    - id: v2
+      type: VertexColoring.Graphs.MutableVertex
+    return:
+      type: VertexColoring.Graphs.MutableEdge
+      description: Created edge.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Connecting(v1 As MutableVertex, v2 As MutableVertex) As MutableEdge
+  overload: VertexColoring.Graphs.Generator.Connecting*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.Generator.VerticesInIdRange(System.Int32,System.Int32)
+  commentId: M:VertexColoring.Graphs.Generator.VerticesInIdRange(System.Int32,System.Int32)
+  id: VerticesInIdRange(System.Int32,System.Int32)
+  parent: VertexColoring.Graphs.Generator
+  langs:
+  - csharp
+  - vb
+  name: VerticesInIdRange(Int32, Int32)
+  nameWithType: Generator.VerticesInIdRange(Int32, Int32)
+  fullName: VertexColoring.Graphs.Generator.VerticesInIdRange(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: VerticesInIdRange
+    path: ''
+    startLine: 2520
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates a list of <span class=\"paramref\">count</span> vertices with ids starting from <span class=\"paramref\">start</span>.\n"
+  example: []
+  syntax:
+    content: public static List<MutableVertex> VerticesInIdRange(int start, int count)
+    parameters:
+    - id: start
+      type: System.Int32
+      description: Starting id.
+    - id: count
+      type: System.Int32
+      description: Number of vertices to create.
+    return:
+      type: List{VertexColoring.Graphs.MutableVertex}
+      description: Created list.
+    content.vb: Public Shared Function VerticesInIdRange(start As Integer, count As Integer) As List(Of MutableVertex)
+  overload: VertexColoring.Graphs.Generator.VerticesInIdRange*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32,System.Int32)
+  commentId: M:VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32,System.Int32)
+  id: RandomConnectedGraph(System.Int32,System.Int32)
+  parent: VertexColoring.Graphs.Generator
+  langs:
+  - csharp
+  - vb
+  name: RandomConnectedGraph(Int32, Int32)
+  nameWithType: Generator.RandomConnectedGraph(Int32, Int32)
+  fullName: VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32, System.Int32)
+  type: Method
+  source:
+    id: RandomConnectedGraph
+    path: ''
+    startLine: 2533
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates new random connected graph with <span class=\"paramref\">vertexCount</span> vertices\nand up to <span class=\"paramref\">edgeCount</span> connecting them. Some edges may be duplicates\non creation and as a result, be lost (duplicate edges are ignored).\n"
+  example: []
+  syntax:
+    content: public static Graph RandomConnectedGraph(int vertexCount, int edgeCount)
+    parameters:
+    - id: vertexCount
+      type: System.Int32
+      description: Number of vertices to create.
+    - id: edgeCount
+      type: System.Int32
+      description: Number of edges to create.
+    return:
+      type: VertexColoring.Graphs.Graph
+      description: Created graph.
+    content.vb: Public Shared Function RandomConnectedGraph(vertexCount As Integer, edgeCount As Integer) As Graph
+  overload: VertexColoring.Graphs.Generator.RandomConnectedGraph*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32,System.Int32,Random)
+  commentId: M:VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32,System.Int32,Random)
+  id: RandomConnectedGraph(System.Int32,System.Int32,Random)
+  parent: VertexColoring.Graphs.Generator
+  langs:
+  - csharp
+  - vb
+  name: RandomConnectedGraph(Int32, Int32, Random)
+  nameWithType: Generator.RandomConnectedGraph(Int32, Int32, Random)
+  fullName: VertexColoring.Graphs.Generator.RandomConnectedGraph(System.Int32, System.Int32, Random)
+  type: Method
+  source:
+    id: RandomConnectedGraph
+    path: ''
+    startLine: 2550
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates new random connected graph with <span class=\"paramref\">vertexCount</span> vertices\nand up to <span class=\"paramref\">edgeCount</span> connecting them. Some edges may be duplicates\non creation and as a result, be lost (duplicate edges are ignored).\n"
+  example: []
+  syntax:
+    content: public static Graph RandomConnectedGraph(int vertexCount, int edgeCount, Random random)
+    parameters:
+    - id: vertexCount
+      type: System.Int32
+      description: Number of vertices to create.
+    - id: edgeCount
+      type: System.Int32
+      description: Number of edges to create.
+    - id: random
+      type: Random
+      description: Random to use while randomizing edge associations.
+    return:
+      type: VertexColoring.Graphs.Graph
+      description: Created graph.
+    content.vb: Public Shared Function RandomConnectedGraph(vertexCount As Integer, edgeCount As Integer, random As Random) As Graph
+  overload: VertexColoring.Graphs.Generator.RandomConnectedGraph*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.Generator.ConnectAll*
+  commentId: Overload:VertexColoring.Graphs.Generator.ConnectAll
+  isExternal: false
+  name: ConnectAll
+  nameWithType: Generator.ConnectAll
+  fullName: VertexColoring.Graphs.Generator.ConnectAll
+- uid: VertexColoring.Graphs.MutableGraph
+  commentId: T:VertexColoring.Graphs.MutableGraph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableGraph
+  nameWithType: MutableGraph
+  fullName: VertexColoring.Graphs.MutableGraph
+- uid: VertexColoring.Graphs.MutableVertex[]
+  name: MutableVertex[]
+  nameWithType: MutableVertex[]
+  fullName: VertexColoring.Graphs.MutableVertex[]
+  nameWithType.vb: MutableVertex()
+  fullName.vb: VertexColoring.Graphs.MutableVertex()
+  name.vb: MutableVertex()
+  spec.csharp:
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: IEnumerable{VertexColoring.Graphs.MutableVertex}
+  commentId: '!:IEnumerable{VertexColoring.Graphs.MutableVertex}'
+  definition: IEnumerable`1
+  name: IEnumerable<MutableVertex>
+  nameWithType: IEnumerable<MutableVertex>
+  fullName: IEnumerable<VertexColoring.Graphs.MutableVertex>
+  nameWithType.vb: IEnumerable(Of MutableVertex)
+  fullName.vb: IEnumerable(Of VertexColoring.Graphs.MutableVertex)
+  name.vb: IEnumerable(Of MutableVertex)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.Generator.Connecting*
+  commentId: Overload:VertexColoring.Graphs.Generator.Connecting
+  isExternal: false
+  name: Connecting
+  nameWithType: Generator.Connecting
+  fullName: VertexColoring.Graphs.Generator.Connecting
+- uid: VertexColoring.Graphs.MutableVertex
+  commentId: T:VertexColoring.Graphs.MutableVertex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableVertex
+  nameWithType: MutableVertex
+  fullName: VertexColoring.Graphs.MutableVertex
+- uid: VertexColoring.Graphs.MutableEdge
+  commentId: T:VertexColoring.Graphs.MutableEdge
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableEdge
+  nameWithType: MutableEdge
+  fullName: VertexColoring.Graphs.MutableEdge
+- uid: VertexColoring.Graphs.Generator.VerticesInIdRange*
+  commentId: Overload:VertexColoring.Graphs.Generator.VerticesInIdRange
+  isExternal: false
+  name: VerticesInIdRange
+  nameWithType: Generator.VerticesInIdRange
+  fullName: VertexColoring.Graphs.Generator.VerticesInIdRange
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: List{VertexColoring.Graphs.MutableVertex}
+  commentId: '!:List{VertexColoring.Graphs.MutableVertex}'
+  definition: List`1
+  name: List<MutableVertex>
+  nameWithType: List<MutableVertex>
+  fullName: List<VertexColoring.Graphs.MutableVertex>
+  nameWithType.vb: List(Of MutableVertex)
+  fullName.vb: List(Of VertexColoring.Graphs.MutableVertex)
+  name.vb: List(Of MutableVertex)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.Generator.RandomConnectedGraph*
+  commentId: Overload:VertexColoring.Graphs.Generator.RandomConnectedGraph
+  isExternal: false
+  name: RandomConnectedGraph
+  nameWithType: Generator.RandomConnectedGraph
+  fullName: VertexColoring.Graphs.Generator.RandomConnectedGraph
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: Random
+  commentId: '!:Random'
+  isExternal: true
+  name: Random
+  nameWithType: Random
+  fullName: Random

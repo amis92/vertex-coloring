@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Algorithms
+  commentId: N:VertexColoring.Algorithms
+  id: VertexColoring.Algorithms
+  children:
+  - VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: VertexColoring.Algorithms
+  nameWithType: VertexColoring.Algorithms
+  fullName: VertexColoring.Algorithms
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: VertexColoring.Algorithms.ColoringExtensions
+  commentId: T:VertexColoring.Algorithms.ColoringExtensions
+  isExternal: false
+  name: ColoringExtensions
+  nameWithType: ColoringExtensions
+  fullName: VertexColoring.Algorithms.ColoringExtensions

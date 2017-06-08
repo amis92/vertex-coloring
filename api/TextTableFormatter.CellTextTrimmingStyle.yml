@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter.CellTextTrimmingStyle
+  commentId: T:TextTableFormatter.CellTextTrimmingStyle
+  id: CellTextTrimmingStyle
+  parent: TextTableFormatter
+  children:
+  - TextTableFormatter.CellTextTrimmingStyle.Crop
+  - TextTableFormatter.CellTextTrimmingStyle.Dots
+  langs:
+  - csharp
+  - vb
+  name: CellTextTrimmingStyle
+  nameWithType: CellTextTrimmingStyle
+  fullName: TextTableFormatter.CellTextTrimmingStyle
+  type: Enum
+  source:
+    id: CellTextTrimmingStyle
+    path: ''
+    startLine: 313
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRepresents a cell content trimming style\n"
+  example: []
+  syntax:
+    content: public enum CellTextTrimmingStyle
+    content.vb: Public Enum CellTextTrimmingStyle
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TextTableFormatter.CellTextTrimmingStyle.Crop
+  commentId: F:TextTableFormatter.CellTextTrimmingStyle.Crop
+  id: Crop
+  parent: TextTableFormatter.CellTextTrimmingStyle
+  langs:
+  - csharp
+  - vb
+  name: Crop
+  nameWithType: CellTextTrimmingStyle.Crop
+  fullName: TextTableFormatter.CellTextTrimmingStyle.Crop
+  type: Field
+  source:
+    id: Crop
+    path: ''
+    startLine: 318
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nCrop the text\n"
+  example: []
+  syntax:
+    content: Crop = 0
+    return:
+      type: TextTableFormatter.CellTextTrimmingStyle
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TextTableFormatter.CellTextTrimmingStyle.Dots
+  commentId: F:TextTableFormatter.CellTextTrimmingStyle.Dots
+  id: Dots
+  parent: TextTableFormatter.CellTextTrimmingStyle
+  langs:
+  - csharp
+  - vb
+  name: Dots
+  nameWithType: CellTextTrimmingStyle.Dots
+  fullName: TextTableFormatter.CellTextTrimmingStyle.Dots
+  type: Field
+  source:
+    id: Dots
+    path: ''
+    startLine: 323
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nTrim text with dots\n"
+  example: []
+  syntax:
+    content: Dots = 1
+    return:
+      type: TextTableFormatter.CellTextTrimmingStyle
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+- uid: TextTableFormatter.CellTextTrimmingStyle
+  commentId: T:TextTableFormatter.CellTextTrimmingStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellTextTrimmingStyle
+  nameWithType: CellTextTrimmingStyle
+  fullName: TextTableFormatter.CellTextTrimmingStyle

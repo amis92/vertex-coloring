@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter.CellHorizontalAlignment
+  commentId: T:TextTableFormatter.CellHorizontalAlignment
+  id: CellHorizontalAlignment
+  parent: TextTableFormatter
+  children:
+  - TextTableFormatter.CellHorizontalAlignment.Center
+  - TextTableFormatter.CellHorizontalAlignment.Left
+  - TextTableFormatter.CellHorizontalAlignment.Right
+  langs:
+  - csharp
+  - vb
+  name: CellHorizontalAlignment
+  nameWithType: CellHorizontalAlignment
+  fullName: TextTableFormatter.CellHorizontalAlignment
+  type: Enum
+  source:
+    id: CellHorizontalAlignment
+    path: ''
+    startLine: 50
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRepresents the cell horizontal alignment\n"
+  example: []
+  syntax:
+    content: public enum CellHorizontalAlignment
+    content.vb: Public Enum CellHorizontalAlignment
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TextTableFormatter.CellHorizontalAlignment.Left
+  commentId: F:TextTableFormatter.CellHorizontalAlignment.Left
+  id: Left
+  parent: TextTableFormatter.CellHorizontalAlignment
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: CellHorizontalAlignment.Left
+  fullName: TextTableFormatter.CellHorizontalAlignment.Left
+  type: Field
+  source:
+    id: Left
+    path: ''
+    startLine: 55
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nLeft horizontal alignment\n"
+  example: []
+  syntax:
+    content: Left = 0
+    return:
+      type: TextTableFormatter.CellHorizontalAlignment
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TextTableFormatter.CellHorizontalAlignment.Center
+  commentId: F:TextTableFormatter.CellHorizontalAlignment.Center
+  id: Center
+  parent: TextTableFormatter.CellHorizontalAlignment
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: CellHorizontalAlignment.Center
+  fullName: TextTableFormatter.CellHorizontalAlignment.Center
+  type: Field
+  source:
+    id: Center
+    path: ''
+    startLine: 60
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nCenter horizontal alignment\n"
+  example: []
+  syntax:
+    content: Center = 1
+    return:
+      type: TextTableFormatter.CellHorizontalAlignment
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TextTableFormatter.CellHorizontalAlignment.Right
+  commentId: F:TextTableFormatter.CellHorizontalAlignment.Right
+  id: Right
+  parent: TextTableFormatter.CellHorizontalAlignment
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: CellHorizontalAlignment.Right
+  fullName: TextTableFormatter.CellHorizontalAlignment.Right
+  type: Field
+  source:
+    id: Right
+    path: ''
+    startLine: 65
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRight horizontal alignment\n"
+  example: []
+  syntax:
+    content: Right = 2
+    return:
+      type: TextTableFormatter.CellHorizontalAlignment
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+- uid: TextTableFormatter.CellHorizontalAlignment
+  commentId: T:TextTableFormatter.CellHorizontalAlignment
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellHorizontalAlignment
+  nameWithType: CellHorizontalAlignment
+  fullName: TextTableFormatter.CellHorizontalAlignment

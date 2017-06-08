@@ -1,0 +1,723 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  id: Graph
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.Graph.#ctor(ImmutableSortedSet{VertexColoring.Graphs.Vertex},ImmutableSortedSet{VertexColoring.Graphs.Edge})
+  - VertexColoring.Graphs.Graph.Edges
+  - VertexColoring.Graphs.Graph.Equals(System.Object)
+  - VertexColoring.Graphs.Graph.Equals(VertexColoring.Graphs.Graph)
+  - VertexColoring.Graphs.Graph.GetHashCode
+  - VertexColoring.Graphs.Graph.op_Equality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  - VertexColoring.Graphs.Graph.op_Inequality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  - VertexColoring.Graphs.Graph.ToString
+  - VertexColoring.Graphs.Graph.Vertices
+  - VertexColoring.Graphs.Graph.WithEdges(ImmutableSortedSet{VertexColoring.Graphs.Edge})
+  - VertexColoring.Graphs.Graph.WithVertices(ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  langs:
+  - csharp
+  - vb
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+  type: Class
+  source:
+    id: Graph
+    path: ''
+    startLine: 2678
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGraph is a tuple of a set of vertices and a set of edges. Graphs are equal if their\ncontainted sets are equal given <see cref=\"!:ImmutableSortedSet&lt;T&gt;.SetEquals(System.Collections.Generic.IEnumerable&lt;T&gt;)\"></see>.\n"
+  example: []
+  syntax:
+    content: 'public sealed class Graph : IEquatable<Graph>, IEquatable<Graph>'
+    content.vb: >-
+      Public NotInheritable Class Graph
+
+          Inherits IEquatable(Of Graph)
+
+          Implements IEquatable(Of Graph)
+  inheritance:
+  - System.Object
+  implements:
+  - IEquatable{VertexColoring.Graphs.Graph}
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: VertexColoring.Graphs.Graph.Vertices
+  commentId: P:VertexColoring.Graphs.Graph.Vertices
+  id: Vertices
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: Vertices
+  nameWithType: Graph.Vertices
+  fullName: VertexColoring.Graphs.Graph.Vertices
+  type: Property
+  source:
+    id: Vertices
+    path: ''
+    startLine: 2621
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets vertices of this graph.\n"
+  example: []
+  syntax:
+    content: public ImmutableSortedSet<Vertex> Vertices { get; }
+    parameters: []
+    return:
+      type: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+    content.vb: Public ReadOnly Property Vertices As ImmutableSortedSet(Of Vertex)
+  overload: VertexColoring.Graphs.Graph.Vertices*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.Graph.Edges
+  commentId: P:VertexColoring.Graphs.Graph.Edges
+  id: Edges
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: Edges
+  nameWithType: Graph.Edges
+  fullName: VertexColoring.Graphs.Graph.Edges
+  type: Property
+  source:
+    id: Edges
+    path: ''
+    startLine: 2626
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets edges of this graph.\n"
+  example: []
+  syntax:
+    content: public ImmutableSortedSet<Edge> Edges { get; }
+    parameters: []
+    return:
+      type: ImmutableSortedSet{VertexColoring.Graphs.Edge}
+    content.vb: Public ReadOnly Property Edges As ImmutableSortedSet(Of Edge)
+  overload: VertexColoring.Graphs.Graph.Edges*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.Graph.Equals(System.Object)
+  commentId: M:VertexColoring.Graphs.Graph.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Graph.Equals(Object)
+  fullName: VertexColoring.Graphs.Graph.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 2628
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overload: VertexColoring.Graphs.Graph.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VertexColoring.Graphs.Graph.Equals(VertexColoring.Graphs.Graph)
+  commentId: M:VertexColoring.Graphs.Graph.Equals(VertexColoring.Graphs.Graph)
+  id: Equals(VertexColoring.Graphs.Graph)
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: Equals(Graph)
+  nameWithType: Graph.Equals(Graph)
+  fullName: VertexColoring.Graphs.Graph.Equals(VertexColoring.Graphs.Graph)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 2633
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public bool Equals(Graph other)
+    parameters:
+    - id: other
+      type: VertexColoring.Graphs.Graph
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Graph) As Boolean
+  overload: VertexColoring.Graphs.Graph.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.Graph.GetHashCode
+  commentId: M:VertexColoring.Graphs.Graph.GetHashCode
+  id: GetHashCode
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Graph.GetHashCode()
+  fullName: VertexColoring.Graphs.Graph.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 2638
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overload: VertexColoring.Graphs.Graph.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VertexColoring.Graphs.Graph.ToString
+  commentId: M:VertexColoring.Graphs.Graph.ToString
+  id: ToString
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Graph.ToString()
+  fullName: VertexColoring.Graphs.Graph.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 2648
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: VertexColoring.Graphs.Graph.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VertexColoring.Graphs.Graph.op_Equality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  commentId: M:VertexColoring.Graphs.Graph.op_Equality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  id: op_Equality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: Equality(Graph, Graph)
+  nameWithType: Graph.Equality(Graph, Graph)
+  fullName: VertexColoring.Graphs.Graph.Equality(VertexColoring.Graphs.Graph, VertexColoring.Graphs.Graph)
+  type: Operator
+  source:
+    id: op_Equality
+    path: ''
+    startLine: 2657
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static bool operator ==(Graph left, Graph right)
+    parameters:
+    - id: left
+      type: VertexColoring.Graphs.Graph
+    - id: right
+      type: VertexColoring.Graphs.Graph
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Graph, right As Graph) As Boolean
+  overload: VertexColoring.Graphs.Graph.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.Graph.op_Inequality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  commentId: M:VertexColoring.Graphs.Graph.op_Inequality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  id: op_Inequality(VertexColoring.Graphs.Graph,VertexColoring.Graphs.Graph)
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Graph, Graph)
+  nameWithType: Graph.Inequality(Graph, Graph)
+  fullName: VertexColoring.Graphs.Graph.Inequality(VertexColoring.Graphs.Graph, VertexColoring.Graphs.Graph)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: ''
+    startLine: 2662
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static bool operator !=(Graph left, Graph right)
+    parameters:
+    - id: left
+      type: VertexColoring.Graphs.Graph
+    - id: right
+      type: VertexColoring.Graphs.Graph
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Graph, right As Graph) As Boolean
+  overload: VertexColoring.Graphs.Graph.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.Graph.#ctor(ImmutableSortedSet{VertexColoring.Graphs.Vertex},ImmutableSortedSet{VertexColoring.Graphs.Edge})
+  commentId: M:VertexColoring.Graphs.Graph.#ctor(ImmutableSortedSet{VertexColoring.Graphs.Vertex},ImmutableSortedSet{VertexColoring.Graphs.Edge})
+  id: '#ctor(ImmutableSortedSet{VertexColoring.Graphs.Vertex},ImmutableSortedSet{VertexColoring.Graphs.Edge})'
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: Graph(ImmutableSortedSet<Vertex>, ImmutableSortedSet<Edge>)
+  nameWithType: Graph.Graph(ImmutableSortedSet<Vertex>, ImmutableSortedSet<Edge>)
+  fullName: VertexColoring.Graphs.Graph.Graph(ImmutableSortedSet<VertexColoring.Graphs.Vertex>, ImmutableSortedSet<VertexColoring.Graphs.Edge>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2681
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Graph(ImmutableSortedSet<Vertex> Vertices, ImmutableSortedSet<Edge> Edges)
+    parameters:
+    - id: Vertices
+      type: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+    - id: Edges
+      type: ImmutableSortedSet{VertexColoring.Graphs.Edge}
+    content.vb: Public Sub New(Vertices As ImmutableSortedSet(Of Vertex), Edges As ImmutableSortedSet(Of Edge))
+  overload: VertexColoring.Graphs.Graph.#ctor*
+  nameWithType.vb: Graph.Graph(ImmutableSortedSet(Of Vertex), ImmutableSortedSet(Of Edge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VertexColoring.Graphs.Graph.Graph(ImmutableSortedSet(Of VertexColoring.Graphs.Vertex), ImmutableSortedSet(Of VertexColoring.Graphs.Edge))
+  name.vb: Graph(ImmutableSortedSet(Of Vertex), ImmutableSortedSet(Of Edge))
+- uid: VertexColoring.Graphs.Graph.WithVertices(ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  commentId: M:VertexColoring.Graphs.Graph.WithVertices(ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  id: WithVertices(ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: WithVertices(ImmutableSortedSet<Vertex>)
+  nameWithType: Graph.WithVertices(ImmutableSortedSet<Vertex>)
+  fullName: VertexColoring.Graphs.Graph.WithVertices(ImmutableSortedSet<VertexColoring.Graphs.Vertex>)
+  type: Method
+  source:
+    id: WithVertices
+    path: ''
+    startLine: 2687
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Graph WithVertices(ImmutableSortedSet<Vertex> Vertices)
+    parameters:
+    - id: Vertices
+      type: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+    return:
+      type: VertexColoring.Graphs.Graph
+    content.vb: Public Function WithVertices(Vertices As ImmutableSortedSet(Of Vertex)) As Graph
+  overload: VertexColoring.Graphs.Graph.WithVertices*
+  nameWithType.vb: Graph.WithVertices(ImmutableSortedSet(Of Vertex))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VertexColoring.Graphs.Graph.WithVertices(ImmutableSortedSet(Of VertexColoring.Graphs.Vertex))
+  name.vb: WithVertices(ImmutableSortedSet(Of Vertex))
+- uid: VertexColoring.Graphs.Graph.WithEdges(ImmutableSortedSet{VertexColoring.Graphs.Edge})
+  commentId: M:VertexColoring.Graphs.Graph.WithEdges(ImmutableSortedSet{VertexColoring.Graphs.Edge})
+  id: WithEdges(ImmutableSortedSet{VertexColoring.Graphs.Edge})
+  parent: VertexColoring.Graphs.Graph
+  langs:
+  - csharp
+  - vb
+  name: WithEdges(ImmutableSortedSet<Edge>)
+  nameWithType: Graph.WithEdges(ImmutableSortedSet<Edge>)
+  fullName: VertexColoring.Graphs.Graph.WithEdges(ImmutableSortedSet<VertexColoring.Graphs.Edge>)
+  type: Method
+  source:
+    id: WithEdges
+    path: ''
+    startLine: 2692
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Graph WithEdges(ImmutableSortedSet<Edge> Edges)
+    parameters:
+    - id: Edges
+      type: ImmutableSortedSet{VertexColoring.Graphs.Edge}
+    return:
+      type: VertexColoring.Graphs.Graph
+    content.vb: Public Function WithEdges(Edges As ImmutableSortedSet(Of Edge)) As Graph
+  overload: VertexColoring.Graphs.Graph.WithEdges*
+  nameWithType.vb: Graph.WithEdges(ImmutableSortedSet(Of Edge))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VertexColoring.Graphs.Graph.WithEdges(ImmutableSortedSet(Of VertexColoring.Graphs.Edge))
+  name.vb: WithEdges(ImmutableSortedSet(Of Edge))
+references:
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IEquatable{VertexColoring.Graphs.Graph}
+  commentId: '!:IEquatable{VertexColoring.Graphs.Graph}'
+  definition: IEquatable`1
+  name: IEquatable<Graph>
+  nameWithType: IEquatable<Graph>
+  fullName: IEquatable<VertexColoring.Graphs.Graph>
+  nameWithType.vb: IEquatable(Of Graph)
+  fullName.vb: IEquatable(Of VertexColoring.Graphs.Graph)
+  name.vb: IEquatable(Of Graph)
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Graph
+    name: Graph
+    nameWithType: Graph
+    fullName: VertexColoring.Graphs.Graph
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Graph
+    name: Graph
+    nameWithType: Graph
+    fullName: VertexColoring.Graphs.Graph
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IEquatable`1
+  isExternal: true
+  name: IEquatable<>
+  nameWithType: IEquatable<>
+  fullName: IEquatable<>
+  nameWithType.vb: IEquatable(Of )
+  fullName.vb: IEquatable(Of )
+  name.vb: IEquatable(Of )
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.Graph.Vertices*
+  commentId: Overload:VertexColoring.Graphs.Graph.Vertices
+  isExternal: false
+  name: Vertices
+  nameWithType: Graph.Vertices
+  fullName: VertexColoring.Graphs.Graph.Vertices
+- uid: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+  commentId: '!:ImmutableSortedSet{VertexColoring.Graphs.Vertex}'
+  definition: ImmutableSortedSet`1
+  name: ImmutableSortedSet<Vertex>
+  nameWithType: ImmutableSortedSet<Vertex>
+  fullName: ImmutableSortedSet<VertexColoring.Graphs.Vertex>
+  nameWithType.vb: ImmutableSortedSet(Of Vertex)
+  fullName.vb: ImmutableSortedSet(Of VertexColoring.Graphs.Vertex)
+  name.vb: ImmutableSortedSet(Of Vertex)
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ImmutableSortedSet`1
+  isExternal: true
+  name: ImmutableSortedSet<>
+  nameWithType: ImmutableSortedSet<>
+  fullName: ImmutableSortedSet<>
+  nameWithType.vb: ImmutableSortedSet(Of )
+  fullName.vb: ImmutableSortedSet(Of )
+  name.vb: ImmutableSortedSet(Of )
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.Graph.Edges*
+  commentId: Overload:VertexColoring.Graphs.Graph.Edges
+  isExternal: false
+  name: Edges
+  nameWithType: Graph.Edges
+  fullName: VertexColoring.Graphs.Graph.Edges
+- uid: ImmutableSortedSet{VertexColoring.Graphs.Edge}
+  commentId: '!:ImmutableSortedSet{VertexColoring.Graphs.Edge}'
+  definition: ImmutableSortedSet`1
+  name: ImmutableSortedSet<Edge>
+  nameWithType: ImmutableSortedSet<Edge>
+  fullName: ImmutableSortedSet<VertexColoring.Graphs.Edge>
+  nameWithType.vb: ImmutableSortedSet(Of Edge)
+  fullName.vb: ImmutableSortedSet(Of VertexColoring.Graphs.Edge)
+  name.vb: ImmutableSortedSet(Of Edge)
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Edge
+    name: Edge
+    nameWithType: Edge
+    fullName: VertexColoring.Graphs.Edge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Edge
+    name: Edge
+    nameWithType: Edge
+    fullName: VertexColoring.Graphs.Edge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.Graph.Equals*
+  commentId: Overload:VertexColoring.Graphs.Graph.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: Graph.Equals
+  fullName: VertexColoring.Graphs.Graph.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: VertexColoring.Graphs.Graph.GetHashCode*
+  commentId: Overload:VertexColoring.Graphs.Graph.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: Graph.GetHashCode
+  fullName: VertexColoring.Graphs.Graph.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: VertexColoring.Graphs.Graph.ToString*
+  commentId: Overload:VertexColoring.Graphs.Graph.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: Graph.ToString
+  fullName: VertexColoring.Graphs.Graph.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: VertexColoring.Graphs.Graph.op_Equality*
+  commentId: Overload:VertexColoring.Graphs.Graph.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: Graph.Equality
+  fullName: VertexColoring.Graphs.Graph.Equality
+- uid: VertexColoring.Graphs.Graph.op_Inequality*
+  commentId: Overload:VertexColoring.Graphs.Graph.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: Graph.Inequality
+  fullName: VertexColoring.Graphs.Graph.Inequality
+- uid: VertexColoring.Graphs.Graph.#ctor*
+  commentId: Overload:VertexColoring.Graphs.Graph.#ctor
+  isExternal: false
+  name: Graph
+  nameWithType: Graph.Graph
+  fullName: VertexColoring.Graphs.Graph.Graph
+- uid: VertexColoring.Graphs.Graph.WithVertices*
+  commentId: Overload:VertexColoring.Graphs.Graph.WithVertices
+  isExternal: false
+  name: WithVertices
+  nameWithType: Graph.WithVertices
+  fullName: VertexColoring.Graphs.Graph.WithVertices
+- uid: VertexColoring.Graphs.Graph.WithEdges*
+  commentId: Overload:VertexColoring.Graphs.Graph.WithEdges
+  isExternal: false
+  name: WithEdges
+  nameWithType: Graph.WithEdges
+  fullName: VertexColoring.Graphs.Graph.WithEdges

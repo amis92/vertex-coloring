@@ -1,0 +1,889 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter.TextTable
+  commentId: T:TextTableFormatter.TextTable
+  id: TextTable
+  parent: TextTableFormatter
+  children:
+  - TextTableFormatter.TextTable.#ctor(System.Int32)
+  - TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle)
+  - TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders)
+  - TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean)
+  - TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.Int32)
+  - TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.String)
+  - TextTableFormatter.TextTable.AddCell(System.String)
+  - TextTableFormatter.TextTable.AddCell(System.String,System.Int32)
+  - TextTableFormatter.TextTable.AddCell(System.String,TextTableFormatter.CellStyle,System.Int32)
+  - TextTableFormatter.TextTable.Render
+  - TextTableFormatter.TextTable.RenderAsStringArray
+  - TextTableFormatter.TextTable.SetColumnWidthRange(System.Int32,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: TextTable
+  nameWithType: TextTable
+  fullName: TextTableFormatter.TextTable
+  type: Class
+  source:
+    id: TextTable
+    path: ''
+    startLine: 1075
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRepresents the text table\n"
+  example: []
+  syntax:
+    content: public class TextTable
+    content.vb: Public Class TextTable
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TextTableFormatter.TextTable.#ctor(System.Int32)
+  commentId: M:TextTableFormatter.TextTable.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: TextTable(Int32)
+  nameWithType: TextTable.TextTable(Int32)
+  fullName: TextTableFormatter.TextTable.TextTable(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1091
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitializes a new instance of TextTable class\n"
+  example: []
+  syntax:
+    content: public TextTable(int columnsCount)
+    parameters:
+    - id: columnsCount
+      type: System.Int32
+      description: The columns count
+    content.vb: Public Sub New(columnsCount As Integer)
+  overload: TextTableFormatter.TextTable.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle)
+  commentId: M:TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle)
+  id: '#ctor(System.Int32,TextTableFormatter.TableBordersStyle)'
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: TextTable(Int32, TableBordersStyle)
+  nameWithType: TextTable.TextTable(Int32, TableBordersStyle)
+  fullName: TextTableFormatter.TextTable.TextTable(System.Int32, TextTableFormatter.TableBordersStyle)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1102
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitializes a new instance of TextTable class\n"
+  example: []
+  syntax:
+    content: public TextTable(int columnsCount, TableBordersStyle borderStyle)
+    parameters:
+    - id: columnsCount
+      type: System.Int32
+      description: The columns count
+    - id: borderStyle
+      type: TextTableFormatter.TableBordersStyle
+      description: The table border style
+    content.vb: Public Sub New(columnsCount As Integer, borderStyle As TableBordersStyle)
+  overload: TextTableFormatter.TextTable.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders)
+  commentId: M:TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders)
+  id: '#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders)'
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: TextTable(Int32, TableBordersStyle, TableVisibleBorders)
+  nameWithType: TextTable.TextTable(Int32, TableBordersStyle, TableVisibleBorders)
+  fullName: TextTableFormatter.TextTable.TextTable(System.Int32, TextTableFormatter.TableBordersStyle, TextTableFormatter.TableVisibleBorders)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1114
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitializes a new instance of TextTable class\n"
+  example: []
+  syntax:
+    content: public TextTable(int columnsCount, TableBordersStyle borderStyle, TableVisibleBorders visibleBorders)
+    parameters:
+    - id: columnsCount
+      type: System.Int32
+      description: The columns count
+    - id: borderStyle
+      type: TextTableFormatter.TableBordersStyle
+      description: The table border style
+    - id: visibleBorders
+      type: TextTableFormatter.TableVisibleBorders
+      description: The table visible borders
+    content.vb: Public Sub New(columnsCount As Integer, borderStyle As TableBordersStyle, visibleBorders As TableVisibleBorders)
+  overload: TextTableFormatter.TextTable.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean)
+  commentId: M:TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean)
+  id: '#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean)'
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: TextTable(Int32, TableBordersStyle, TableVisibleBorders, Boolean)
+  nameWithType: TextTable.TextTable(Int32, TableBordersStyle, TableVisibleBorders, Boolean)
+  fullName: TextTableFormatter.TextTable.TextTable(System.Int32, TextTableFormatter.TableBordersStyle, TextTableFormatter.TableVisibleBorders, System.Boolean)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1127
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitializes a new instance of TextTable class\n"
+  example: []
+  syntax:
+    content: public TextTable(int columnsCount, TableBordersStyle borderStyle, TableVisibleBorders visibleBorders, bool escapeXml)
+    parameters:
+    - id: columnsCount
+      type: System.Int32
+      description: The columns count
+    - id: borderStyle
+      type: TextTableFormatter.TableBordersStyle
+      description: The table border style
+    - id: visibleBorders
+      type: TextTableFormatter.TableVisibleBorders
+      description: The table visible borders
+    - id: escapeXml
+      type: System.Boolean
+      description: true if xml content must be escaped
+    content.vb: Public Sub New(columnsCount As Integer, borderStyle As TableBordersStyle, visibleBorders As TableVisibleBorders, escapeXml As Boolean)
+  overload: TextTableFormatter.TextTable.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.Int32)
+  commentId: M:TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.Int32)
+  id: '#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.Int32)'
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: TextTable(Int32, TableBordersStyle, TableVisibleBorders, Boolean, Int32)
+  nameWithType: TextTable.TextTable(Int32, TableBordersStyle, TableVisibleBorders, Boolean, Int32)
+  fullName: TextTableFormatter.TextTable.TextTable(System.Int32, TextTableFormatter.TableBordersStyle, TextTableFormatter.TableVisibleBorders, System.Boolean, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1141
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitializes a new instance of TextTable class\n"
+  example: []
+  syntax:
+    content: public TextTable(int columnsCount, TableBordersStyle borderStyle, TableVisibleBorders visibleBorders, bool escapeXml, int leftMargin)
+    parameters:
+    - id: columnsCount
+      type: System.Int32
+      description: The columns count
+    - id: borderStyle
+      type: TextTableFormatter.TableBordersStyle
+      description: The table border style
+    - id: visibleBorders
+      type: TextTableFormatter.TableVisibleBorders
+      description: The table visible borders
+    - id: escapeXml
+      type: System.Boolean
+      description: true if xml content must be escaped
+    - id: leftMargin
+      type: System.Int32
+      description: The table left margin
+    content.vb: Public Sub New(columnsCount As Integer, borderStyle As TableBordersStyle, visibleBorders As TableVisibleBorders, escapeXml As Boolean, leftMargin As Integer)
+  overload: TextTableFormatter.TextTable.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.String)
+  commentId: M:TextTableFormatter.TextTable.#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.String)
+  id: '#ctor(System.Int32,TextTableFormatter.TableBordersStyle,TextTableFormatter.TableVisibleBorders,System.Boolean,System.String)'
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: TextTable(Int32, TableBordersStyle, TableVisibleBorders, Boolean, String)
+  nameWithType: TextTable.TextTable(Int32, TableBordersStyle, TableVisibleBorders, Boolean, String)
+  fullName: TextTableFormatter.TextTable.TextTable(System.Int32, TextTableFormatter.TableBordersStyle, TextTableFormatter.TableVisibleBorders, System.Boolean, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1155
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitializes a new instance of TextTable class\n"
+  example: []
+  syntax:
+    content: public TextTable(int columnsCount, TableBordersStyle borderStyle, TableVisibleBorders visibleBorders, bool escapeXml, string prompt)
+    parameters:
+    - id: columnsCount
+      type: System.Int32
+      description: The columns count
+    - id: borderStyle
+      type: TextTableFormatter.TableBordersStyle
+      description: The table border style
+    - id: visibleBorders
+      type: TextTableFormatter.TableVisibleBorders
+      description: The table visible borders
+    - id: escapeXml
+      type: System.Boolean
+      description: true if xml content must be escaped
+    - id: prompt
+      type: System.String
+      description: The table prompt string
+    content.vb: Public Sub New(columnsCount As Integer, borderStyle As TableBordersStyle, visibleBorders As TableVisibleBorders, escapeXml As Boolean, prompt As String)
+  overload: TextTableFormatter.TextTable.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.AddCell(System.String)
+  commentId: M:TextTableFormatter.TextTable.AddCell(System.String)
+  id: AddCell(System.String)
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: AddCell(String)
+  nameWithType: TextTable.AddCell(String)
+  fullName: TextTableFormatter.TextTable.AddCell(System.String)
+  type: Method
+  source:
+    id: AddCell
+    path: ''
+    startLine: 1165
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nAdds a cell with the given content\n"
+  example: []
+  syntax:
+    content: public void AddCell(string content)
+    parameters:
+    - id: content
+      type: System.String
+      description: The cell content
+    content.vb: Public Sub AddCell(content As String)
+  overload: TextTableFormatter.TextTable.AddCell*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.AddCell(System.String,System.Int32)
+  commentId: M:TextTableFormatter.TextTable.AddCell(System.String,System.Int32)
+  id: AddCell(System.String,System.Int32)
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: AddCell(String, Int32)
+  nameWithType: TextTable.AddCell(String, Int32)
+  fullName: TextTableFormatter.TextTable.AddCell(System.String, System.Int32)
+  type: Method
+  source:
+    id: AddCell
+    path: ''
+    startLine: 1175
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nAdds a cell with the given content and column span\n"
+  example: []
+  syntax:
+    content: public void AddCell(string content, int columnSpan)
+    parameters:
+    - id: content
+      type: System.String
+      description: The cell content
+    - id: columnSpan
+      type: System.Int32
+      description: The cell column span
+    content.vb: Public Sub AddCell(content As String, columnSpan As Integer)
+  overload: TextTableFormatter.TextTable.AddCell*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.AddCell(System.String,TextTableFormatter.CellStyle,System.Int32)
+  commentId: M:TextTableFormatter.TextTable.AddCell(System.String,TextTableFormatter.CellStyle,System.Int32)
+  id: AddCell(System.String,TextTableFormatter.CellStyle,System.Int32)
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: AddCell(String, CellStyle, Int32)
+  nameWithType: TextTable.AddCell(String, CellStyle, Int32)
+  fullName: TextTableFormatter.TextTable.AddCell(System.String, TextTableFormatter.CellStyle, System.Int32)
+  type: Method
+  source:
+    id: AddCell
+    path: ''
+    startLine: 1187
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nAdds a cell with a given content, a style and a column span.\nThe cell will be arranged in a new row if necessary\n"
+  example: []
+  syntax:
+    content: public void AddCell(string content, CellStyle style, int columnSpan = 1)
+    parameters:
+    - id: content
+      type: System.String
+      description: The cell content
+    - id: style
+      type: TextTableFormatter.CellStyle
+      description: The cell style
+    - id: columnSpan
+      type: System.Int32
+      description: The cell column span
+    content.vb: Public Sub AddCell(content As String, style As CellStyle, columnSpan As Integer = 1)
+  overload: TextTableFormatter.TextTable.AddCell*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.SetColumnWidthRange(System.Int32,System.Int32,System.Int32)
+  commentId: M:TextTableFormatter.TextTable.SetColumnWidthRange(System.Int32,System.Int32,System.Int32)
+  id: SetColumnWidthRange(System.Int32,System.Int32,System.Int32)
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: SetColumnWidthRange(Int32, Int32, Int32)
+  nameWithType: TextTable.SetColumnWidthRange(Int32, Int32, Int32)
+  fullName: TextTableFormatter.TextTable.SetColumnWidthRange(System.Int32, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: SetColumnWidthRange
+    path: ''
+    startLine: 1223
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nSets the column width range (min - max)\n"
+  example: []
+  syntax:
+    content: public void SetColumnWidthRange(int columnIndex, int minWidth, int maxWidth)
+    parameters:
+    - id: columnIndex
+      type: System.Int32
+      description: The column index
+    - id: minWidth
+      type: System.Int32
+      description: The column min width
+    - id: maxWidth
+      type: System.Int32
+      description: The column max width
+    content.vb: Public Sub SetColumnWidthRange(columnIndex As Integer, minWidth As Integer, maxWidth As Integer)
+  overload: TextTableFormatter.TextTable.SetColumnWidthRange*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.Render
+  commentId: M:TextTableFormatter.TextTable.Render
+  id: Render
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: Render()
+  nameWithType: TextTable.Render()
+  fullName: TextTableFormatter.TextTable.Render()
+  type: Method
+  source:
+    id: Render
+    path: ''
+    startLine: 1232
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRenders the table as a string\n"
+  example: []
+  syntax:
+    content: public string Render()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function Render As String
+  overload: TextTableFormatter.TextTable.Render*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TextTable.RenderAsStringArray
+  commentId: M:TextTableFormatter.TextTable.RenderAsStringArray
+  id: RenderAsStringArray
+  parent: TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: RenderAsStringArray()
+  nameWithType: TextTable.RenderAsStringArray()
+  fullName: TextTableFormatter.TextTable.RenderAsStringArray()
+  type: Method
+  source:
+    id: RenderAsStringArray
+    path: ''
+    startLine: 1242
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRenders the table as a string array (each array element is a row)\n"
+  example: []
+  syntax:
+    content: public string[] RenderAsStringArray()
+    return:
+      type: System.String[]
+      description: ''
+    content.vb: Public Function RenderAsStringArray As String()
+  overload: TextTableFormatter.TextTable.RenderAsStringArray*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TextTableFormatter.TextTable.#ctor*
+  commentId: Overload:TextTableFormatter.TextTable.#ctor
+  isExternal: false
+  name: TextTable
+  nameWithType: TextTable.TextTable
+  fullName: TextTableFormatter.TextTable.TextTable
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: TextTableFormatter.TableBordersStyle
+  commentId: T:TextTableFormatter.TableBordersStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: TableBordersStyle
+  nameWithType: TableBordersStyle
+  fullName: TextTableFormatter.TableBordersStyle
+- uid: TextTableFormatter.TableVisibleBorders
+  commentId: T:TextTableFormatter.TableVisibleBorders
+  parent: TextTableFormatter
+  isExternal: false
+  name: TableVisibleBorders
+  nameWithType: TableVisibleBorders
+  fullName: TextTableFormatter.TableVisibleBorders
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: TextTableFormatter.TextTable.AddCell*
+  commentId: Overload:TextTableFormatter.TextTable.AddCell
+  isExternal: false
+  name: AddCell
+  nameWithType: TextTable.AddCell
+  fullName: TextTableFormatter.TextTable.AddCell
+- uid: TextTableFormatter.CellStyle
+  commentId: T:TextTableFormatter.CellStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellStyle
+  nameWithType: CellStyle
+  fullName: TextTableFormatter.CellStyle
+- uid: TextTableFormatter.TextTable.SetColumnWidthRange*
+  commentId: Overload:TextTableFormatter.TextTable.SetColumnWidthRange
+  isExternal: false
+  name: SetColumnWidthRange
+  nameWithType: TextTable.SetColumnWidthRange
+  fullName: TextTableFormatter.TextTable.SetColumnWidthRange
+- uid: TextTableFormatter.TextTable.Render*
+  commentId: Overload:TextTableFormatter.TextTable.Render
+  isExternal: false
+  name: Render
+  nameWithType: TextTable.Render
+  fullName: TextTableFormatter.TextTable.Render
+- uid: TextTableFormatter.TextTable.RenderAsStringArray*
+  commentId: Overload:TextTableFormatter.TextTable.RenderAsStringArray
+  isExternal: false
+  name: RenderAsStringArray
+  nameWithType: TextTable.RenderAsStringArray
+  fullName: TextTableFormatter.TextTable.RenderAsStringArray
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

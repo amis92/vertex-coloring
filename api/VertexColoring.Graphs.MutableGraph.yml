@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.MutableGraph
+  commentId: T:VertexColoring.Graphs.MutableGraph
+  id: MutableGraph
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.MutableGraph.Edges
+  - VertexColoring.Graphs.MutableGraph.Vertices
+  langs:
+  - csharp
+  - vb
+  name: MutableGraph
+  nameWithType: MutableGraph
+  fullName: VertexColoring.Graphs.MutableGraph
+  type: Class
+  source:
+    id: MutableGraph
+    path: ''
+    startLine: 3033
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nA mutable version of <xref href=\"VertexColoring.Graphs.Graph\" data-throw-if-not-resolved=\"false\"></xref>. Easily transformable to immutable \ninstance using <xref href=\"VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraph)\" data-throw-if-not-resolved=\"false\"></xref> extension method.\n"
+  example: []
+  syntax:
+    content: public sealed class MutableGraph
+    content.vb: Public NotInheritable Class MutableGraph
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: VertexColoring.Graphs.MutableGraph.Vertices
+  commentId: P:VertexColoring.Graphs.MutableGraph.Vertices
+  id: Vertices
+  parent: VertexColoring.Graphs.MutableGraph
+  langs:
+  - csharp
+  - vb
+  name: Vertices
+  nameWithType: MutableGraph.Vertices
+  fullName: VertexColoring.Graphs.MutableGraph.Vertices
+  type: Property
+  source:
+    id: Vertices
+    path: ''
+    startLine: 3038
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets a list of this graph's vertices. Initialized to empty list.\n"
+  example: []
+  syntax:
+    content: public List<MutableVertex> Vertices { get; }
+    parameters: []
+    return:
+      type: List{VertexColoring.Graphs.MutableVertex}
+    content.vb: Public ReadOnly Property Vertices As List(Of MutableVertex)
+  overload: VertexColoring.Graphs.MutableGraph.Vertices*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.MutableGraph.Edges
+  commentId: P:VertexColoring.Graphs.MutableGraph.Edges
+  id: Edges
+  parent: VertexColoring.Graphs.MutableGraph
+  langs:
+  - csharp
+  - vb
+  name: Edges
+  nameWithType: MutableGraph.Edges
+  fullName: VertexColoring.Graphs.MutableGraph.Edges
+  type: Property
+  source:
+    id: Edges
+    path: ''
+    startLine: 3043
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets a list of this graph's edges. Initialized to empty list.\n"
+  example: []
+  syntax:
+    content: public List<MutableEdge> Edges { get; }
+    parameters: []
+    return:
+      type: List{VertexColoring.Graphs.MutableEdge}
+    content.vb: Public ReadOnly Property Edges As List(Of MutableEdge)
+  overload: VertexColoring.Graphs.MutableGraph.Edges*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraph)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraph)
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.MutableGraph.Vertices*
+  commentId: Overload:VertexColoring.Graphs.MutableGraph.Vertices
+  isExternal: false
+  name: Vertices
+  nameWithType: MutableGraph.Vertices
+  fullName: VertexColoring.Graphs.MutableGraph.Vertices
+- uid: List{VertexColoring.Graphs.MutableVertex}
+  commentId: '!:List{VertexColoring.Graphs.MutableVertex}'
+  definition: List`1
+  name: List<MutableVertex>
+  nameWithType: List<MutableVertex>
+  fullName: List<VertexColoring.Graphs.MutableVertex>
+  nameWithType.vb: List(Of MutableVertex)
+  fullName.vb: List(Of VertexColoring.Graphs.MutableVertex)
+  name.vb: List(Of MutableVertex)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+    nameWithType: MutableVertex
+    fullName: VertexColoring.Graphs.MutableVertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.MutableGraph.Edges*
+  commentId: Overload:VertexColoring.Graphs.MutableGraph.Edges
+  isExternal: false
+  name: Edges
+  nameWithType: MutableGraph.Edges
+  fullName: VertexColoring.Graphs.MutableGraph.Edges
+- uid: List{VertexColoring.Graphs.MutableEdge}
+  commentId: '!:List{VertexColoring.Graphs.MutableEdge}'
+  definition: List`1
+  name: List<MutableEdge>
+  nameWithType: List<MutableEdge>
+  fullName: List<VertexColoring.Graphs.MutableEdge>
+  nameWithType.vb: List(Of MutableEdge)
+  fullName.vb: List(Of VertexColoring.Graphs.MutableEdge)
+  name.vb: List(Of MutableEdge)
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.MutableEdge
+    name: MutableEdge
+    nameWithType: MutableEdge
+    fullName: VertexColoring.Graphs.MutableEdge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.MutableEdge
+    name: MutableEdge
+    nameWithType: MutableEdge
+    fullName: VertexColoring.Graphs.MutableEdge
+  - name: )
+    nameWithType: )
+    fullName: )

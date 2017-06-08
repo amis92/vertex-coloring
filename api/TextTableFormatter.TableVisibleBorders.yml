@@ -1,0 +1,1180 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter.TableVisibleBorders
+  commentId: T:TextTableFormatter.TableVisibleBorders
+  id: TableVisibleBorders
+  parent: TextTableFormatter
+  children:
+  - TextTableFormatter.TableVisibleBorders.#ctor
+  - TextTableFormatter.TableVisibleBorders.ALL
+  - TextTableFormatter.TableVisibleBorders.HEADER_AND_COLUMNS
+  - TextTableFormatter.TableVisibleBorders.HEADER_AND_FIRST_COLUMN
+  - TextTableFormatter.TableVisibleBorders.HEADER_AND_FOOTER
+  - TextTableFormatter.TableVisibleBorders.HEADER_FIRST_AND_LAST_COLUMN
+  - TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_COLUMNS
+  - TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_FIRST_COLUMN
+  - TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+  - TextTableFormatter.TableVisibleBorders.HEADER_ONLY
+  - TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible
+  - TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible
+  - TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible
+  - TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible
+  - TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible
+  - TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible
+  - TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible
+  - TextTableFormatter.TableVisibleBorders.IsRightBorderVisible
+  - TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible
+  - TextTableFormatter.TableVisibleBorders.IsTopBorderVisible
+  - TextTableFormatter.TableVisibleBorders.NONE
+  - TextTableFormatter.TableVisibleBorders.SURROUND
+  - TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS
+  - TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_FOOTER_AND_COLUMNS
+  langs:
+  - csharp
+  - vb
+  name: TableVisibleBorders
+  nameWithType: TableVisibleBorders
+  fullName: TextTableFormatter.TableVisibleBorders
+  type: Class
+  source:
+    id: TableVisibleBorders
+    path: ''
+    startLine: 885
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRepresents which table borders are visible\n"
+  example: []
+  syntax:
+    content: public class TableVisibleBorders
+    content.vb: Public Class TableVisibleBorders
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TextTableFormatter.TableVisibleBorders.NONE
+  commentId: F:TextTableFormatter.TableVisibleBorders.NONE
+  id: NONE
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: NONE
+  nameWithType: TableVisibleBorders.NONE
+  fullName: TextTableFormatter.TableVisibleBorders.NONE
+  type: Field
+  source:
+    id: NONE
+    path: ''
+    startLine: 887
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders NONE
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared NONE As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_ONLY
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_ONLY
+  id: HEADER_ONLY
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_ONLY
+  nameWithType: TableVisibleBorders.HEADER_ONLY
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_ONLY
+  type: Field
+  source:
+    id: HEADER_ONLY
+    path: ''
+    startLine: 888
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_ONLY
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_ONLY As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_AND_FOOTER
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_AND_FOOTER
+  id: HEADER_AND_FOOTER
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_AND_FOOTER
+  nameWithType: TableVisibleBorders.HEADER_AND_FOOTER
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_AND_FOOTER
+  type: Field
+  source:
+    id: HEADER_AND_FOOTER
+    path: ''
+    startLine: 889
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_AND_FOOTER
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_AND_FOOTER As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_COLUMNS
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_COLUMNS
+  id: HEADER_FOOTER_AND_COLUMNS
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_FOOTER_AND_COLUMNS
+  nameWithType: TableVisibleBorders.HEADER_FOOTER_AND_COLUMNS
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_COLUMNS
+  type: Field
+  source:
+    id: HEADER_FOOTER_AND_COLUMNS
+    path: ''
+    startLine: 890
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_FOOTER_AND_COLUMNS
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_FOOTER_AND_COLUMNS As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_AND_FIRST_COLUMN
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_AND_FIRST_COLUMN
+  id: HEADER_AND_FIRST_COLUMN
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_AND_FIRST_COLUMN
+  nameWithType: TableVisibleBorders.HEADER_AND_FIRST_COLUMN
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_AND_FIRST_COLUMN
+  type: Field
+  source:
+    id: HEADER_AND_FIRST_COLUMN
+    path: ''
+    startLine: 891
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_AND_FIRST_COLUMN
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_AND_FIRST_COLUMN As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_FIRST_AND_LAST_COLUMN
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_FIRST_AND_LAST_COLUMN
+  id: HEADER_FIRST_AND_LAST_COLUMN
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_FIRST_AND_LAST_COLUMN
+  nameWithType: TableVisibleBorders.HEADER_FIRST_AND_LAST_COLUMN
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_FIRST_AND_LAST_COLUMN
+  type: Field
+  source:
+    id: HEADER_FIRST_AND_LAST_COLUMN
+    path: ''
+    startLine: 892
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_FIRST_AND_LAST_COLUMN
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_FIRST_AND_LAST_COLUMN As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_FIRST_COLUMN
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_FIRST_COLUMN
+  id: HEADER_FOOTER_AND_FIRST_COLUMN
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_FOOTER_AND_FIRST_COLUMN
+  nameWithType: TableVisibleBorders.HEADER_FOOTER_AND_FIRST_COLUMN
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_AND_FIRST_COLUMN
+  type: Field
+  source:
+    id: HEADER_FOOTER_AND_FIRST_COLUMN
+    path: ''
+    startLine: 893
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_FOOTER_AND_FIRST_COLUMN
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_FOOTER_AND_FIRST_COLUMN As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+  id: HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+  nameWithType: TableVisibleBorders.HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+  type: Field
+  source:
+    id: HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+    path: ''
+    startLine: 894
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_FOOTER_FIRST_AND_LAST_COLUMN
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_FOOTER_FIRST_AND_LAST_COLUMN As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.HEADER_AND_COLUMNS
+  commentId: F:TextTableFormatter.TableVisibleBorders.HEADER_AND_COLUMNS
+  id: HEADER_AND_COLUMNS
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: HEADER_AND_COLUMNS
+  nameWithType: TableVisibleBorders.HEADER_AND_COLUMNS
+  fullName: TextTableFormatter.TableVisibleBorders.HEADER_AND_COLUMNS
+  type: Field
+  source:
+    id: HEADER_AND_COLUMNS
+    path: ''
+    startLine: 895
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders HEADER_AND_COLUMNS
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared HEADER_AND_COLUMNS As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS
+  commentId: F:TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS
+  id: SURROUND_HEADER_AND_COLUMNS
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: SURROUND_HEADER_AND_COLUMNS
+  nameWithType: TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS
+  fullName: TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_AND_COLUMNS
+  type: Field
+  source:
+    id: SURROUND_HEADER_AND_COLUMNS
+    path: ''
+    startLine: 896
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders SURROUND_HEADER_AND_COLUMNS
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared SURROUND_HEADER_AND_COLUMNS As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_FOOTER_AND_COLUMNS
+  commentId: F:TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_FOOTER_AND_COLUMNS
+  id: SURROUND_HEADER_FOOTER_AND_COLUMNS
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: SURROUND_HEADER_FOOTER_AND_COLUMNS
+  nameWithType: TableVisibleBorders.SURROUND_HEADER_FOOTER_AND_COLUMNS
+  fullName: TextTableFormatter.TableVisibleBorders.SURROUND_HEADER_FOOTER_AND_COLUMNS
+  type: Field
+  source:
+    id: SURROUND_HEADER_FOOTER_AND_COLUMNS
+    path: ''
+    startLine: 897
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders SURROUND_HEADER_FOOTER_AND_COLUMNS
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared SURROUND_HEADER_FOOTER_AND_COLUMNS As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.SURROUND
+  commentId: F:TextTableFormatter.TableVisibleBorders.SURROUND
+  id: SURROUND
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: SURROUND
+  nameWithType: TableVisibleBorders.SURROUND
+  fullName: TextTableFormatter.TableVisibleBorders.SURROUND
+  type: Field
+  source:
+    id: SURROUND
+    path: ''
+    startLine: 898
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders SURROUND
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared SURROUND As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.ALL
+  commentId: F:TextTableFormatter.TableVisibleBorders.ALL
+  id: ALL
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: ALL
+  nameWithType: TableVisibleBorders.ALL
+  fullName: TextTableFormatter.TableVisibleBorders.ALL
+  type: Field
+  source:
+    id: ALL
+    path: ''
+    startLine: 899
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  syntax:
+    content: public static TableVisibleBorders ALL
+    return:
+      type: TextTableFormatter.TableVisibleBorders
+    content.vb: Public Shared ALL As TableVisibleBorders
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible
+  id: IsBottomBorderVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsBottomBorderVisible
+  nameWithType: TableVisibleBorders.IsBottomBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible
+  type: Property
+  source:
+    id: IsBottomBorderVisible
+    path: ''
+    startLine: 904
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table bottom border is visible\n"
+  example: []
+  syntax:
+    content: public bool IsBottomBorderVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsBottomBorderVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible
+  id: IsCenterSeparatorVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsCenterSeparatorVisible
+  nameWithType: TableVisibleBorders.IsCenterSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible
+  type: Property
+  source:
+    id: IsCenterSeparatorVisible
+    path: ''
+    startLine: 909
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table center separator is visible\n"
+  example: []
+  syntax:
+    content: public bool IsCenterSeparatorVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCenterSeparatorVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible
+  id: IsFooterSeparatorVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsFooterSeparatorVisible
+  nameWithType: TableVisibleBorders.IsFooterSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible
+  type: Property
+  source:
+    id: IsFooterSeparatorVisible
+    path: ''
+    startLine: 914
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table footer separator is visible\n"
+  example: []
+  syntax:
+    content: public bool IsFooterSeparatorVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsFooterSeparatorVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible
+  id: IsHeaderSeparatorVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsHeaderSeparatorVisible
+  nameWithType: TableVisibleBorders.IsHeaderSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible
+  type: Property
+  source:
+    id: IsHeaderSeparatorVisible
+    path: ''
+    startLine: 919
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table header separator is visible\n"
+  example: []
+  syntax:
+    content: public bool IsHeaderSeparatorVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsHeaderSeparatorVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible
+  id: IsLeftBorderVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsLeftBorderVisible
+  nameWithType: TableVisibleBorders.IsLeftBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible
+  type: Property
+  source:
+    id: IsLeftBorderVisible
+    path: ''
+    startLine: 924
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table left border is visible\n"
+  example: []
+  syntax:
+    content: public bool IsLeftBorderVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLeftBorderVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible
+  id: IsLeftSeparatorVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsLeftSeparatorVisible
+  nameWithType: TableVisibleBorders.IsLeftSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible
+  type: Property
+  source:
+    id: IsLeftSeparatorVisible
+    path: ''
+    startLine: 929
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table left separator is visible\n"
+  example: []
+  syntax:
+    content: public bool IsLeftSeparatorVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLeftSeparatorVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible
+  id: IsMiddleSeparatorVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsMiddleSeparatorVisible
+  nameWithType: TableVisibleBorders.IsMiddleSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible
+  type: Property
+  source:
+    id: IsMiddleSeparatorVisible
+    path: ''
+    startLine: 934
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table middle separator is visible\n"
+  example: []
+  syntax:
+    content: public bool IsMiddleSeparatorVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsMiddleSeparatorVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsRightBorderVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsRightBorderVisible
+  id: IsRightBorderVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsRightBorderVisible
+  nameWithType: TableVisibleBorders.IsRightBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsRightBorderVisible
+  type: Property
+  source:
+    id: IsRightBorderVisible
+    path: ''
+    startLine: 939
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table right border is visible\n"
+  example: []
+  syntax:
+    content: public bool IsRightBorderVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRightBorderVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsRightBorderVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible
+  id: IsRightSeparatorVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsRightSeparatorVisible
+  nameWithType: TableVisibleBorders.IsRightSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible
+  type: Property
+  source:
+    id: IsRightSeparatorVisible
+    path: ''
+    startLine: 944
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table right separator is visible\n"
+  example: []
+  syntax:
+    content: public bool IsRightSeparatorVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsRightSeparatorVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.IsTopBorderVisible
+  commentId: P:TextTableFormatter.TableVisibleBorders.IsTopBorderVisible
+  id: IsTopBorderVisible
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: IsTopBorderVisible
+  nameWithType: TableVisibleBorders.IsTopBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsTopBorderVisible
+  type: Property
+  source:
+    id: IsTopBorderVisible
+    path: ''
+    startLine: 949
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets if the table top border is visible\n"
+  example: []
+  syntax:
+    content: public bool IsTopBorderVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsTopBorderVisible As Boolean
+  overload: TextTableFormatter.TableVisibleBorders.IsTopBorderVisible*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.TableVisibleBorders.#ctor
+  commentId: M:TextTableFormatter.TableVisibleBorders.#ctor
+  id: '#ctor'
+  parent: TextTableFormatter.TableVisibleBorders
+  langs:
+  - csharp
+  - vb
+  name: TableVisibleBorders()
+  nameWithType: TableVisibleBorders.TableVisibleBorders()
+  fullName: TextTableFormatter.TableVisibleBorders.TableVisibleBorders()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 954
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitializes a new instance of TableVisibleBorders class\n"
+  example: []
+  syntax:
+    content: public TableVisibleBorders()
+    content.vb: Public Sub New
+  overload: TextTableFormatter.TableVisibleBorders.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TextTableFormatter.TableVisibleBorders
+  commentId: T:TextTableFormatter.TableVisibleBorders
+  parent: TextTableFormatter
+  isExternal: false
+  name: TableVisibleBorders
+  nameWithType: TableVisibleBorders
+  fullName: TextTableFormatter.TableVisibleBorders
+- uid: TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible
+  isExternal: false
+  name: IsBottomBorderVisible
+  nameWithType: TableVisibleBorders.IsBottomBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsBottomBorderVisible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible
+  isExternal: false
+  name: IsCenterSeparatorVisible
+  nameWithType: TableVisibleBorders.IsCenterSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsCenterSeparatorVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible
+  isExternal: false
+  name: IsFooterSeparatorVisible
+  nameWithType: TableVisibleBorders.IsFooterSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsFooterSeparatorVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible
+  isExternal: false
+  name: IsHeaderSeparatorVisible
+  nameWithType: TableVisibleBorders.IsHeaderSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsHeaderSeparatorVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible
+  isExternal: false
+  name: IsLeftBorderVisible
+  nameWithType: TableVisibleBorders.IsLeftBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsLeftBorderVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible
+  isExternal: false
+  name: IsLeftSeparatorVisible
+  nameWithType: TableVisibleBorders.IsLeftSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsLeftSeparatorVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible
+  isExternal: false
+  name: IsMiddleSeparatorVisible
+  nameWithType: TableVisibleBorders.IsMiddleSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsMiddleSeparatorVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsRightBorderVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsRightBorderVisible
+  isExternal: false
+  name: IsRightBorderVisible
+  nameWithType: TableVisibleBorders.IsRightBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsRightBorderVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible
+  isExternal: false
+  name: IsRightSeparatorVisible
+  nameWithType: TableVisibleBorders.IsRightSeparatorVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsRightSeparatorVisible
+- uid: TextTableFormatter.TableVisibleBorders.IsTopBorderVisible*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.IsTopBorderVisible
+  isExternal: false
+  name: IsTopBorderVisible
+  nameWithType: TableVisibleBorders.IsTopBorderVisible
+  fullName: TextTableFormatter.TableVisibleBorders.IsTopBorderVisible
+- uid: TextTableFormatter.TableVisibleBorders.#ctor*
+  commentId: Overload:TextTableFormatter.TableVisibleBorders.#ctor
+  isExternal: false
+  name: TableVisibleBorders
+  nameWithType: TableVisibleBorders.TableVisibleBorders
+  fullName: TextTableFormatter.TableVisibleBorders.TableVisibleBorders

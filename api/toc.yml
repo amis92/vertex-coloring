@@ -1,0 +1,56 @@
+### YamlMime:TableOfContent
+- uid: TextTableFormatter
+  name: TextTableFormatter
+  items:
+  - uid: TextTableFormatter.CellHorizontalAlignment
+    name: CellHorizontalAlignment
+  - uid: TextTableFormatter.CellNullStyle
+    name: CellNullStyle
+  - uid: TextTableFormatter.CellStyle
+    name: CellStyle
+  - uid: TextTableFormatter.CellTextTrimmingStyle
+    name: CellTextTrimmingStyle
+  - uid: TextTableFormatter.TableBordersStyle
+    name: TableBordersStyle
+  - uid: TextTableFormatter.TableVisibleBorders
+    name: TableVisibleBorders
+  - uid: TextTableFormatter.TextTable
+    name: TextTable
+- uid: VertexColoring.Algorithms
+  name: VertexColoring.Algorithms
+  items:
+  - uid: VertexColoring.Algorithms.ColoringExtensions
+    name: ColoringExtensions
+- uid: VertexColoring.Graphs
+  name: VertexColoring.Graphs
+  items:
+  - uid: VertexColoring.Graphs.Edge
+    name: Edge
+  - uid: VertexColoring.Graphs.Generator
+    name: Generator
+  - uid: VertexColoring.Graphs.Graph
+    name: Graph
+  - uid: VertexColoring.Graphs.GraphColoring
+    name: GraphColoring
+  - uid: VertexColoring.Graphs.GraphExtensions
+    name: GraphExtensions
+  - uid: VertexColoring.Graphs.GraphIndex
+    name: GraphIndex
+  - uid: VertexColoring.Graphs.InducedSubgraph
+    name: InducedSubgraph
+  - uid: VertexColoring.Graphs.MutableEdge
+    name: MutableEdge
+  - uid: VertexColoring.Graphs.MutableGraph
+    name: MutableGraph
+  - uid: VertexColoring.Graphs.MutableGraphColoring
+    name: MutableGraphColoring
+  - uid: VertexColoring.Graphs.MutableVertex
+    name: MutableVertex
+  - uid: VertexColoring.Graphs.TrivialGraphFormatExtensions
+    name: TrivialGraphFormatExtensions
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+  - uid: VertexColoring.Graphs.VertexAdjacency
+    name: VertexAdjacency
+  - uid: VertexColoring.Graphs.VertexDegrees
+    name: VertexDegrees

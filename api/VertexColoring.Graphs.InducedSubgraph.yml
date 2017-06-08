@@ -1,0 +1,783 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.InducedSubgraph
+  commentId: T:VertexColoring.Graphs.InducedSubgraph
+  id: InducedSubgraph
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.InducedSubgraph.#ctor(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  - VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency
+  - VertexColoring.Graphs.InducedSubgraph.OriginalGraph
+  - VertexColoring.Graphs.InducedSubgraph.RemovedEdges
+  - VertexColoring.Graphs.InducedSubgraph.RemovedVertices
+  - VertexColoring.Graphs.InducedSubgraph.Subgraph
+  langs:
+  - csharp
+  - vb
+  name: InducedSubgraph
+  nameWithType: InducedSubgraph
+  fullName: VertexColoring.Graphs.InducedSubgraph
+  type: Class
+  source:
+    id: InducedSubgraph
+    path: ''
+    startLine: 2958
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public class InducedSubgraph
+    content.vb: Public Class InducedSubgraph
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: VertexColoring.Graphs.InducedSubgraph.#ctor(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  commentId: M:VertexColoring.Graphs.InducedSubgraph.#ctor(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  id: '#ctor(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})'
+  parent: VertexColoring.Graphs.InducedSubgraph
+  langs:
+  - csharp
+  - vb
+  name: InducedSubgraph(VertexAdjacency, IEnumerable<Vertex>)
+  nameWithType: InducedSubgraph.InducedSubgraph(VertexAdjacency, IEnumerable<Vertex>)
+  fullName: VertexColoring.Graphs.InducedSubgraph.InducedSubgraph(VertexColoring.Graphs.VertexAdjacency, IEnumerable<VertexColoring.Graphs.Vertex>)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2960
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public InducedSubgraph(VertexAdjacency adjacency, IEnumerable<Vertex> removedVertices)
+    parameters:
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+    - id: removedVertices
+      type: IEnumerable{VertexColoring.Graphs.Vertex}
+    content.vb: Public Sub New(adjacency As VertexAdjacency, removedVertices As IEnumerable(Of Vertex))
+  overload: VertexColoring.Graphs.InducedSubgraph.#ctor*
+  nameWithType.vb: InducedSubgraph.InducedSubgraph(VertexAdjacency, IEnumerable(Of Vertex))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: VertexColoring.Graphs.InducedSubgraph.InducedSubgraph(VertexColoring.Graphs.VertexAdjacency, IEnumerable(Of VertexColoring.Graphs.Vertex))
+  name.vb: InducedSubgraph(VertexAdjacency, IEnumerable(Of Vertex))
+- uid: VertexColoring.Graphs.InducedSubgraph.OriginalGraph
+  commentId: P:VertexColoring.Graphs.InducedSubgraph.OriginalGraph
+  id: OriginalGraph
+  parent: VertexColoring.Graphs.InducedSubgraph
+  langs:
+  - csharp
+  - vb
+  name: OriginalGraph
+  nameWithType: InducedSubgraph.OriginalGraph
+  fullName: VertexColoring.Graphs.InducedSubgraph.OriginalGraph
+  type: Property
+  source:
+    id: OriginalGraph
+    path: ''
+    startLine: 2971
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Graph OriginalGraph { get; }
+    parameters: []
+    return:
+      type: VertexColoring.Graphs.Graph
+    content.vb: Public ReadOnly Property OriginalGraph As Graph
+  overload: VertexColoring.Graphs.InducedSubgraph.OriginalGraph*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency
+  commentId: P:VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency
+  id: OriginalAdjacency
+  parent: VertexColoring.Graphs.InducedSubgraph
+  langs:
+  - csharp
+  - vb
+  name: OriginalAdjacency
+  nameWithType: InducedSubgraph.OriginalAdjacency
+  fullName: VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency
+  type: Property
+  source:
+    id: OriginalAdjacency
+    path: ''
+    startLine: 2973
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public VertexAdjacency OriginalAdjacency { get; }
+    parameters: []
+    return:
+      type: VertexColoring.Graphs.VertexAdjacency
+    content.vb: Public ReadOnly Property OriginalAdjacency As VertexAdjacency
+  overload: VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.InducedSubgraph.Subgraph
+  commentId: P:VertexColoring.Graphs.InducedSubgraph.Subgraph
+  id: Subgraph
+  parent: VertexColoring.Graphs.InducedSubgraph
+  langs:
+  - csharp
+  - vb
+  name: Subgraph
+  nameWithType: InducedSubgraph.Subgraph
+  fullName: VertexColoring.Graphs.InducedSubgraph.Subgraph
+  type: Property
+  source:
+    id: Subgraph
+    path: ''
+    startLine: 2975
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Graph Subgraph { get; }
+    parameters: []
+    return:
+      type: VertexColoring.Graphs.Graph
+    content.vb: Public ReadOnly Property Subgraph As Graph
+  overload: VertexColoring.Graphs.InducedSubgraph.Subgraph*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.InducedSubgraph.RemovedEdges
+  commentId: P:VertexColoring.Graphs.InducedSubgraph.RemovedEdges
+  id: RemovedEdges
+  parent: VertexColoring.Graphs.InducedSubgraph
+  langs:
+  - csharp
+  - vb
+  name: RemovedEdges
+  nameWithType: InducedSubgraph.RemovedEdges
+  fullName: VertexColoring.Graphs.InducedSubgraph.RemovedEdges
+  type: Property
+  source:
+    id: RemovedEdges
+    path: ''
+    startLine: 2977
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public ImmutableSortedSet<Edge> RemovedEdges { get; }
+    parameters: []
+    return:
+      type: ImmutableSortedSet{VertexColoring.Graphs.Edge}
+    content.vb: Public ReadOnly Property RemovedEdges As ImmutableSortedSet(Of Edge)
+  overload: VertexColoring.Graphs.InducedSubgraph.RemovedEdges*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.InducedSubgraph.RemovedVertices
+  commentId: P:VertexColoring.Graphs.InducedSubgraph.RemovedVertices
+  id: RemovedVertices
+  parent: VertexColoring.Graphs.InducedSubgraph
+  langs:
+  - csharp
+  - vb
+  name: RemovedVertices
+  nameWithType: InducedSubgraph.RemovedVertices
+  fullName: VertexColoring.Graphs.InducedSubgraph.RemovedVertices
+  type: Property
+  source:
+    id: RemovedVertices
+    path: ''
+    startLine: 2979
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public ImmutableSortedSet<Vertex> RemovedVertices { get; }
+    parameters: []
+    return:
+      type: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+    content.vb: Public ReadOnly Property RemovedVertices As ImmutableSortedSet(Of Vertex)
+  overload: VertexColoring.Graphs.InducedSubgraph.RemovedVertices*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.InducedSubgraph.#ctor*
+  commentId: Overload:VertexColoring.Graphs.InducedSubgraph.#ctor
+  isExternal: false
+  name: InducedSubgraph
+  nameWithType: InducedSubgraph.InducedSubgraph
+  fullName: VertexColoring.Graphs.InducedSubgraph.InducedSubgraph
+- uid: VertexColoring.Graphs.VertexAdjacency
+  commentId: T:VertexColoring.Graphs.VertexAdjacency
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: VertexAdjacency
+  nameWithType: VertexAdjacency
+  fullName: VertexColoring.Graphs.VertexAdjacency
+- uid: IEnumerable{VertexColoring.Graphs.Vertex}
+  commentId: '!:IEnumerable{VertexColoring.Graphs.Vertex}'
+  definition: IEnumerable`1
+  name: IEnumerable<Vertex>
+  nameWithType: IEnumerable<Vertex>
+  fullName: IEnumerable<VertexColoring.Graphs.Vertex>
+  nameWithType.vb: IEnumerable(Of Vertex)
+  fullName.vb: IEnumerable(Of VertexColoring.Graphs.Vertex)
+  name.vb: IEnumerable(Of Vertex)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.InducedSubgraph.OriginalGraph*
+  commentId: Overload:VertexColoring.Graphs.InducedSubgraph.OriginalGraph
+  isExternal: false
+  name: OriginalGraph
+  nameWithType: InducedSubgraph.OriginalGraph
+  fullName: VertexColoring.Graphs.InducedSubgraph.OriginalGraph
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency*
+  commentId: Overload:VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency
+  isExternal: false
+  name: OriginalAdjacency
+  nameWithType: InducedSubgraph.OriginalAdjacency
+  fullName: VertexColoring.Graphs.InducedSubgraph.OriginalAdjacency
+- uid: VertexColoring.Graphs.InducedSubgraph.Subgraph*
+  commentId: Overload:VertexColoring.Graphs.InducedSubgraph.Subgraph
+  isExternal: false
+  name: Subgraph
+  nameWithType: InducedSubgraph.Subgraph
+  fullName: VertexColoring.Graphs.InducedSubgraph.Subgraph
+- uid: VertexColoring.Graphs.InducedSubgraph.RemovedEdges*
+  commentId: Overload:VertexColoring.Graphs.InducedSubgraph.RemovedEdges
+  isExternal: false
+  name: RemovedEdges
+  nameWithType: InducedSubgraph.RemovedEdges
+  fullName: VertexColoring.Graphs.InducedSubgraph.RemovedEdges
+- uid: ImmutableSortedSet{VertexColoring.Graphs.Edge}
+  commentId: '!:ImmutableSortedSet{VertexColoring.Graphs.Edge}'
+  definition: ImmutableSortedSet`1
+  name: ImmutableSortedSet<Edge>
+  nameWithType: ImmutableSortedSet<Edge>
+  fullName: ImmutableSortedSet<VertexColoring.Graphs.Edge>
+  nameWithType.vb: ImmutableSortedSet(Of Edge)
+  fullName.vb: ImmutableSortedSet(Of VertexColoring.Graphs.Edge)
+  name.vb: ImmutableSortedSet(Of Edge)
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Edge
+    name: Edge
+    nameWithType: Edge
+    fullName: VertexColoring.Graphs.Edge
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Edge
+    name: Edge
+    nameWithType: Edge
+    fullName: VertexColoring.Graphs.Edge
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ImmutableSortedSet`1
+  isExternal: true
+  name: ImmutableSortedSet<>
+  nameWithType: ImmutableSortedSet<>
+  fullName: ImmutableSortedSet<>
+  nameWithType.vb: ImmutableSortedSet(Of )
+  fullName.vb: ImmutableSortedSet(Of )
+  name.vb: ImmutableSortedSet(Of )
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.InducedSubgraph.RemovedVertices*
+  commentId: Overload:VertexColoring.Graphs.InducedSubgraph.RemovedVertices
+  isExternal: false
+  name: RemovedVertices
+  nameWithType: InducedSubgraph.RemovedVertices
+  fullName: VertexColoring.Graphs.InducedSubgraph.RemovedVertices
+- uid: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+  commentId: '!:ImmutableSortedSet{VertexColoring.Graphs.Vertex}'
+  definition: ImmutableSortedSet`1
+  name: ImmutableSortedSet<Vertex>
+  nameWithType: ImmutableSortedSet<Vertex>
+  fullName: ImmutableSortedSet<VertexColoring.Graphs.Vertex>
+  nameWithType.vb: ImmutableSortedSet(Of Vertex)
+  fullName.vb: ImmutableSortedSet(Of VertexColoring.Graphs.Vertex)
+  name.vb: ImmutableSortedSet(Of Vertex)
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )

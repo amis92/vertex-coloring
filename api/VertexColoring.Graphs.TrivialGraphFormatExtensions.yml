@@ -1,0 +1,510 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.TrivialGraphFormatExtensions
+  commentId: T:VertexColoring.Graphs.TrivialGraphFormatExtensions
+  id: TrivialGraphFormatExtensions
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph(TextReader)
+  - VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf(TextWriter,VertexColoring.Graphs.GraphColoring)
+  - VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf(TextWriter,VertexColoring.Graphs.Graph)
+  langs:
+  - csharp
+  - vb
+  name: TrivialGraphFormatExtensions
+  nameWithType: TrivialGraphFormatExtensions
+  fullName: VertexColoring.Graphs.TrivialGraphFormatExtensions
+  type: Class
+  source:
+    id: TrivialGraphFormatExtensions
+    path: ''
+    startLine: 3140
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nContains extensions useful to writing to/reading from TGF (Trivial Graph Format)\n- plain text graph representation. See https://en.wikipedia.org/wiki/Trivial_Graph_Format\n"
+  example: []
+  syntax:
+    content: public static class TrivialGraphFormatExtensions
+    content.vb: Public Module TrivialGraphFormatExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf(TextWriter,VertexColoring.Graphs.Graph)
+  commentId: M:VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf(TextWriter,VertexColoring.Graphs.Graph)
+  id: WriteGraphAsTgf(TextWriter,VertexColoring.Graphs.Graph)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.TrivialGraphFormatExtensions
+  langs:
+  - csharp
+  - vb
+  name: WriteGraphAsTgf(TextWriter, Graph)
+  nameWithType: TrivialGraphFormatExtensions.WriteGraphAsTgf(TextWriter, Graph)
+  fullName: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf(TextWriter, VertexColoring.Graphs.Graph)
+  type: Method
+  source:
+    id: WriteGraphAsTgf
+    path: ''
+    startLine: 3151
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nSaves given <span class=\"paramref\">graph</span> into <span class=\"paramref\">writer</span> in TGF text representation.\n"
+  example: []
+  syntax:
+    content: public static void WriteGraphAsTgf(this TextWriter writer, Graph graph)
+    parameters:
+    - id: writer
+      type: TextWriter
+      description: Writer to save graph to.
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+      description: Graph to be saved.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub WriteGraphAsTgf(writer As TextWriter, graph As Graph)
+  overload: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf(TextWriter,VertexColoring.Graphs.GraphColoring)
+  commentId: M:VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf(TextWriter,VertexColoring.Graphs.GraphColoring)
+  id: WriteColoringAsTgf(TextWriter,VertexColoring.Graphs.GraphColoring)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.TrivialGraphFormatExtensions
+  langs:
+  - csharp
+  - vb
+  name: WriteColoringAsTgf(TextWriter, GraphColoring)
+  nameWithType: TrivialGraphFormatExtensions.WriteColoringAsTgf(TextWriter, GraphColoring)
+  fullName: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf(TextWriter, VertexColoring.Graphs.GraphColoring)
+  type: Method
+  source:
+    id: WriteColoringAsTgf
+    path: ''
+    startLine: 3170
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nSaves given <span class=\"paramref\">coloring</span> into <span class=\"paramref\">writer</span> in TGF-like text representation.\nThe color of each vertex is saved as a second number, after vertex id. So a vertex with id=1, label=sth\ncolored with number 132 will be saved in TGF vertex list as \"1 132 sth\".\n"
+  example: []
+  syntax:
+    content: public static void WriteColoringAsTgf(this TextWriter writer, GraphColoring coloring)
+    parameters:
+    - id: writer
+      type: TextWriter
+      description: Writer to save coloring to.
+    - id: coloring
+      type: VertexColoring.Graphs.GraphColoring
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Sub WriteColoringAsTgf(writer As TextWriter, coloring As GraphColoring)
+  overload: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph(TextReader)
+  commentId: M:VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph(TextReader)
+  id: ReadTgfGraph(TextReader)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.TrivialGraphFormatExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadTgfGraph(TextReader)
+  nameWithType: TrivialGraphFormatExtensions.ReadTgfGraph(TextReader)
+  fullName: VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph(TextReader)
+  type: Method
+  source:
+    id: ReadTgfGraph
+    path: ''
+    startLine: 3189
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nReads a graph in TGF from <span class=\"paramref\">reader</span>.\n"
+  example: []
+  syntax:
+    content: public static Graph ReadTgfGraph(this TextReader reader)
+    parameters:
+    - id: reader
+      type: TextReader
+      description: Reads TGF containing graph.
+    return:
+      type: VertexColoring.Graphs.Graph
+      description: Graph read.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadTgfGraph(reader As TextReader) As Graph
+  overload: VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf*
+  commentId: Overload:VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf
+  isExternal: false
+  name: WriteGraphAsTgf
+  nameWithType: TrivialGraphFormatExtensions.WriteGraphAsTgf
+  fullName: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteGraphAsTgf
+- uid: TextWriter
+  isExternal: true
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: TextWriter
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf*
+  commentId: Overload:VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf
+  isExternal: false
+  name: WriteColoringAsTgf
+  nameWithType: TrivialGraphFormatExtensions.WriteColoringAsTgf
+  fullName: VertexColoring.Graphs.TrivialGraphFormatExtensions.WriteColoringAsTgf
+- uid: VertexColoring.Graphs.GraphColoring
+  commentId: T:VertexColoring.Graphs.GraphColoring
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: GraphColoring
+  nameWithType: GraphColoring
+  fullName: VertexColoring.Graphs.GraphColoring
+- uid: VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph*
+  commentId: Overload:VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph
+  isExternal: false
+  name: ReadTgfGraph
+  nameWithType: TrivialGraphFormatExtensions.ReadTgfGraph
+  fullName: VertexColoring.Graphs.TrivialGraphFormatExtensions.ReadTgfGraph
+- uid: TextReader
+  commentId: '!:TextReader'
+  isExternal: true
+  name: TextReader
+  nameWithType: TextReader
+  fullName: TextReader

@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter.CellNullStyle
+  commentId: T:TextTableFormatter.CellNullStyle
+  id: CellNullStyle
+  parent: TextTableFormatter
+  children:
+  - TextTableFormatter.CellNullStyle.EmptyString
+  - TextTableFormatter.CellNullStyle.NullText
+  langs:
+  - csharp
+  - vb
+  name: CellNullStyle
+  nameWithType: CellNullStyle
+  fullName: TextTableFormatter.CellNullStyle
+  type: Enum
+  source:
+    id: CellNullStyle
+    path: ''
+    startLine: 73
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRepresents the cell null text style\n"
+  example: []
+  syntax:
+    content: public enum CellNullStyle
+    content.vb: Public Enum CellNullStyle
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: TextTableFormatter.CellNullStyle.EmptyString
+  commentId: F:TextTableFormatter.CellNullStyle.EmptyString
+  id: EmptyString
+  parent: TextTableFormatter.CellNullStyle
+  langs:
+  - csharp
+  - vb
+  name: EmptyString
+  nameWithType: CellNullStyle.EmptyString
+  fullName: TextTableFormatter.CellNullStyle.EmptyString
+  type: Field
+  source:
+    id: EmptyString
+    path: ''
+    startLine: 78
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nThe empty string\n"
+  example: []
+  syntax:
+    content: EmptyString = 0
+    return:
+      type: TextTableFormatter.CellNullStyle
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: TextTableFormatter.CellNullStyle.NullText
+  commentId: F:TextTableFormatter.CellNullStyle.NullText
+  id: NullText
+  parent: TextTableFormatter.CellNullStyle
+  langs:
+  - csharp
+  - vb
+  name: NullText
+  nameWithType: CellNullStyle.NullText
+  fullName: TextTableFormatter.CellNullStyle.NullText
+  type: Field
+  source:
+    id: NullText
+    path: ''
+    startLine: 83
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nThe null text: [null]\n"
+  example: []
+  syntax:
+    content: NullText = 1
+    return:
+      type: TextTableFormatter.CellNullStyle
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+- uid: TextTableFormatter.CellNullStyle
+  commentId: T:TextTableFormatter.CellNullStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellNullStyle
+  nameWithType: CellNullStyle
+  fullName: TextTableFormatter.CellNullStyle

@@ -1,0 +1,643 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.VertexDegrees
+  commentId: T:VertexColoring.Graphs.VertexDegrees
+  id: VertexDegrees
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.VertexDegrees.#ctor(VertexColoring.Graphs.VertexAdjacency)
+  - VertexColoring.Graphs.VertexDegrees.Degrees
+  - VertexColoring.Graphs.VertexDegrees.Graph
+  - VertexColoring.Graphs.VertexDegrees.Item(VertexColoring.Graphs.Vertex)
+  langs:
+  - csharp
+  - vb
+  name: VertexDegrees
+  nameWithType: VertexDegrees
+  fullName: VertexColoring.Graphs.VertexDegrees
+  type: Class
+  source:
+    id: VertexDegrees
+    path: ''
+    startLine: 3428
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nAssociates vertices with their degree in a given graph. Provides indexer to simplify access.\n"
+  example: []
+  syntax:
+    content: public sealed class VertexDegrees
+    content.vb: Public NotInheritable Class VertexDegrees
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: VertexColoring.Graphs.VertexDegrees.#ctor(VertexColoring.Graphs.VertexAdjacency)
+  commentId: M:VertexColoring.Graphs.VertexDegrees.#ctor(VertexColoring.Graphs.VertexAdjacency)
+  id: '#ctor(VertexColoring.Graphs.VertexAdjacency)'
+  parent: VertexColoring.Graphs.VertexDegrees
+  langs:
+  - csharp
+  - vb
+  name: VertexDegrees(VertexAdjacency)
+  nameWithType: VertexDegrees.VertexDegrees(VertexAdjacency)
+  fullName: VertexColoring.Graphs.VertexDegrees.VertexDegrees(VertexColoring.Graphs.VertexAdjacency)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3430
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public VertexDegrees(VertexAdjacency adjacency)
+    parameters:
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+    content.vb: Public Sub New(adjacency As VertexAdjacency)
+  overload: VertexColoring.Graphs.VertexDegrees.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.VertexDegrees.Graph
+  commentId: P:VertexColoring.Graphs.VertexDegrees.Graph
+  id: Graph
+  parent: VertexColoring.Graphs.VertexDegrees
+  langs:
+  - csharp
+  - vb
+  name: Graph
+  nameWithType: VertexDegrees.Graph
+  fullName: VertexColoring.Graphs.VertexDegrees.Graph
+  type: Property
+  source:
+    id: Graph
+    path: ''
+    startLine: 3438
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets graph in which the degrees are counted.\n"
+  example: []
+  syntax:
+    content: public Graph Graph { get; }
+    parameters: []
+    return:
+      type: VertexColoring.Graphs.Graph
+    content.vb: Public ReadOnly Property Graph As Graph
+  overload: VertexColoring.Graphs.VertexDegrees.Graph*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.VertexDegrees.Degrees
+  commentId: P:VertexColoring.Graphs.VertexDegrees.Degrees
+  id: Degrees
+  parent: VertexColoring.Graphs.VertexDegrees
+  langs:
+  - csharp
+  - vb
+  name: Degrees
+  nameWithType: VertexDegrees.Degrees
+  fullName: VertexColoring.Graphs.VertexDegrees.Degrees
+  type: Property
+  source:
+    id: Degrees
+    path: ''
+    startLine: 3443
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets the underlying dictionary of vertex degrees.\n"
+  example: []
+  syntax:
+    content: public ImmutableSortedDictionary<Vertex, int> Degrees { get; }
+    parameters: []
+    return:
+      type: ImmutableSortedDictionary{VertexColoring.Graphs.Vertex,System.Int32}
+    content.vb: Public ReadOnly Property Degrees As ImmutableSortedDictionary(Of Vertex, Integer)
+  overload: VertexColoring.Graphs.VertexDegrees.Degrees*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.VertexDegrees.Item(VertexColoring.Graphs.Vertex)
+  commentId: P:VertexColoring.Graphs.VertexDegrees.Item(VertexColoring.Graphs.Vertex)
+  id: Item(VertexColoring.Graphs.Vertex)
+  parent: VertexColoring.Graphs.VertexDegrees
+  langs:
+  - csharp
+  - vb
+  name: Item[Vertex]
+  nameWithType: VertexDegrees.Item[Vertex]
+  fullName: VertexColoring.Graphs.VertexDegrees.Item[VertexColoring.Graphs.Vertex]
+  type: Property
+  source:
+    id: this[]
+    path: ''
+    startLine: 3450
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets the degree of a given <span class=\"paramref\">vertex</span> in <xref href=\"VertexColoring.Graphs.VertexDegrees.Graph\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public int this[Vertex vertex] { get; }
+    parameters:
+    - id: vertex
+      type: VertexColoring.Graphs.Vertex
+      description: Vertex to get degree of.
+    return:
+      type: System.Int32
+      description: Vertex's degree.
+    content.vb: Public ReadOnly Property Item(vertex As Vertex) As Integer
+  overload: VertexColoring.Graphs.VertexDegrees.Item*
+  nameWithType.vb: VertexDegrees.Item(Vertex)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: VertexColoring.Graphs.VertexDegrees.Item(VertexColoring.Graphs.Vertex)
+  name.vb: Item(Vertex)
+references:
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.VertexDegrees.#ctor*
+  commentId: Overload:VertexColoring.Graphs.VertexDegrees.#ctor
+  isExternal: false
+  name: VertexDegrees
+  nameWithType: VertexDegrees.VertexDegrees
+  fullName: VertexColoring.Graphs.VertexDegrees.VertexDegrees
+- uid: VertexColoring.Graphs.VertexAdjacency
+  commentId: T:VertexColoring.Graphs.VertexAdjacency
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: VertexAdjacency
+  nameWithType: VertexAdjacency
+  fullName: VertexColoring.Graphs.VertexAdjacency
+- uid: VertexColoring.Graphs.VertexDegrees.Graph*
+  commentId: Overload:VertexColoring.Graphs.VertexDegrees.Graph
+  isExternal: false
+  name: Graph
+  nameWithType: VertexDegrees.Graph
+  fullName: VertexColoring.Graphs.VertexDegrees.Graph
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: VertexColoring.Graphs.VertexDegrees.Degrees*
+  commentId: Overload:VertexColoring.Graphs.VertexDegrees.Degrees
+  isExternal: false
+  name: Degrees
+  nameWithType: VertexDegrees.Degrees
+  fullName: VertexColoring.Graphs.VertexDegrees.Degrees
+- uid: ImmutableSortedDictionary{VertexColoring.Graphs.Vertex,System.Int32}
+  commentId: '!:ImmutableSortedDictionary{VertexColoring.Graphs.Vertex,System.Int32}'
+  definition: ImmutableSortedDictionary`2
+  name: ImmutableSortedDictionary<Vertex, Int32>
+  nameWithType: ImmutableSortedDictionary<Vertex, Int32>
+  fullName: ImmutableSortedDictionary<VertexColoring.Graphs.Vertex, System.Int32>
+  nameWithType.vb: ImmutableSortedDictionary(Of Vertex, Int32)
+  fullName.vb: ImmutableSortedDictionary(Of VertexColoring.Graphs.Vertex, System.Int32)
+  name.vb: ImmutableSortedDictionary(Of Vertex, Int32)
+  spec.csharp:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ImmutableSortedDictionary`2
+  isExternal: true
+  name: ImmutableSortedDictionary<, >
+  nameWithType: ImmutableSortedDictionary<, >
+  fullName: ImmutableSortedDictionary<, >
+  nameWithType.vb: ImmutableSortedDictionary(Of , )
+  fullName.vb: ImmutableSortedDictionary(Of , )
+  name.vb: ImmutableSortedDictionary(Of , )
+  spec.csharp:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.VertexDegrees.Graph
+  commentId: P:VertexColoring.Graphs.VertexDegrees.Graph
+- uid: VertexColoring.Graphs.VertexDegrees.Item*
+  commentId: Overload:VertexColoring.Graphs.VertexDegrees.Item
+  isExternal: false
+  name: Item
+  nameWithType: VertexDegrees.Item
+  fullName: VertexColoring.Graphs.VertexDegrees.Item
+- uid: VertexColoring.Graphs.Vertex
+  commentId: T:VertexColoring.Graphs.Vertex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Vertex
+  nameWithType: Vertex
+  fullName: VertexColoring.Graphs.Vertex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

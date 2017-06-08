@@ -1,0 +1,1397 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.GraphExtensions
+  commentId: T:VertexColoring.Graphs.GraphExtensions
+  id: GraphExtensions
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.Graph)
+  - VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.InducedSubgraph)
+  - VertexColoring.Graphs.GraphExtensions.ColorsUsed(VertexColoring.Graphs.GraphColoring)
+  - VertexColoring.Graphs.GraphExtensions.Degree(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.VertexAdjacency)
+  - VertexColoring.Graphs.GraphExtensions.Index(VertexColoring.Graphs.Graph)
+  - VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  - VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  - VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  - VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  - VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  - VertexColoring.Graphs.GraphExtensions.MinDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  - VertexColoring.Graphs.GraphExtensions.OtherVertex(VertexColoring.Graphs.Edge,VertexColoring.Graphs.Vertex)
+  - VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge)
+  - VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge,VertexColoring.Graphs.GraphIndex)
+  - VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraph)
+  - VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraphColoring)
+  - VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableVertex)
+  - VertexColoring.Graphs.GraphExtensions.VertexDegrees(VertexColoring.Graphs.VertexAdjacency)
+  langs:
+  - csharp
+  - vb
+  name: GraphExtensions
+  nameWithType: GraphExtensions
+  fullName: VertexColoring.Graphs.GraphExtensions
+  type: Class
+  source:
+    id: GraphExtensions
+    path: ''
+    startLine: 2789
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nContains useful extension methods to simplify using <xref href=\"VertexColoring.Graphs.Graph\" data-throw-if-not-resolved=\"false\"></xref>s and rest of the family\nfrom this namespace.\n"
+  example: []
+  syntax:
+    content: public static class GraphExtensions
+    content.vb: Public Module GraphExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraphColoring)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraphColoring)
+  id: ToImmutable(VertexColoring.Graphs.MutableGraphColoring)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToImmutable(MutableGraphColoring)
+  nameWithType: GraphExtensions.ToImmutable(MutableGraphColoring)
+  fullName: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraphColoring)
+  type: Method
+  source:
+    id: ToImmutable
+    path: ''
+    startLine: 2796
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nTransforms this mutable instance (as well as it's properties) to immutable copy.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ToImmutable(this MutableGraphColoring coloring)
+    parameters:
+    - id: coloring
+      type: VertexColoring.Graphs.MutableGraphColoring
+      description: Instance to transform.
+    return:
+      type: VertexColoring.Graphs.GraphColoring
+      description: Immutable copy of provided instance.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToImmutable(coloring As MutableGraphColoring) As GraphColoring
+  overload: VertexColoring.Graphs.GraphExtensions.ToImmutable*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.ColorsUsed(VertexColoring.Graphs.GraphColoring)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ColorsUsed(VertexColoring.Graphs.GraphColoring)
+  id: ColorsUsed(VertexColoring.Graphs.GraphColoring)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorsUsed(GraphColoring)
+  nameWithType: GraphExtensions.ColorsUsed(GraphColoring)
+  fullName: VertexColoring.Graphs.GraphExtensions.ColorsUsed(VertexColoring.Graphs.GraphColoring)
+  type: Method
+  source:
+    id: ColorsUsed
+    path: ''
+    startLine: 2806
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCalculates count of unique colors used in <span class=\"paramref\">coloring</span>.\n"
+  example: []
+  syntax:
+    content: public static int ColorsUsed(this GraphColoring coloring)
+    parameters:
+    - id: coloring
+      type: VertexColoring.Graphs.GraphColoring
+      description: Coloring to count colors in.
+    return:
+      type: System.Int32
+      description: Count of unique colors.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorsUsed(coloring As GraphColoring) As Integer
+  overload: VertexColoring.Graphs.GraphExtensions.ColorsUsed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.Graph)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.Graph)
+  id: Adjacency(VertexColoring.Graphs.Graph)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: Adjacency(Graph)
+  nameWithType: GraphExtensions.Adjacency(Graph)
+  fullName: VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.Graph)
+  type: Method
+  source:
+    id: Adjacency
+    path: ''
+    startLine: 2816
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates an adjacency instance for the <span class=\"paramref\">graph</span>.\n"
+  example: []
+  syntax:
+    content: public static VertexAdjacency Adjacency(this Graph graph)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+      description: Graph to create adjacency for.
+    return:
+      type: VertexColoring.Graphs.VertexAdjacency
+      description: Graph's adjacency.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Adjacency(graph As Graph) As VertexAdjacency
+  overload: VertexColoring.Graphs.GraphExtensions.Adjacency*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.InducedSubgraph)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.InducedSubgraph)
+  id: Adjacency(VertexColoring.Graphs.InducedSubgraph)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: Adjacency(InducedSubgraph)
+  nameWithType: GraphExtensions.Adjacency(InducedSubgraph)
+  fullName: VertexColoring.Graphs.GraphExtensions.Adjacency(VertexColoring.Graphs.InducedSubgraph)
+  type: Method
+  source:
+    id: Adjacency
+    path: ''
+    startLine: 2825
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates an adjacency instance for the <span class=\"paramref\">graph</span>.\nIt's optimized in comparison to creating adjacency directly from an actual <xref href=\"VertexColoring.Graphs.InducedSubgraph.Subgraph\" data-throw-if-not-resolved=\"false\"></xref>\nof <span class=\"paramref\">graph</span>.\n"
+  example: []
+  syntax:
+    content: public static VertexAdjacency Adjacency(this InducedSubgraph graph)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.InducedSubgraph
+      description: Graph to create adjacency for.
+    return:
+      type: VertexColoring.Graphs.VertexAdjacency
+      description: Graph's adjacency.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Adjacency(graph As InducedSubgraph) As VertexAdjacency
+  overload: VertexColoring.Graphs.GraphExtensions.Adjacency*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.VertexDegrees(VertexColoring.Graphs.VertexAdjacency)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.VertexDegrees(VertexColoring.Graphs.VertexAdjacency)
+  id: VertexDegrees(VertexColoring.Graphs.VertexAdjacency)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: VertexDegrees(VertexAdjacency)
+  nameWithType: GraphExtensions.VertexDegrees(VertexAdjacency)
+  fullName: VertexColoring.Graphs.GraphExtensions.VertexDegrees(VertexColoring.Graphs.VertexAdjacency)
+  type: Method
+  source:
+    id: VertexDegrees
+    path: ''
+    startLine: 2832
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates container for graph's vertex degrees.\n"
+  example: []
+  syntax:
+    content: public static VertexDegrees VertexDegrees(this VertexAdjacency adjacency)
+    parameters:
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+      description: ''
+    return:
+      type: VertexColoring.Graphs.VertexDegrees
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function VertexDegrees(adjacency As VertexAdjacency) As VertexDegrees
+  overload: VertexColoring.Graphs.GraphExtensions.VertexDegrees*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  id: MaxDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: MaxDegreeVertex(Graph, VertexDegrees)
+  nameWithType: GraphExtensions.MaxDegreeVertex(Graph, VertexDegrees)
+  fullName: VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex(VertexColoring.Graphs.Graph, VertexColoring.Graphs.VertexDegrees)
+  type: Method
+  source:
+    id: MaxDegreeVertex
+    path: ''
+    startLine: 2834
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static Vertex MaxDegreeVertex(this Graph graph, VertexDegrees degrees)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+    - id: degrees
+      type: VertexColoring.Graphs.VertexDegrees
+    return:
+      type: VertexColoring.Graphs.Vertex
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MaxDegreeVertex(graph As Graph, degrees As VertexDegrees) As Vertex
+  overload: VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.MinDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.MinDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  id: MinDegreeVertex(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexDegrees)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: MinDegreeVertex(Graph, VertexDegrees)
+  nameWithType: GraphExtensions.MinDegreeVertex(Graph, VertexDegrees)
+  fullName: VertexColoring.Graphs.GraphExtensions.MinDegreeVertex(VertexColoring.Graphs.Graph, VertexColoring.Graphs.VertexDegrees)
+  type: Method
+  source:
+    id: MinDegreeVertex
+    path: ''
+    startLine: 2839
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static Vertex MinDegreeVertex(this Graph graph, VertexDegrees degrees)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+    - id: degrees
+      type: VertexColoring.Graphs.VertexDegrees
+    return:
+      type: VertexColoring.Graphs.Vertex
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MinDegreeVertex(graph As Graph, degrees As VertexDegrees) As Vertex
+  overload: VertexColoring.Graphs.GraphExtensions.MinDegreeVertex*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraph)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraph)
+  id: ToImmutable(VertexColoring.Graphs.MutableGraph)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToImmutable(MutableGraph)
+  nameWithType: GraphExtensions.ToImmutable(MutableGraph)
+  fullName: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableGraph)
+  type: Method
+  source:
+    id: ToImmutable
+    path: ''
+    startLine: 2844
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static Graph ToImmutable(this MutableGraph mutable)
+    parameters:
+    - id: mutable
+      type: VertexColoring.Graphs.MutableGraph
+    return:
+      type: VertexColoring.Graphs.Graph
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToImmutable(mutable As MutableGraph) As Graph
+  overload: VertexColoring.Graphs.GraphExtensions.ToImmutable*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.OtherVertex(VertexColoring.Graphs.Edge,VertexColoring.Graphs.Vertex)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.OtherVertex(VertexColoring.Graphs.Edge,VertexColoring.Graphs.Vertex)
+  id: OtherVertex(VertexColoring.Graphs.Edge,VertexColoring.Graphs.Vertex)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: OtherVertex(Edge, Vertex)
+  nameWithType: GraphExtensions.OtherVertex(Edge, Vertex)
+  fullName: VertexColoring.Graphs.GraphExtensions.OtherVertex(VertexColoring.Graphs.Edge, VertexColoring.Graphs.Vertex)
+  type: Method
+  source:
+    id: OtherVertex
+    path: ''
+    startLine: 2852
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static Vertex OtherVertex(this Edge e, Vertex v)
+    parameters:
+    - id: e
+      type: VertexColoring.Graphs.Edge
+    - id: v
+      type: VertexColoring.Graphs.Vertex
+    return:
+      type: VertexColoring.Graphs.Vertex
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OtherVertex(e As Edge, v As Vertex) As Vertex
+  overload: VertexColoring.Graphs.GraphExtensions.OtherVertex*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableVertex)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableVertex)
+  id: ToImmutable(VertexColoring.Graphs.MutableVertex)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToImmutable(MutableVertex)
+  nameWithType: GraphExtensions.ToImmutable(MutableVertex)
+  fullName: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableVertex)
+  type: Method
+  source:
+    id: ToImmutable
+    path: ''
+    startLine: 2857
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static Vertex ToImmutable(this MutableVertex mutable)
+    parameters:
+    - id: mutable
+      type: VertexColoring.Graphs.MutableVertex
+    return:
+      type: VertexColoring.Graphs.Vertex
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToImmutable(mutable As MutableVertex) As Vertex
+  overload: VertexColoring.Graphs.GraphExtensions.ToImmutable*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge)
+  id: ToImmutable(VertexColoring.Graphs.MutableEdge)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToImmutable(MutableEdge)
+  nameWithType: GraphExtensions.ToImmutable(MutableEdge)
+  fullName: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge)
+  type: Method
+  source:
+    id: ToImmutable
+    path: ''
+    startLine: 2862
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static Edge ToImmutable(this MutableEdge mutable)
+    parameters:
+    - id: mutable
+      type: VertexColoring.Graphs.MutableEdge
+    return:
+      type: VertexColoring.Graphs.Edge
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToImmutable(mutable As MutableEdge) As Edge
+  overload: VertexColoring.Graphs.GraphExtensions.ToImmutable*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge,VertexColoring.Graphs.GraphIndex)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge,VertexColoring.Graphs.GraphIndex)
+  id: ToImmutable(VertexColoring.Graphs.MutableEdge,VertexColoring.Graphs.GraphIndex)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToImmutable(MutableEdge, GraphIndex)
+  nameWithType: GraphExtensions.ToImmutable(MutableEdge, GraphIndex)
+  fullName: VertexColoring.Graphs.GraphExtensions.ToImmutable(VertexColoring.Graphs.MutableEdge, VertexColoring.Graphs.GraphIndex)
+  type: Method
+  source:
+    id: ToImmutable
+    path: ''
+    startLine: 2867
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static Edge ToImmutable(this MutableEdge mutable, GraphIndex index)
+    parameters:
+    - id: mutable
+      type: VertexColoring.Graphs.MutableEdge
+    - id: index
+      type: VertexColoring.Graphs.GraphIndex
+    return:
+      type: VertexColoring.Graphs.Edge
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToImmutable(mutable As MutableEdge, index As GraphIndex) As Edge
+  overload: VertexColoring.Graphs.GraphExtensions.ToImmutable*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.Index(VertexColoring.Graphs.Graph)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.Index(VertexColoring.Graphs.Graph)
+  id: Index(VertexColoring.Graphs.Graph)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: Index(Graph)
+  nameWithType: GraphExtensions.Index(Graph)
+  fullName: VertexColoring.Graphs.GraphExtensions.Index(VertexColoring.Graphs.Graph)
+  type: Method
+  source:
+    id: Index
+    path: ''
+    startLine: 2872
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static GraphIndex Index(this Graph graph)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+    return:
+      type: VertexColoring.Graphs.GraphIndex
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Index(graph As Graph) As GraphIndex
+  overload: VertexColoring.Graphs.GraphExtensions.Index*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  commentId: M:VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  id: InducedSubgraphByRemovingVertices(VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: InducedSubgraphByRemovingVertices(VertexAdjacency, IEnumerable<Vertex>)
+  nameWithType: GraphExtensions.InducedSubgraphByRemovingVertices(VertexAdjacency, IEnumerable<Vertex>)
+  fullName: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.VertexAdjacency, IEnumerable<VertexColoring.Graphs.Vertex>)
+  type: Method
+  source:
+    id: InducedSubgraphByRemovingVertices
+    path: ''
+    startLine: 2874
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static InducedSubgraph InducedSubgraphByRemovingVertices(this VertexAdjacency adjacency, IEnumerable<Vertex> removedVertices)
+    parameters:
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+    - id: removedVertices
+      type: IEnumerable{VertexColoring.Graphs.Vertex}
+    return:
+      type: VertexColoring.Graphs.InducedSubgraph
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function InducedSubgraphByRemovingVertices(adjacency As VertexAdjacency, removedVertices As IEnumerable(Of Vertex)) As InducedSubgraph
+  overload: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices*
+  nameWithType.vb: GraphExtensions.InducedSubgraphByRemovingVertices(VertexAdjacency, IEnumerable(Of Vertex))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.VertexAdjacency, IEnumerable(Of VertexColoring.Graphs.Vertex))
+  name.vb: InducedSubgraphByRemovingVertices(VertexAdjacency, IEnumerable(Of Vertex))
+- uid: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  commentId: M:VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  id: InducedSubgraphByRemovingVertices(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,IEnumerable{VertexColoring.Graphs.Vertex})
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: InducedSubgraphByRemovingVertices(Graph, VertexAdjacency, IEnumerable<Vertex>)
+  nameWithType: GraphExtensions.InducedSubgraphByRemovingVertices(Graph, VertexAdjacency, IEnumerable<Vertex>)
+  fullName: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.Graph, VertexColoring.Graphs.VertexAdjacency, IEnumerable<VertexColoring.Graphs.Vertex>)
+  type: Method
+  source:
+    id: InducedSubgraphByRemovingVertices
+    path: ''
+    startLine: 2879
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static InducedSubgraph InducedSubgraphByRemovingVertices(this Graph graph, VertexAdjacency adjacency, IEnumerable<Vertex> removedVertices)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+    - id: removedVertices
+      type: IEnumerable{VertexColoring.Graphs.Vertex}
+    return:
+      type: VertexColoring.Graphs.InducedSubgraph
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function InducedSubgraphByRemovingVertices(graph As Graph, adjacency As VertexAdjacency, removedVertices As IEnumerable(Of Vertex)) As InducedSubgraph
+  overload: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices*
+  nameWithType.vb: GraphExtensions.InducedSubgraphByRemovingVertices(Graph, VertexAdjacency, IEnumerable(Of Vertex))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices(VertexColoring.Graphs.Graph, VertexColoring.Graphs.VertexAdjacency, IEnumerable(Of VertexColoring.Graphs.Vertex))
+  name.vb: InducedSubgraphByRemovingVertices(Graph, VertexAdjacency, IEnumerable(Of Vertex))
+- uid: VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  commentId: M:VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  id: InducedSubgraph(VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: InducedSubgraph(VertexAdjacency, ImmutableSortedSet<Vertex>)
+  nameWithType: GraphExtensions.InducedSubgraph(VertexAdjacency, ImmutableSortedSet<Vertex>)
+  fullName: VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.VertexAdjacency, ImmutableSortedSet<VertexColoring.Graphs.Vertex>)
+  type: Method
+  source:
+    id: InducedSubgraph
+    path: ''
+    startLine: 2884
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static InducedSubgraph InducedSubgraph(this VertexAdjacency adjacency, ImmutableSortedSet<Vertex> vertices)
+    parameters:
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+    - id: vertices
+      type: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+    return:
+      type: VertexColoring.Graphs.InducedSubgraph
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function InducedSubgraph(adjacency As VertexAdjacency, vertices As ImmutableSortedSet(Of Vertex)) As InducedSubgraph
+  overload: VertexColoring.Graphs.GraphExtensions.InducedSubgraph*
+  nameWithType.vb: GraphExtensions.InducedSubgraph(VertexAdjacency, ImmutableSortedSet(Of Vertex))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.VertexAdjacency, ImmutableSortedSet(Of VertexColoring.Graphs.Vertex))
+  name.vb: InducedSubgraph(VertexAdjacency, ImmutableSortedSet(Of Vertex))
+- uid: VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  commentId: M:VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  id: InducedSubgraph(VertexColoring.Graphs.Graph,VertexColoring.Graphs.VertexAdjacency,ImmutableSortedSet{VertexColoring.Graphs.Vertex})
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: InducedSubgraph(Graph, VertexAdjacency, ImmutableSortedSet<Vertex>)
+  nameWithType: GraphExtensions.InducedSubgraph(Graph, VertexAdjacency, ImmutableSortedSet<Vertex>)
+  fullName: VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.Graph, VertexColoring.Graphs.VertexAdjacency, ImmutableSortedSet<VertexColoring.Graphs.Vertex>)
+  type: Method
+  source:
+    id: InducedSubgraph
+    path: ''
+    startLine: 2889
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static InducedSubgraph InducedSubgraph(this Graph graph, VertexAdjacency adjacency, ImmutableSortedSet<Vertex> vertices)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+    - id: vertices
+      type: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+    return:
+      type: VertexColoring.Graphs.InducedSubgraph
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function InducedSubgraph(graph As Graph, adjacency As VertexAdjacency, vertices As ImmutableSortedSet(Of Vertex)) As InducedSubgraph
+  overload: VertexColoring.Graphs.GraphExtensions.InducedSubgraph*
+  nameWithType.vb: GraphExtensions.InducedSubgraph(Graph, VertexAdjacency, ImmutableSortedSet(Of Vertex))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VertexColoring.Graphs.GraphExtensions.InducedSubgraph(VertexColoring.Graphs.Graph, VertexColoring.Graphs.VertexAdjacency, ImmutableSortedSet(Of VertexColoring.Graphs.Vertex))
+  name.vb: InducedSubgraph(Graph, VertexAdjacency, ImmutableSortedSet(Of Vertex))
+- uid: VertexColoring.Graphs.GraphExtensions.Degree(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.VertexAdjacency)
+  commentId: M:VertexColoring.Graphs.GraphExtensions.Degree(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.VertexAdjacency)
+  id: Degree(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.VertexAdjacency)
+  isExtensionMethod: true
+  parent: VertexColoring.Graphs.GraphExtensions
+  langs:
+  - csharp
+  - vb
+  name: Degree(Vertex, VertexAdjacency)
+  nameWithType: GraphExtensions.Degree(Vertex, VertexAdjacency)
+  fullName: VertexColoring.Graphs.GraphExtensions.Degree(VertexColoring.Graphs.Vertex, VertexColoring.Graphs.VertexAdjacency)
+  type: Method
+  source:
+    id: Degree
+    path: ''
+    startLine: 2910
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static int Degree(this Vertex vertex, VertexAdjacency adjacency)
+    parameters:
+    - id: vertex
+      type: VertexColoring.Graphs.Vertex
+    - id: adjacency
+      type: VertexColoring.Graphs.VertexAdjacency
+    return:
+      type: System.Int32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Degree(vertex As Vertex, adjacency As VertexAdjacency) As Integer
+  overload: VertexColoring.Graphs.GraphExtensions.Degree*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.GraphExtensions.ToImmutable*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.ToImmutable
+  isExternal: false
+  name: ToImmutable
+  nameWithType: GraphExtensions.ToImmutable
+  fullName: VertexColoring.Graphs.GraphExtensions.ToImmutable
+- uid: VertexColoring.Graphs.MutableGraphColoring
+  commentId: T:VertexColoring.Graphs.MutableGraphColoring
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableGraphColoring
+  nameWithType: MutableGraphColoring
+  fullName: VertexColoring.Graphs.MutableGraphColoring
+- uid: VertexColoring.Graphs.GraphColoring
+  commentId: T:VertexColoring.Graphs.GraphColoring
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: GraphColoring
+  nameWithType: GraphColoring
+  fullName: VertexColoring.Graphs.GraphColoring
+- uid: VertexColoring.Graphs.GraphExtensions.ColorsUsed*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.ColorsUsed
+  isExternal: false
+  name: ColorsUsed
+  nameWithType: GraphExtensions.ColorsUsed
+  fullName: VertexColoring.Graphs.GraphExtensions.ColorsUsed
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: VertexColoring.Graphs.GraphExtensions.Adjacency*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.Adjacency
+  isExternal: false
+  name: Adjacency
+  nameWithType: GraphExtensions.Adjacency
+  fullName: VertexColoring.Graphs.GraphExtensions.Adjacency
+- uid: VertexColoring.Graphs.VertexAdjacency
+  commentId: T:VertexColoring.Graphs.VertexAdjacency
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: VertexAdjacency
+  nameWithType: VertexAdjacency
+  fullName: VertexColoring.Graphs.VertexAdjacency
+- uid: VertexColoring.Graphs.InducedSubgraph.Subgraph
+  commentId: P:VertexColoring.Graphs.InducedSubgraph.Subgraph
+- uid: VertexColoring.Graphs.InducedSubgraph
+  commentId: T:VertexColoring.Graphs.InducedSubgraph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: InducedSubgraph
+  nameWithType: InducedSubgraph
+  fullName: VertexColoring.Graphs.InducedSubgraph
+- uid: VertexColoring.Graphs.GraphExtensions.VertexDegrees*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.VertexDegrees
+  isExternal: false
+  name: VertexDegrees
+  nameWithType: GraphExtensions.VertexDegrees
+  fullName: VertexColoring.Graphs.GraphExtensions.VertexDegrees
+- uid: VertexColoring.Graphs.VertexDegrees
+  commentId: T:VertexColoring.Graphs.VertexDegrees
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: VertexDegrees
+  nameWithType: VertexDegrees
+  fullName: VertexColoring.Graphs.VertexDegrees
+- uid: VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex
+  isExternal: false
+  name: MaxDegreeVertex
+  nameWithType: GraphExtensions.MaxDegreeVertex
+  fullName: VertexColoring.Graphs.GraphExtensions.MaxDegreeVertex
+- uid: VertexColoring.Graphs.Vertex
+  commentId: T:VertexColoring.Graphs.Vertex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Vertex
+  nameWithType: Vertex
+  fullName: VertexColoring.Graphs.Vertex
+- uid: VertexColoring.Graphs.GraphExtensions.MinDegreeVertex*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.MinDegreeVertex
+  isExternal: false
+  name: MinDegreeVertex
+  nameWithType: GraphExtensions.MinDegreeVertex
+  fullName: VertexColoring.Graphs.GraphExtensions.MinDegreeVertex
+- uid: VertexColoring.Graphs.MutableGraph
+  commentId: T:VertexColoring.Graphs.MutableGraph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableGraph
+  nameWithType: MutableGraph
+  fullName: VertexColoring.Graphs.MutableGraph
+- uid: VertexColoring.Graphs.GraphExtensions.OtherVertex*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.OtherVertex
+  isExternal: false
+  name: OtherVertex
+  nameWithType: GraphExtensions.OtherVertex
+  fullName: VertexColoring.Graphs.GraphExtensions.OtherVertex
+- uid: VertexColoring.Graphs.Edge
+  commentId: T:VertexColoring.Graphs.Edge
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Edge
+  nameWithType: Edge
+  fullName: VertexColoring.Graphs.Edge
+- uid: VertexColoring.Graphs.MutableVertex
+  commentId: T:VertexColoring.Graphs.MutableVertex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableVertex
+  nameWithType: MutableVertex
+  fullName: VertexColoring.Graphs.MutableVertex
+- uid: VertexColoring.Graphs.MutableEdge
+  commentId: T:VertexColoring.Graphs.MutableEdge
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: MutableEdge
+  nameWithType: MutableEdge
+  fullName: VertexColoring.Graphs.MutableEdge
+- uid: VertexColoring.Graphs.GraphIndex
+  commentId: T:VertexColoring.Graphs.GraphIndex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: GraphIndex
+  nameWithType: GraphIndex
+  fullName: VertexColoring.Graphs.GraphIndex
+- uid: VertexColoring.Graphs.GraphExtensions.Index*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.Index
+  isExternal: false
+  name: Index
+  nameWithType: GraphExtensions.Index
+  fullName: VertexColoring.Graphs.GraphExtensions.Index
+- uid: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices
+  isExternal: false
+  name: InducedSubgraphByRemovingVertices
+  nameWithType: GraphExtensions.InducedSubgraphByRemovingVertices
+  fullName: VertexColoring.Graphs.GraphExtensions.InducedSubgraphByRemovingVertices
+- uid: IEnumerable{VertexColoring.Graphs.Vertex}
+  commentId: '!:IEnumerable{VertexColoring.Graphs.Vertex}'
+  definition: IEnumerable`1
+  name: IEnumerable<Vertex>
+  nameWithType: IEnumerable<Vertex>
+  fullName: IEnumerable<VertexColoring.Graphs.Vertex>
+  nameWithType.vb: IEnumerable(Of Vertex)
+  fullName.vb: IEnumerable(Of VertexColoring.Graphs.Vertex)
+  name.vb: IEnumerable(Of Vertex)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.GraphExtensions.InducedSubgraph*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.InducedSubgraph
+  isExternal: false
+  name: InducedSubgraph
+  nameWithType: GraphExtensions.InducedSubgraph
+  fullName: VertexColoring.Graphs.GraphExtensions.InducedSubgraph
+- uid: ImmutableSortedSet{VertexColoring.Graphs.Vertex}
+  commentId: '!:ImmutableSortedSet{VertexColoring.Graphs.Vertex}'
+  definition: ImmutableSortedSet`1
+  name: ImmutableSortedSet<Vertex>
+  nameWithType: ImmutableSortedSet<Vertex>
+  fullName: ImmutableSortedSet<VertexColoring.Graphs.Vertex>
+  nameWithType.vb: ImmutableSortedSet(Of Vertex)
+  fullName.vb: ImmutableSortedSet(Of VertexColoring.Graphs.Vertex)
+  name.vb: ImmutableSortedSet(Of Vertex)
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ImmutableSortedSet`1
+  isExternal: true
+  name: ImmutableSortedSet<>
+  nameWithType: ImmutableSortedSet<>
+  fullName: ImmutableSortedSet<>
+  nameWithType.vb: ImmutableSortedSet(Of )
+  fullName.vb: ImmutableSortedSet(Of )
+  name.vb: ImmutableSortedSet(Of )
+  spec.csharp:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedSet`1
+    name: ImmutableSortedSet
+    nameWithType: ImmutableSortedSet
+    fullName: ImmutableSortedSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.GraphExtensions.Degree*
+  commentId: Overload:VertexColoring.Graphs.GraphExtensions.Degree
+  isExternal: false
+  name: Degree
+  nameWithType: GraphExtensions.Degree
+  fullName: VertexColoring.Graphs.GraphExtensions.Degree

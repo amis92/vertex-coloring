@@ -1,0 +1,674 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter.CellStyle
+  commentId: T:TextTableFormatter.CellStyle
+  id: CellStyle
+  parent: TextTableFormatter
+  children:
+  - TextTableFormatter.CellStyle.#ctor
+  - TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment)
+  - TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle)
+  - TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle)
+  - TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle,System.Boolean)
+  - TextTableFormatter.CellStyle.HorizontalAlignment
+  - TextTableFormatter.CellStyle.NullStyle
+  - TextTableFormatter.CellStyle.TextTrimmingStyle
+  langs:
+  - csharp
+  - vb
+  name: CellStyle
+  nameWithType: CellStyle
+  fullName: TextTableFormatter.CellStyle
+  type: Class
+  source:
+    id: CellStyle
+    path: ''
+    startLine: 93
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nRepresents a cell style\n"
+  example: []
+  syntax:
+    content: public class CellStyle
+    content.vb: Public Class CellStyle
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: TextTableFormatter.CellStyle.HorizontalAlignment
+  commentId: P:TextTableFormatter.CellStyle.HorizontalAlignment
+  id: HorizontalAlignment
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: HorizontalAlignment
+  nameWithType: CellStyle.HorizontalAlignment
+  fullName: TextTableFormatter.CellStyle.HorizontalAlignment
+  type: Property
+  source:
+    id: HorizontalAlignment
+    path: ''
+    startLine: 110
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the cell horizontal alignment\n"
+  example: []
+  syntax:
+    content: public CellHorizontalAlignment HorizontalAlignment { get; set; }
+    parameters: []
+    return:
+      type: TextTableFormatter.CellHorizontalAlignment
+    content.vb: Public Property HorizontalAlignment As CellHorizontalAlignment
+  overload: TextTableFormatter.CellStyle.HorizontalAlignment*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.CellStyle.TextTrimmingStyle
+  commentId: P:TextTableFormatter.CellStyle.TextTrimmingStyle
+  id: TextTrimmingStyle
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: TextTrimmingStyle
+  nameWithType: CellStyle.TextTrimmingStyle
+  fullName: TextTableFormatter.CellStyle.TextTrimmingStyle
+  type: Property
+  source:
+    id: TextTrimmingStyle
+    path: ''
+    startLine: 115
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the cell abbreviation style\n"
+  example: []
+  syntax:
+    content: public CellTextTrimmingStyle TextTrimmingStyle { get; set; }
+    parameters: []
+    return:
+      type: TextTableFormatter.CellTextTrimmingStyle
+    content.vb: Public Property TextTrimmingStyle As CellTextTrimmingStyle
+  overload: TextTableFormatter.CellStyle.TextTrimmingStyle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.CellStyle.NullStyle
+  commentId: P:TextTableFormatter.CellStyle.NullStyle
+  id: NullStyle
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: NullStyle
+  nameWithType: CellStyle.NullStyle
+  fullName: TextTableFormatter.CellStyle.NullStyle
+  type: Property
+  source:
+    id: NullStyle
+    path: ''
+    startLine: 120
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nGets or sets the cell null style\n"
+  example: []
+  syntax:
+    content: public CellNullStyle NullStyle { get; set; }
+    parameters: []
+    return:
+      type: TextTableFormatter.CellNullStyle
+    content.vb: Public Property NullStyle As CellNullStyle
+  overload: TextTableFormatter.CellStyle.NullStyle*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.CellStyle.#ctor
+  commentId: M:TextTableFormatter.CellStyle.#ctor
+  id: '#ctor'
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: CellStyle()
+  nameWithType: CellStyle.CellStyle()
+  fullName: TextTableFormatter.CellStyle.CellStyle()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 125
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitialize a new instance of CellStyle class\n"
+  example: []
+  syntax:
+    content: public CellStyle()
+    content.vb: Public Sub New
+  overload: TextTableFormatter.CellStyle.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment)
+  commentId: M:TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment)
+  id: '#ctor(TextTableFormatter.CellHorizontalAlignment)'
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: CellStyle(CellHorizontalAlignment)
+  nameWithType: CellStyle.CellStyle(CellHorizontalAlignment)
+  fullName: TextTableFormatter.CellStyle.CellStyle(TextTableFormatter.CellHorizontalAlignment)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 134
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitialize a new instance of CellStyle class\n"
+  example: []
+  syntax:
+    content: public CellStyle(CellHorizontalAlignment horizontalAlignment)
+    parameters:
+    - id: horizontalAlignment
+      type: TextTableFormatter.CellHorizontalAlignment
+      description: The cell horizontal alignment
+    content.vb: Public Sub New(horizontalAlignment As CellHorizontalAlignment)
+  overload: TextTableFormatter.CellStyle.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle)
+  commentId: M:TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle)
+  id: '#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle)'
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: CellStyle(CellHorizontalAlignment, CellTextTrimmingStyle)
+  nameWithType: CellStyle.CellStyle(CellHorizontalAlignment, CellTextTrimmingStyle)
+  fullName: TextTableFormatter.CellStyle.CellStyle(TextTableFormatter.CellHorizontalAlignment, TextTableFormatter.CellTextTrimmingStyle)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 144
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitialize a new instance of CellStyle class\n"
+  example: []
+  syntax:
+    content: public CellStyle(CellHorizontalAlignment horizontalAlignment, CellTextTrimmingStyle textTrimmingStyle)
+    parameters:
+    - id: horizontalAlignment
+      type: TextTableFormatter.CellHorizontalAlignment
+      description: The cell horizontal alignment
+    - id: textTrimmingStyle
+      type: TextTableFormatter.CellTextTrimmingStyle
+      description: The cell text trimming style
+    content.vb: Public Sub New(horizontalAlignment As CellHorizontalAlignment, textTrimmingStyle As CellTextTrimmingStyle)
+  overload: TextTableFormatter.CellStyle.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle)
+  commentId: M:TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle)
+  id: '#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle)'
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: CellStyle(CellHorizontalAlignment, CellTextTrimmingStyle, CellNullStyle)
+  nameWithType: CellStyle.CellStyle(CellHorizontalAlignment, CellTextTrimmingStyle, CellNullStyle)
+  fullName: TextTableFormatter.CellStyle.CellStyle(TextTableFormatter.CellHorizontalAlignment, TextTableFormatter.CellTextTrimmingStyle, TextTableFormatter.CellNullStyle)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 155
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitialize a new instance of CellStyle class\n"
+  example: []
+  syntax:
+    content: public CellStyle(CellHorizontalAlignment horizontalAlignment, CellTextTrimmingStyle textTrimmingStyle, CellNullStyle nullStyle)
+    parameters:
+    - id: horizontalAlignment
+      type: TextTableFormatter.CellHorizontalAlignment
+      description: The cell horizontal alignment
+    - id: textTrimmingStyle
+      type: TextTableFormatter.CellTextTrimmingStyle
+      description: The cell text trimming style
+    - id: nullStyle
+      type: TextTableFormatter.CellNullStyle
+      description: The cell null style
+    content.vb: Public Sub New(horizontalAlignment As CellHorizontalAlignment, textTrimmingStyle As CellTextTrimmingStyle, nullStyle As CellNullStyle)
+  overload: TextTableFormatter.CellStyle.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle,System.Boolean)
+  commentId: M:TextTableFormatter.CellStyle.#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle,System.Boolean)
+  id: '#ctor(TextTableFormatter.CellHorizontalAlignment,TextTableFormatter.CellTextTrimmingStyle,TextTableFormatter.CellNullStyle,System.Boolean)'
+  parent: TextTableFormatter.CellStyle
+  langs:
+  - csharp
+  - vb
+  name: CellStyle(CellHorizontalAlignment, CellTextTrimmingStyle, CellNullStyle, Boolean)
+  nameWithType: CellStyle.CellStyle(CellHorizontalAlignment, CellTextTrimmingStyle, CellNullStyle, Boolean)
+  fullName: TextTableFormatter.CellStyle.CellStyle(TextTableFormatter.CellHorizontalAlignment, TextTableFormatter.CellTextTrimmingStyle, TextTableFormatter.CellNullStyle, System.Boolean)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 167
+  assemblies:
+  - cs.temp.dll
+  namespace: TextTableFormatter
+  summary: "\nInitialize a new instance of CellStyle class\n"
+  example: []
+  syntax:
+    content: public CellStyle(CellHorizontalAlignment horizontalAlignment, CellTextTrimmingStyle textTrimmingStyle, CellNullStyle nullStyle, bool removeTerminalFormats)
+    parameters:
+    - id: horizontalAlignment
+      type: TextTableFormatter.CellHorizontalAlignment
+      description: The cell horizontal alignment
+    - id: textTrimmingStyle
+      type: TextTableFormatter.CellTextTrimmingStyle
+      description: The cell text trimming style
+    - id: nullStyle
+      type: TextTableFormatter.CellNullStyle
+      description: The cell null style
+    - id: removeTerminalFormats
+      type: System.Boolean
+      description: 'True: terminal formats will be removed'
+    content.vb: Public Sub New(horizontalAlignment As CellHorizontalAlignment, textTrimmingStyle As CellTextTrimmingStyle, nullStyle As CellNullStyle, removeTerminalFormats As Boolean)
+  overload: TextTableFormatter.CellStyle.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TextTableFormatter.CellStyle.HorizontalAlignment*
+  commentId: Overload:TextTableFormatter.CellStyle.HorizontalAlignment
+  isExternal: false
+  name: HorizontalAlignment
+  nameWithType: CellStyle.HorizontalAlignment
+  fullName: TextTableFormatter.CellStyle.HorizontalAlignment
+- uid: TextTableFormatter.CellHorizontalAlignment
+  commentId: T:TextTableFormatter.CellHorizontalAlignment
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellHorizontalAlignment
+  nameWithType: CellHorizontalAlignment
+  fullName: TextTableFormatter.CellHorizontalAlignment
+- uid: TextTableFormatter.CellStyle.TextTrimmingStyle*
+  commentId: Overload:TextTableFormatter.CellStyle.TextTrimmingStyle
+  isExternal: false
+  name: TextTrimmingStyle
+  nameWithType: CellStyle.TextTrimmingStyle
+  fullName: TextTableFormatter.CellStyle.TextTrimmingStyle
+- uid: TextTableFormatter.CellTextTrimmingStyle
+  commentId: T:TextTableFormatter.CellTextTrimmingStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellTextTrimmingStyle
+  nameWithType: CellTextTrimmingStyle
+  fullName: TextTableFormatter.CellTextTrimmingStyle
+- uid: TextTableFormatter.CellStyle.NullStyle*
+  commentId: Overload:TextTableFormatter.CellStyle.NullStyle
+  isExternal: false
+  name: NullStyle
+  nameWithType: CellStyle.NullStyle
+  fullName: TextTableFormatter.CellStyle.NullStyle
+- uid: TextTableFormatter.CellNullStyle
+  commentId: T:TextTableFormatter.CellNullStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellNullStyle
+  nameWithType: CellNullStyle
+  fullName: TextTableFormatter.CellNullStyle
+- uid: TextTableFormatter.CellStyle.#ctor*
+  commentId: Overload:TextTableFormatter.CellStyle.#ctor
+  isExternal: false
+  name: CellStyle
+  nameWithType: CellStyle.CellStyle
+  fullName: TextTableFormatter.CellStyle.CellStyle
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

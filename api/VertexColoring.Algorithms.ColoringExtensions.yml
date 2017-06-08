@@ -1,0 +1,846 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Algorithms.ColoringExtensions
+  commentId: T:VertexColoring.Algorithms.ColoringExtensions
+  id: ColoringExtensions
+  parent: VertexColoring.Algorithms
+  children:
+  - VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)
+  - VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph,VertexAdjacency)
+  - VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder(Graph,IEnumerable{Vertex},VertexAdjacency)
+  - VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph)
+  - VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph,VertexAdjacency)
+  - VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst(Graph,VertexAdjacency)
+  - VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst(Graph,VertexAdjacency)
+  - VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting(GraphColoring)
+  langs:
+  - csharp
+  - vb
+  name: ColoringExtensions
+  nameWithType: ColoringExtensions
+  fullName: VertexColoring.Algorithms.ColoringExtensions
+  type: Class
+  source:
+    id: ColoringExtensions
+    path: ''
+    startLine: 1301
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nProvides <see cref=\"!:Graph\"></see> extension methods that calculate vertex coloring using different algorithms.\n"
+  example: []
+  syntax:
+    content: public static class ColoringExtensions
+    content.vb: Public Module ColoringExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)
+  id: ColorGreedily(Graph)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorGreedily(Graph)
+  nameWithType: ColoringExtensions.ColorGreedily(Graph)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)
+  type: Method
+  source:
+    id: ColorGreedily
+    path: ''
+    startLine: 1308
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nColors graph vertices greedily processing them in order of <see cref=\"!:Graph.Vertices\"></see>.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ColorGreedily(this Graph graph)
+    parameters:
+    - id: graph
+      type: Graph
+      description: Graph to be colored.
+    return:
+      type: GraphColoring
+      description: Vertex coloring of provided graph.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorGreedily(graph As Graph) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph,VertexAdjacency)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph,VertexAdjacency)
+  id: ColorGreedily(Graph,VertexAdjacency)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorGreedily(Graph, VertexAdjacency)
+  nameWithType: ColoringExtensions.ColorGreedily(Graph, VertexAdjacency)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph, VertexAdjacency)
+  type: Method
+  source:
+    id: ColorGreedily
+    path: ''
+    startLine: 1321
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nColors graph vertices greedily processing them in order of <see cref=\"!:Graph.Vertices\"></see>.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ColorGreedily(this Graph graph, VertexAdjacency adjacency)
+    parameters:
+    - id: graph
+      type: Graph
+      description: Graph to be colored.
+    - id: adjacency
+      type: VertexAdjacency
+      description: >-
+        <span class="paramref">graph</span> adjacency to save calculations
+            when doing multiple colorings.
+    return:
+      type: GraphColoring
+      description: Vertex coloring of provided graph.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorGreedily(graph As Graph, adjacency As VertexAdjacency) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder(Graph,IEnumerable{Vertex},VertexAdjacency)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder(Graph,IEnumerable{Vertex},VertexAdjacency)
+  id: ColorGreedilyWithVertexOrder(Graph,IEnumerable{Vertex},VertexAdjacency)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorGreedilyWithVertexOrder(Graph, IEnumerable<Vertex>, VertexAdjacency)
+  nameWithType: ColoringExtensions.ColorGreedilyWithVertexOrder(Graph, IEnumerable<Vertex>, VertexAdjacency)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder(Graph, IEnumerable<Vertex>, VertexAdjacency)
+  type: Method
+  source:
+    id: ColorGreedilyWithVertexOrder
+    path: ''
+    startLine: 1334
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nColors graph vertices greedily processing them in order of <span class=\"paramref\">verticesOrdered</span>.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ColorGreedilyWithVertexOrder(this Graph graph, IEnumerable<Vertex> verticesOrdered, VertexAdjacency adjacency)
+    parameters:
+    - id: graph
+      type: Graph
+      description: Graph to be colored.
+    - id: verticesOrdered
+      type: IEnumerable{Vertex}
+      description: Ordering of graph vertices to use in algorithm.
+    - id: adjacency
+      type: VertexAdjacency
+      description: >-
+        <span class="paramref">graph</span> adjacency to save calculations
+            when doing multiple colorings.
+    return:
+      type: GraphColoring
+      description: Vertex coloring of provided graph.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorGreedilyWithVertexOrder(graph As Graph, verticesOrdered As IEnumerable(Of Vertex), adjacency As VertexAdjacency) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder*
+  nameWithType.vb: ColoringExtensions.ColorGreedilyWithVertexOrder(Graph, IEnumerable(Of Vertex), VertexAdjacency)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder(Graph, IEnumerable(Of Vertex), VertexAdjacency)
+  name.vb: ColorGreedilyWithVertexOrder(Graph, IEnumerable(Of Vertex), VertexAdjacency)
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst(Graph,VertexAdjacency)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst(Graph,VertexAdjacency)
+  id: ColorLargestFirst(Graph,VertexAdjacency)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorLargestFirst(Graph, VertexAdjacency)
+  nameWithType: ColoringExtensions.ColorLargestFirst(Graph, VertexAdjacency)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst(Graph, VertexAdjacency)
+  type: Method
+  source:
+    id: ColorLargestFirst
+    path: ''
+    startLine: 1358
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nColors graph vertices greedily processing them in descending order of vertex degree.\nVariant of <xref href=\"VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)\" data-throw-if-not-resolved=\"false\"></xref> with another vertex processing order.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ColorLargestFirst(this Graph graph, VertexAdjacency adjacency)
+    parameters:
+    - id: graph
+      type: Graph
+      description: Graph to be colored.
+    - id: adjacency
+      type: VertexAdjacency
+      description: >-
+        <span class="paramref">graph</span> adjacency to save calculations
+            when doing multiple colorings.
+    return:
+      type: GraphColoring
+      description: Vertex coloring of provided graph.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorLargestFirst(graph As Graph, adjacency As VertexAdjacency) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst(Graph,VertexAdjacency)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst(Graph,VertexAdjacency)
+  id: ColorSmallestFirst(Graph,VertexAdjacency)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorSmallestFirst(Graph, VertexAdjacency)
+  nameWithType: ColoringExtensions.ColorSmallestFirst(Graph, VertexAdjacency)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst(Graph, VertexAdjacency)
+  type: Method
+  source:
+    id: ColorSmallestFirst
+    path: ''
+    startLine: 1376
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nColors graph vertices greedily processing them in ascending order of vertex degree.\nVariant of <xref href=\"VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)\" data-throw-if-not-resolved=\"false\"></xref> with another vertex processing order.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ColorSmallestFirst(this Graph graph, VertexAdjacency adjacency)
+    parameters:
+    - id: graph
+      type: Graph
+      description: Graph to be colored.
+    - id: adjacency
+      type: VertexAdjacency
+      description: >-
+        <span class="paramref">graph</span> adjacency to save calculations
+            when doing multiple colorings.
+    return:
+      type: GraphColoring
+      description: Vertex coloring of provided graph.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorSmallestFirst(graph As Graph, adjacency As VertexAdjacency) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph)
+  id: ColorGreedyIndependentSets(Graph)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorGreedyIndependentSets(Graph)
+  nameWithType: ColoringExtensions.ColorGreedyIndependentSets(Graph)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph)
+  type: Method
+  source:
+    id: ColorGreedyIndependentSets
+    path: ''
+    startLine: 1402
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nColors graph using G.I.S (Greedy Independent Sets) algorithm. See remarks.\n"
+  remarks: "\nGIS algorithm:\n<ol><li></li><li></li><li></li><li></li><li></li><li></li></ol>\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ColorGreedyIndependentSets(this Graph graph)
+    parameters:
+    - id: graph
+      type: Graph
+      description: Graph to be colored.
+    return:
+      type: GraphColoring
+      description: Vertex coloring of provided graph.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorGreedyIndependentSets(graph As Graph) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph,VertexAdjacency)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph,VertexAdjacency)
+  id: ColorGreedyIndependentSets(Graph,VertexAdjacency)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ColorGreedyIndependentSets(Graph, VertexAdjacency)
+  nameWithType: ColoringExtensions.ColorGreedyIndependentSets(Graph, VertexAdjacency)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph, VertexAdjacency)
+  type: Method
+  source:
+    id: ColorGreedyIndependentSets
+    path: ''
+    startLine: 1414
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nColors graph using G.I.S (Greedy Independent Sets) algorithm. See remarks in <xref href=\"VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph)\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring ColorGreedyIndependentSets(this Graph graph, VertexAdjacency adjacency)
+    parameters:
+    - id: graph
+      type: Graph
+      description: Graph to be colored.
+    - id: adjacency
+      type: VertexAdjacency
+      description: >-
+        <span class="paramref">graph</span> adjacency to save calculations
+            when doing multiple colorings.
+    return:
+      type: GraphColoring
+      description: Vertex coloring of provided graph.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ColorGreedyIndependentSets(graph As Graph, adjacency As VertexAdjacency) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting(GraphColoring)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting(GraphColoring)
+  id: OptimizeByWeighting(GraphColoring)
+  isExtensionMethod: true
+  parent: VertexColoring.Algorithms.ColoringExtensions
+  langs:
+  - csharp
+  - vb
+  name: OptimizeByWeighting(GraphColoring)
+  nameWithType: ColoringExtensions.OptimizeByWeighting(GraphColoring)
+  fullName: VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting(GraphColoring)
+  type: Method
+  source:
+    id: OptimizeByWeighting
+    path: ''
+    startLine: 1442
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Algorithms
+  summary: "\nOptimizes color weights by grouping vertices by color, ordering the groups by count,\nand assigning colors in rising order to groups of vertices as ordered,\nso that the largest group has the smallest color.\n"
+  example: []
+  syntax:
+    content: public static GraphColoring OptimizeByWeighting(this GraphColoring coloring)
+    parameters:
+    - id: coloring
+      type: GraphColoring
+      description: Coloring to be optimized.
+    return:
+      type: GraphColoring
+      description: A new, optimized coloring (new instance).
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function OptimizeByWeighting(coloring As GraphColoring) As GraphColoring
+  overload: VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: VertexColoring.Algorithms
+  commentId: N:VertexColoring.Algorithms
+  isExternal: false
+  name: VertexColoring.Algorithms
+  nameWithType: VertexColoring.Algorithms
+  fullName: VertexColoring.Algorithms
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily*
+  commentId: Overload:VertexColoring.Algorithms.ColoringExtensions.ColorGreedily
+  isExternal: false
+  name: ColorGreedily
+  nameWithType: ColoringExtensions.ColorGreedily
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily
+- uid: Graph
+  isExternal: true
+  name: Graph
+  nameWithType: Graph
+  fullName: Graph
+- uid: GraphColoring
+  isExternal: true
+  name: GraphColoring
+  nameWithType: GraphColoring
+  fullName: GraphColoring
+- uid: VertexAdjacency
+  isExternal: true
+  name: VertexAdjacency
+  nameWithType: VertexAdjacency
+  fullName: VertexAdjacency
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder*
+  commentId: Overload:VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder
+  isExternal: false
+  name: ColorGreedilyWithVertexOrder
+  nameWithType: ColoringExtensions.ColorGreedilyWithVertexOrder
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedilyWithVertexOrder
+- uid: IEnumerable{Vertex}
+  commentId: '!:IEnumerable{Vertex}'
+  definition: IEnumerable`1
+  name: IEnumerable<Vertex>
+  nameWithType: IEnumerable<Vertex>
+  fullName: IEnumerable<Vertex>
+  nameWithType.vb: IEnumerable(Of Vertex)
+  fullName.vb: IEnumerable(Of Vertex)
+  name.vb: IEnumerable(Of Vertex)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Vertex
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: Vertex
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorGreedily(Graph)
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst*
+  commentId: Overload:VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst
+  isExternal: false
+  name: ColorLargestFirst
+  nameWithType: ColoringExtensions.ColorLargestFirst
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorLargestFirst
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst*
+  commentId: Overload:VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst
+  isExternal: false
+  name: ColorSmallestFirst
+  nameWithType: ColoringExtensions.ColorSmallestFirst
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorSmallestFirst
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets*
+  commentId: Overload:VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets
+  isExternal: false
+  name: ColorGreedyIndependentSets
+  nameWithType: ColoringExtensions.ColorGreedyIndependentSets
+  fullName: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets
+- uid: VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph)
+  commentId: M:VertexColoring.Algorithms.ColoringExtensions.ColorGreedyIndependentSets(Graph)
+- uid: VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting*
+  commentId: Overload:VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting
+  isExternal: false
+  name: OptimizeByWeighting
+  nameWithType: ColoringExtensions.OptimizeByWeighting
+  fullName: VertexColoring.Algorithms.ColoringExtensions.OptimizeByWeighting

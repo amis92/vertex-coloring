@@ -1,0 +1,77 @@
+### YamlMime:ManagedReference
+items:
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  id: TextTableFormatter
+  children:
+  - TextTableFormatter.CellHorizontalAlignment
+  - TextTableFormatter.CellNullStyle
+  - TextTableFormatter.CellStyle
+  - TextTableFormatter.CellTextTrimmingStyle
+  - TextTableFormatter.TableBordersStyle
+  - TextTableFormatter.TableVisibleBorders
+  - TextTableFormatter.TextTable
+  langs:
+  - csharp
+  - vb
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: TextTableFormatter.CellHorizontalAlignment
+  commentId: T:TextTableFormatter.CellHorizontalAlignment
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellHorizontalAlignment
+  nameWithType: CellHorizontalAlignment
+  fullName: TextTableFormatter.CellHorizontalAlignment
+- uid: TextTableFormatter.CellNullStyle
+  commentId: T:TextTableFormatter.CellNullStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellNullStyle
+  nameWithType: CellNullStyle
+  fullName: TextTableFormatter.CellNullStyle
+- uid: TextTableFormatter.CellStyle
+  commentId: T:TextTableFormatter.CellStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellStyle
+  nameWithType: CellStyle
+  fullName: TextTableFormatter.CellStyle
+- uid: TextTableFormatter.CellTextTrimmingStyle
+  commentId: T:TextTableFormatter.CellTextTrimmingStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: CellTextTrimmingStyle
+  nameWithType: CellTextTrimmingStyle
+  fullName: TextTableFormatter.CellTextTrimmingStyle
+- uid: TextTableFormatter.TableBordersStyle
+  commentId: T:TextTableFormatter.TableBordersStyle
+  parent: TextTableFormatter
+  isExternal: false
+  name: TableBordersStyle
+  nameWithType: TableBordersStyle
+  fullName: TextTableFormatter.TableBordersStyle
+- uid: TextTableFormatter.TableVisibleBorders
+  commentId: T:TextTableFormatter.TableVisibleBorders
+  parent: TextTableFormatter
+  isExternal: false
+  name: TableVisibleBorders
+  nameWithType: TableVisibleBorders
+  fullName: TextTableFormatter.TableVisibleBorders
+- uid: TextTableFormatter.TextTable
+  commentId: T:TextTableFormatter.TextTable
+  isExternal: false
+  name: TextTable
+  nameWithType: TextTable
+  fullName: TextTableFormatter.TextTable
+- uid: TextTableFormatter
+  commentId: N:TextTableFormatter
+  isExternal: false
+  name: TextTableFormatter
+  nameWithType: TextTableFormatter
+  fullName: TextTableFormatter

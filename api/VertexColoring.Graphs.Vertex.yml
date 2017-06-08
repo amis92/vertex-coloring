@@ -1,0 +1,725 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.Vertex
+  commentId: T:VertexColoring.Graphs.Vertex
+  id: Vertex
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.Vertex.#ctor(System.Int64,System.String)
+  - VertexColoring.Graphs.Vertex.CompareTo(VertexColoring.Graphs.Vertex)
+  - VertexColoring.Graphs.Vertex.Equals(System.Object)
+  - VertexColoring.Graphs.Vertex.Equals(VertexColoring.Graphs.Vertex)
+  - VertexColoring.Graphs.Vertex.GetHashCode
+  - VertexColoring.Graphs.Vertex.Id
+  - VertexColoring.Graphs.Vertex.Label
+  - VertexColoring.Graphs.Vertex.op_Equality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  - VertexColoring.Graphs.Vertex.op_Inequality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  - VertexColoring.Graphs.Vertex.ToString
+  - VertexColoring.Graphs.Vertex.WithId(System.Int64)
+  - VertexColoring.Graphs.Vertex.WithLabel(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Vertex
+  nameWithType: Vertex
+  fullName: VertexColoring.Graphs.Vertex
+  type: Class
+  source:
+    id: Vertex
+    path: ''
+    startLine: 3320
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nRepresents a vertex with an Id that identifies vertex as unique, and an arbitrary label.\nThe Id defines vertex and two different instances with same Id are considered equal\nfor all operations (Labels have no meaning).\n"
+  example: []
+  syntax:
+    content: 'public sealed class Vertex : IEquatable<Vertex>, IComparable<Vertex>, IEquatable<Vertex>'
+    content.vb: >-
+      Public NotInheritable Class Vertex
+
+          Inherits IEquatable(Of Vertex)
+
+          Implements IComparable(Of Vertex), IEquatable(Of Vertex)
+  inheritance:
+  - System.Object
+  implements:
+  - IComparable{VertexColoring.Graphs.Vertex}
+  - IEquatable{VertexColoring.Graphs.Vertex}
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: VertexColoring.Graphs.Vertex.Id
+  commentId: P:VertexColoring.Graphs.Vertex.Id
+  id: Id
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Vertex.Id
+  fullName: VertexColoring.Graphs.Vertex.Id
+  type: Property
+  source:
+    id: Id
+    path: ''
+    startLine: 3264
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets the numeric identifier of this vertex.\n"
+  example: []
+  syntax:
+    content: public long Id { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Id As Long
+  overload: VertexColoring.Graphs.Vertex.Id*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.Vertex.Label
+  commentId: P:VertexColoring.Graphs.Vertex.Label
+  id: Label
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: Vertex.Label
+  fullName: VertexColoring.Graphs.Vertex.Label
+  type: Property
+  source:
+    id: Label
+    path: ''
+    startLine: 3269
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets an arbitrary label of this vertex.\n"
+  example: []
+  syntax:
+    content: public string Label { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Label As String
+  overload: VertexColoring.Graphs.Vertex.Label*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.Vertex.CompareTo(VertexColoring.Graphs.Vertex)
+  commentId: M:VertexColoring.Graphs.Vertex.CompareTo(VertexColoring.Graphs.Vertex)
+  id: CompareTo(VertexColoring.Graphs.Vertex)
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: CompareTo(Vertex)
+  nameWithType: Vertex.CompareTo(Vertex)
+  fullName: VertexColoring.Graphs.Vertex.CompareTo(VertexColoring.Graphs.Vertex)
+  type: Method
+  source:
+    id: CompareTo
+    path: ''
+    startLine: 3276
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCompares vertices based on their <xref href=\"VertexColoring.Graphs.Vertex.Id\" data-throw-if-not-resolved=\"false\"></xref>s.\n"
+  example: []
+  syntax:
+    content: public int CompareTo(Vertex other)
+    parameters:
+    - id: other
+      type: VertexColoring.Graphs.Vertex
+      description: ''
+    return:
+      type: System.Int32
+      description: Result of identifier comparison or a positive value if <span class="paramref">other</span> is null.
+    content.vb: Public Function CompareTo(other As Vertex) As Integer
+  overload: VertexColoring.Graphs.Vertex.CompareTo*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.Vertex.Equals(VertexColoring.Graphs.Vertex)
+  commentId: M:VertexColoring.Graphs.Vertex.Equals(VertexColoring.Graphs.Vertex)
+  id: Equals(VertexColoring.Graphs.Vertex)
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: Equals(Vertex)
+  nameWithType: Vertex.Equals(Vertex)
+  fullName: VertexColoring.Graphs.Vertex.Equals(VertexColoring.Graphs.Vertex)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 3281
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public bool Equals(Vertex other)
+    parameters:
+    - id: other
+      type: VertexColoring.Graphs.Vertex
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Vertex) As Boolean
+  overload: VertexColoring.Graphs.Vertex.Equals*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.Vertex.Equals(System.Object)
+  commentId: M:VertexColoring.Graphs.Vertex.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: Equals(Object)
+  nameWithType: Vertex.Equals(Object)
+  fullName: VertexColoring.Graphs.Vertex.Equals(System.Object)
+  type: Method
+  source:
+    id: Equals
+    path: ''
+    startLine: 3286
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overload: VertexColoring.Graphs.Vertex.Equals*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VertexColoring.Graphs.Vertex.GetHashCode
+  commentId: M:VertexColoring.Graphs.Vertex.GetHashCode
+  id: GetHashCode
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Vertex.GetHashCode()
+  fullName: VertexColoring.Graphs.Vertex.GetHashCode()
+  type: Method
+  source:
+    id: GetHashCode
+    path: ''
+    startLine: 3291
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode As Integer
+  overload: VertexColoring.Graphs.Vertex.GetHashCode*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VertexColoring.Graphs.Vertex.ToString
+  commentId: M:VertexColoring.Graphs.Vertex.ToString
+  id: ToString
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Vertex.ToString()
+  fullName: VertexColoring.Graphs.Vertex.ToString()
+  type: Method
+  source:
+    id: ToString
+    path: ''
+    startLine: 3296
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overload: VertexColoring.Graphs.Vertex.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: VertexColoring.Graphs.Vertex.op_Equality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  commentId: M:VertexColoring.Graphs.Vertex.op_Equality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  id: op_Equality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: Equality(Vertex, Vertex)
+  nameWithType: Vertex.Equality(Vertex, Vertex)
+  fullName: VertexColoring.Graphs.Vertex.Equality(VertexColoring.Graphs.Vertex, VertexColoring.Graphs.Vertex)
+  type: Operator
+  source:
+    id: op_Equality
+    path: ''
+    startLine: 3301
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static bool operator ==(Vertex left, Vertex right)
+    parameters:
+    - id: left
+      type: VertexColoring.Graphs.Vertex
+    - id: right
+      type: VertexColoring.Graphs.Vertex
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As Vertex, right As Vertex) As Boolean
+  overload: VertexColoring.Graphs.Vertex.op_Equality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.Vertex.op_Inequality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  commentId: M:VertexColoring.Graphs.Vertex.op_Inequality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  id: op_Inequality(VertexColoring.Graphs.Vertex,VertexColoring.Graphs.Vertex)
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: Inequality(Vertex, Vertex)
+  nameWithType: Vertex.Inequality(Vertex, Vertex)
+  fullName: VertexColoring.Graphs.Vertex.Inequality(VertexColoring.Graphs.Vertex, VertexColoring.Graphs.Vertex)
+  type: Operator
+  source:
+    id: op_Inequality
+    path: ''
+    startLine: 3306
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public static bool operator !=(Vertex left, Vertex right)
+    parameters:
+    - id: left
+      type: VertexColoring.Graphs.Vertex
+    - id: right
+      type: VertexColoring.Graphs.Vertex
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As Vertex, right As Vertex) As Boolean
+  overload: VertexColoring.Graphs.Vertex.op_Inequality*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: VertexColoring.Graphs.Vertex.#ctor(System.Int64,System.String)
+  commentId: M:VertexColoring.Graphs.Vertex.#ctor(System.Int64,System.String)
+  id: '#ctor(System.Int64,System.String)'
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: Vertex(Int64, String)
+  nameWithType: Vertex.Vertex(Int64, String)
+  fullName: VertexColoring.Graphs.Vertex.Vertex(System.Int64, System.String)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3323
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Vertex(long Id, string Label)
+    parameters:
+    - id: Id
+      type: System.Int64
+    - id: Label
+      type: System.String
+    content.vb: Public Sub New(Id As Long, Label As String)
+  overload: VertexColoring.Graphs.Vertex.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.Vertex.WithId(System.Int64)
+  commentId: M:VertexColoring.Graphs.Vertex.WithId(System.Int64)
+  id: WithId(System.Int64)
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: WithId(Int64)
+  nameWithType: Vertex.WithId(Int64)
+  fullName: VertexColoring.Graphs.Vertex.WithId(System.Int64)
+  type: Method
+  source:
+    id: WithId
+    path: ''
+    startLine: 3329
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Vertex WithId(long Id)
+    parameters:
+    - id: Id
+      type: System.Int64
+    return:
+      type: VertexColoring.Graphs.Vertex
+    content.vb: Public Function WithId(Id As Long) As Vertex
+  overload: VertexColoring.Graphs.Vertex.WithId*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.Vertex.WithLabel(System.String)
+  commentId: M:VertexColoring.Graphs.Vertex.WithLabel(System.String)
+  id: WithLabel(System.String)
+  parent: VertexColoring.Graphs.Vertex
+  langs:
+  - csharp
+  - vb
+  name: WithLabel(String)
+  nameWithType: Vertex.WithLabel(String)
+  fullName: VertexColoring.Graphs.Vertex.WithLabel(System.String)
+  type: Method
+  source:
+    id: WithLabel
+    path: ''
+    startLine: 3334
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  syntax:
+    content: public Vertex WithLabel(string Label)
+    parameters:
+    - id: Label
+      type: System.String
+    return:
+      type: VertexColoring.Graphs.Vertex
+    content.vb: Public Function WithLabel(Label As String) As Vertex
+  overload: VertexColoring.Graphs.Vertex.WithLabel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: IComparable{VertexColoring.Graphs.Vertex}
+  commentId: '!:IComparable{VertexColoring.Graphs.Vertex}'
+  definition: IComparable`1
+  name: IComparable<Vertex>
+  nameWithType: IComparable<Vertex>
+  fullName: IComparable<VertexColoring.Graphs.Vertex>
+  nameWithType.vb: IComparable(Of Vertex)
+  fullName.vb: IComparable(Of VertexColoring.Graphs.Vertex)
+  name.vb: IComparable(Of Vertex)
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEquatable{VertexColoring.Graphs.Vertex}
+  commentId: '!:IEquatable{VertexColoring.Graphs.Vertex}'
+  definition: IEquatable`1
+  name: IEquatable<Vertex>
+  nameWithType: IEquatable<Vertex>
+  fullName: IEquatable<VertexColoring.Graphs.Vertex>
+  nameWithType.vb: IEquatable(Of Vertex)
+  fullName.vb: IEquatable(Of VertexColoring.Graphs.Vertex)
+  name.vb: IEquatable(Of Vertex)
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: IComparable`1
+  isExternal: true
+  name: IComparable<>
+  nameWithType: IComparable<>
+  fullName: IComparable<>
+  nameWithType.vb: IComparable(Of )
+  fullName.vb: IComparable(Of )
+  name.vb: IComparable(Of )
+  spec.csharp:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IComparable`1
+    name: IComparable
+    nameWithType: IComparable
+    fullName: IComparable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEquatable`1
+  isExternal: true
+  name: IEquatable<>
+  nameWithType: IEquatable<>
+  fullName: IEquatable<>
+  nameWithType.vb: IEquatable(Of )
+  fullName.vb: IEquatable(Of )
+  name.vb: IEquatable(Of )
+  spec.csharp:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEquatable`1
+    name: IEquatable
+    nameWithType: IEquatable
+    fullName: IEquatable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.Vertex.Id*
+  commentId: Overload:VertexColoring.Graphs.Vertex.Id
+  isExternal: false
+  name: Id
+  nameWithType: Vertex.Id
+  fullName: VertexColoring.Graphs.Vertex.Id
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: VertexColoring.Graphs.Vertex.Label*
+  commentId: Overload:VertexColoring.Graphs.Vertex.Label
+  isExternal: false
+  name: Label
+  nameWithType: Vertex.Label
+  fullName: VertexColoring.Graphs.Vertex.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: VertexColoring.Graphs.Vertex.Id
+  commentId: P:VertexColoring.Graphs.Vertex.Id
+- uid: VertexColoring.Graphs.Vertex.CompareTo*
+  commentId: Overload:VertexColoring.Graphs.Vertex.CompareTo
+  isExternal: false
+  name: CompareTo
+  nameWithType: Vertex.CompareTo
+  fullName: VertexColoring.Graphs.Vertex.CompareTo
+- uid: VertexColoring.Graphs.Vertex
+  commentId: T:VertexColoring.Graphs.Vertex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Vertex
+  nameWithType: Vertex
+  fullName: VertexColoring.Graphs.Vertex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: VertexColoring.Graphs.Vertex.Equals*
+  commentId: Overload:VertexColoring.Graphs.Vertex.Equals
+  isExternal: false
+  name: Equals
+  nameWithType: Vertex.Equals
+  fullName: VertexColoring.Graphs.Vertex.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: VertexColoring.Graphs.Vertex.GetHashCode*
+  commentId: Overload:VertexColoring.Graphs.Vertex.GetHashCode
+  isExternal: false
+  name: GetHashCode
+  nameWithType: Vertex.GetHashCode
+  fullName: VertexColoring.Graphs.Vertex.GetHashCode
+- uid: VertexColoring.Graphs.Vertex.ToString*
+  commentId: Overload:VertexColoring.Graphs.Vertex.ToString
+  isExternal: false
+  name: ToString
+  nameWithType: Vertex.ToString
+  fullName: VertexColoring.Graphs.Vertex.ToString
+- uid: VertexColoring.Graphs.Vertex.op_Equality*
+  commentId: Overload:VertexColoring.Graphs.Vertex.op_Equality
+  isExternal: false
+  name: Equality
+  nameWithType: Vertex.Equality
+  fullName: VertexColoring.Graphs.Vertex.Equality
+- uid: VertexColoring.Graphs.Vertex.op_Inequality*
+  commentId: Overload:VertexColoring.Graphs.Vertex.op_Inequality
+  isExternal: false
+  name: Inequality
+  nameWithType: Vertex.Inequality
+  fullName: VertexColoring.Graphs.Vertex.Inequality
+- uid: VertexColoring.Graphs.Vertex.#ctor*
+  commentId: Overload:VertexColoring.Graphs.Vertex.#ctor
+  isExternal: false
+  name: Vertex
+  nameWithType: Vertex.Vertex
+  fullName: VertexColoring.Graphs.Vertex.Vertex
+- uid: VertexColoring.Graphs.Vertex.WithId*
+  commentId: Overload:VertexColoring.Graphs.Vertex.WithId
+  isExternal: false
+  name: WithId
+  nameWithType: Vertex.WithId
+  fullName: VertexColoring.Graphs.Vertex.WithId
+- uid: VertexColoring.Graphs.Vertex.WithLabel*
+  commentId: Overload:VertexColoring.Graphs.Vertex.WithLabel
+  isExternal: false
+  name: WithLabel
+  nameWithType: Vertex.WithLabel
+  fullName: VertexColoring.Graphs.Vertex.WithLabel

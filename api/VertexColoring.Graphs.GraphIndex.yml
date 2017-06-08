@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: VertexColoring.Graphs.GraphIndex
+  commentId: T:VertexColoring.Graphs.GraphIndex
+  id: GraphIndex
+  parent: VertexColoring.Graphs
+  children:
+  - VertexColoring.Graphs.GraphIndex.#ctor(VertexColoring.Graphs.Graph)
+  - VertexColoring.Graphs.GraphIndex.Graph
+  - VertexColoring.Graphs.GraphIndex.Item(System.Int64)
+  - VertexColoring.Graphs.GraphIndex.Vertices
+  langs:
+  - csharp
+  - vb
+  name: GraphIndex
+  nameWithType: GraphIndex
+  fullName: VertexColoring.Graphs.GraphIndex
+  type: Class
+  source:
+    id: GraphIndex
+    path: ''
+    startLine: 2921
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nRepresents index of graph vertices by their id. Provides indexer for convenience.\n"
+  example: []
+  syntax:
+    content: public sealed class GraphIndex
+    content.vb: Public NotInheritable Class GraphIndex
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: VertexColoring.Graphs.GraphIndex.#ctor(VertexColoring.Graphs.Graph)
+  commentId: M:VertexColoring.Graphs.GraphIndex.#ctor(VertexColoring.Graphs.Graph)
+  id: '#ctor(VertexColoring.Graphs.Graph)'
+  parent: VertexColoring.Graphs.GraphIndex
+  langs:
+  - csharp
+  - vb
+  name: GraphIndex(Graph)
+  nameWithType: GraphIndex.GraphIndex(Graph)
+  fullName: VertexColoring.Graphs.GraphIndex.GraphIndex(VertexColoring.Graphs.Graph)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2927
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nCreates new instance of index for given graph.\n"
+  example: []
+  syntax:
+    content: public GraphIndex(Graph graph)
+    parameters:
+    - id: graph
+      type: VertexColoring.Graphs.Graph
+      description: Graph to create index for.
+    content.vb: Public Sub New(graph As Graph)
+  overload: VertexColoring.Graphs.GraphIndex.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: VertexColoring.Graphs.GraphIndex.Graph
+  commentId: P:VertexColoring.Graphs.GraphIndex.Graph
+  id: Graph
+  parent: VertexColoring.Graphs.GraphIndex
+  langs:
+  - csharp
+  - vb
+  name: Graph
+  nameWithType: GraphIndex.Graph
+  fullName: VertexColoring.Graphs.GraphIndex.Graph
+  type: Property
+  source:
+    id: Graph
+    path: ''
+    startLine: 2936
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets the graph that this index is of.\n"
+  example: []
+  syntax:
+    content: public Graph Graph { get; }
+    parameters: []
+    return:
+      type: VertexColoring.Graphs.Graph
+    content.vb: Public ReadOnly Property Graph As Graph
+  overload: VertexColoring.Graphs.GraphIndex.Graph*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.GraphIndex.Vertices
+  commentId: P:VertexColoring.Graphs.GraphIndex.Vertices
+  id: Vertices
+  parent: VertexColoring.Graphs.GraphIndex
+  langs:
+  - csharp
+  - vb
+  name: Vertices
+  nameWithType: GraphIndex.Vertices
+  fullName: VertexColoring.Graphs.GraphIndex.Vertices
+  type: Property
+  source:
+    id: Vertices
+    path: ''
+    startLine: 2941
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets the association of vertex ids and vertices with that id.\n"
+  example: []
+  syntax:
+    content: public ImmutableSortedDictionary<long, Vertex> Vertices { get; }
+    parameters: []
+    return:
+      type: ImmutableSortedDictionary{System.Int64,VertexColoring.Graphs.Vertex}
+    content.vb: Public ReadOnly Property Vertices As ImmutableSortedDictionary(Of Long, Vertex)
+  overload: VertexColoring.Graphs.GraphIndex.Vertices*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: VertexColoring.Graphs.GraphIndex.Item(System.Int64)
+  commentId: P:VertexColoring.Graphs.GraphIndex.Item(System.Int64)
+  id: Item(System.Int64)
+  parent: VertexColoring.Graphs.GraphIndex
+  langs:
+  - csharp
+  - vb
+  name: Item[Int64]
+  nameWithType: GraphIndex.Item[Int64]
+  fullName: VertexColoring.Graphs.GraphIndex.Item[System.Int64]
+  type: Property
+  source:
+    id: this[]
+    path: ''
+    startLine: 2948
+  assemblies:
+  - cs.temp.dll
+  namespace: VertexColoring.Graphs
+  summary: "\nGets a vertex with a given id. Throws exception if id was not found.\n"
+  example: []
+  syntax:
+    content: public Vertex this[long id] { get; }
+    parameters:
+    - id: id
+      type: System.Int64
+      description: Id of vertex to be found.
+    return:
+      type: VertexColoring.Graphs.Vertex
+      description: Vertex with given id.
+    content.vb: Public ReadOnly Property Item(id As Long) As Vertex
+  overload: VertexColoring.Graphs.GraphIndex.Item*
+  nameWithType.vb: GraphIndex.Item(Int64)
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+  fullName.vb: VertexColoring.Graphs.GraphIndex.Item(System.Int64)
+  name.vb: Item(Int64)
+references:
+- uid: VertexColoring.Graphs
+  commentId: N:VertexColoring.Graphs
+  isExternal: false
+  name: VertexColoring.Graphs
+  nameWithType: VertexColoring.Graphs
+  fullName: VertexColoring.Graphs
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: VertexColoring.Graphs.GraphIndex.#ctor*
+  commentId: Overload:VertexColoring.Graphs.GraphIndex.#ctor
+  isExternal: false
+  name: GraphIndex
+  nameWithType: GraphIndex.GraphIndex
+  fullName: VertexColoring.Graphs.GraphIndex.GraphIndex
+- uid: VertexColoring.Graphs.Graph
+  commentId: T:VertexColoring.Graphs.Graph
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Graph
+  nameWithType: Graph
+  fullName: VertexColoring.Graphs.Graph
+- uid: VertexColoring.Graphs.GraphIndex.Graph*
+  commentId: Overload:VertexColoring.Graphs.GraphIndex.Graph
+  isExternal: false
+  name: Graph
+  nameWithType: GraphIndex.Graph
+  fullName: VertexColoring.Graphs.GraphIndex.Graph
+- uid: VertexColoring.Graphs.GraphIndex.Vertices*
+  commentId: Overload:VertexColoring.Graphs.GraphIndex.Vertices
+  isExternal: false
+  name: Vertices
+  nameWithType: GraphIndex.Vertices
+  fullName: VertexColoring.Graphs.GraphIndex.Vertices
+- uid: ImmutableSortedDictionary{System.Int64,VertexColoring.Graphs.Vertex}
+  commentId: '!:ImmutableSortedDictionary{System.Int64,VertexColoring.Graphs.Vertex}'
+  definition: ImmutableSortedDictionary`2
+  name: ImmutableSortedDictionary<Int64, Vertex>
+  nameWithType: ImmutableSortedDictionary<Int64, Vertex>
+  fullName: ImmutableSortedDictionary<System.Int64, VertexColoring.Graphs.Vertex>
+  nameWithType.vb: ImmutableSortedDictionary(Of Int64, Vertex)
+  fullName.vb: ImmutableSortedDictionary(Of System.Int64, VertexColoring.Graphs.Vertex)
+  name.vb: ImmutableSortedDictionary(Of Int64, Vertex)
+  spec.csharp:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Int64
+    name: Int64
+    nameWithType: Int64
+    fullName: System.Int64
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: VertexColoring.Graphs.Vertex
+    name: Vertex
+    nameWithType: Vertex
+    fullName: VertexColoring.Graphs.Vertex
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ImmutableSortedDictionary`2
+  isExternal: true
+  name: ImmutableSortedDictionary<, >
+  nameWithType: ImmutableSortedDictionary<, >
+  fullName: ImmutableSortedDictionary<, >
+  nameWithType.vb: ImmutableSortedDictionary(Of , )
+  fullName.vb: ImmutableSortedDictionary(Of , )
+  name.vb: ImmutableSortedDictionary(Of , )
+  spec.csharp:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ImmutableSortedDictionary`2
+    name: ImmutableSortedDictionary
+    nameWithType: ImmutableSortedDictionary
+    fullName: ImmutableSortedDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: VertexColoring.Graphs.GraphIndex.Item*
+  commentId: Overload:VertexColoring.Graphs.GraphIndex.Item
+  isExternal: false
+  name: Item
+  nameWithType: GraphIndex.Item
+  fullName: VertexColoring.Graphs.GraphIndex.Item
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: VertexColoring.Graphs.Vertex
+  commentId: T:VertexColoring.Graphs.Vertex
+  parent: VertexColoring.Graphs
+  isExternal: false
+  name: Vertex
+  nameWithType: Vertex
+  fullName: VertexColoring.Graphs.Vertex
