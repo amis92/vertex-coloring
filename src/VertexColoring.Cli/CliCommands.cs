@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace VertexColoring.Cli
 {
-    public class CliCommands : BaseCliCommands
+    class CliCommands : BaseCliCommands
     {
         [DefaultCommand]
         [Command("color")]

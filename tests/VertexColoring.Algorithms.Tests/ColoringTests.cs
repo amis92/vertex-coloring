@@ -1,4 +1,3 @@
-using System;
 using VertexColoring.Graphs;
 using Xunit;
 
@@ -115,7 +114,7 @@ namespace VertexColoring.Algorithms.Tests
             Assert.Equal(4, optimizedCost);
         }
 
-        [Fact(Skip = "Measuring performace, not really test")]
+        //[Fact(Skip = "Measuring performace, not really test")]
         public void TimeTest()
         {
             var graph = Generator.RandomConnectedGraph(1000, 4000);

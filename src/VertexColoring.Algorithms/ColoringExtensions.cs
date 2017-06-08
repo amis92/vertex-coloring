@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using System.Text;
 using VertexColoring.Graphs;
 
 namespace VertexColoring.Algorithms
@@ -61,6 +59,7 @@ namespace VertexColoring.Algorithms
 
         /// <summary>
         /// Colors graph vertices greedily processing them in descending order of vertex degree.
+        /// Variant of <see cref="ColorGreedily(Graph)"/> with another vertex processing order.
         /// </summary>
         /// <param name="graph">Graph to be colored.</param>
         /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
@@ -78,6 +77,7 @@ namespace VertexColoring.Algorithms
 
         /// <summary>
         /// Colors graph vertices greedily processing them in ascending order of vertex degree.
+        /// Variant of <see cref="ColorGreedily(Graph)"/> with another vertex processing order.
         /// </summary>
         /// <param name="graph">Graph to be colored.</param>
         /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
@@ -100,7 +100,7 @@ namespace VertexColoring.Algorithms
         /// <returns>Vertex coloring of provided graph.</returns>
         /// <remarks>
         /// GIS algorithm:
-        /// <list type="ol">
+        /// <list type="number">
         /// <item>Take induced subgraph S by removing all colored vertices from base graph G.</item>
         /// <item>Take from S a vertex v with maximum degree and color it.</item>'
         /// <item>S:= Subgraph induced from S with removed vertex v.</item>
