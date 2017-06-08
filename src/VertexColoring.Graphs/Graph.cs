@@ -4,11 +4,21 @@ using System.IO;
 
 namespace VertexColoring.Graphs
 {
+    /// <summary>
+    /// Graph is a tuple of a set of vertices and a set of edges. Graphs are equal if their
+    /// containted sets are equal given <see cref="ImmutableSortedSet{T}.SetEquals(System.Collections.Generic.IEnumerable{T})"/>.
+    /// </summary>
     [Record]
     public sealed partial class Graph : IEquatable<Graph>
     {
+        /// <summary>
+        /// Gets vertices of this graph.
+        /// </summary>
         public ImmutableSortedSet<Vertex> Vertices { get; }
 
+        /// <summary>
+        /// Gets edges of this graph.
+        /// </summary>
         public ImmutableSortedSet<Edge> Edges { get; }
 
         public override bool Equals(object obj)

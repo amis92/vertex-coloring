@@ -19,7 +19,7 @@ namespace VertexColoring.Algorithms
         /// <returns>Vertex coloring of provided graph.</returns>
         public static GraphColoring ColorGreedily(this Graph graph)
         {
-            var adjacency = new GraphAdjacency(graph);
+            var adjacency = new VertexAdjacency(graph);
             return graph.ColorGreedily(adjacency);
         }
 
@@ -30,7 +30,7 @@ namespace VertexColoring.Algorithms
         /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
         /// when doing multiple colorings.</param>
         /// <returns>Vertex coloring of provided graph.</returns>
-        public static GraphColoring ColorGreedily(this Graph graph, GraphAdjacency adjacency)
+        public static GraphColoring ColorGreedily(this Graph graph, VertexAdjacency adjacency)
         {
             return graph.ColorGreedilyWithVertexOrder(graph.Vertices, adjacency);
         }
@@ -44,7 +44,7 @@ namespace VertexColoring.Algorithms
         /// when doing multiple colorings.</param>
         /// <returns>Vertex coloring of provided graph.</returns>
         public static GraphColoring ColorGreedilyWithVertexOrder(this Graph graph, IEnumerable<Vertex> verticesOrdered,
-            GraphAdjacency adjacency)
+            VertexAdjacency adjacency)
         {
             var maxDegree = adjacency.AdjacentVertices.Max(p => p.Value.Count);
             var colors = Enumerable.Range(1, maxDegree + 2);
@@ -66,7 +66,7 @@ namespace VertexColoring.Algorithms
         /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
         /// when doing multiple colorings.</param>
         /// <returns>Vertex coloring of provided graph.</returns>
-        public static GraphColoring ColorLargestFirst(this Graph graph, GraphAdjacency adjacency)
+        public static GraphColoring ColorLargestFirst(this Graph graph, VertexAdjacency adjacency)
         {
             var verticesLf = graph.Vertices
                 .Select(v => v.ToDegreeTuple(adjacency))
@@ -83,7 +83,7 @@ namespace VertexColoring.Algorithms
         /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
         /// when doing multiple colorings.</param>
         /// <returns>Vertex coloring of provided graph.</returns>
-        public static GraphColoring ColorSmallestFirst(this Graph graph, GraphAdjacency adjacency)
+        public static GraphColoring ColorSmallestFirst(this Graph graph, VertexAdjacency adjacency)
         {
             var verticesLf = graph.Vertices
                 .Select(v => v.ToDegreeTuple(adjacency))
@@ -121,7 +121,7 @@ namespace VertexColoring.Algorithms
         /// <param name="adjacency"><paramref name="graph"/> adjacency to save calculations
         /// when doing multiple colorings.</param>
         /// <returns>Vertex coloring of provided graph.</returns>
-        public static GraphColoring ColorGreedyIndependentSets(this Graph graph, GraphAdjacency adjacency)
+        public static GraphColoring ColorGreedyIndependentSets(this Graph graph, VertexAdjacency adjacency)
         {
             var maxDegree = adjacency.AdjacentVertices.Max(p => p.Value.Count);
             var color = 1;
@@ -132,7 +132,7 @@ namespace VertexColoring.Algorithms
                 var inducedAdjacency = induced.Adjacency();
                 while (induced.Subgraph.Vertices.Count > 0)
                 {
-                    var vertex = induced.Subgraph.MinDegreeVertex(induced.Subgraph.Degrees(inducedAdjacency));
+                    var vertex = induced.Subgraph.MinDegreeVertex(inducedAdjacency.VertexDegrees());
                     coloring[vertex] = color;
                     induced = inducedAdjacency.InducedSubgraphByRemovingVertices(inducedAdjacency.AdjacentVertices[vertex].Add(vertex));
                     inducedAdjacency = induced.Adjacency();
@@ -160,7 +160,7 @@ namespace VertexColoring.Algorithms
             return new GraphColoring(coloring.Graph, colors);
         }
 
-        private static (Vertex vertex, int degree) ToDegreeTuple(this Vertex v, GraphAdjacency adjacency)
+        private static (Vertex vertex, int degree) ToDegreeTuple(this Vertex v, VertexAdjacency adjacency)
         {
             return (v, adjacency.AdjacentVertices[v].Count);
         }

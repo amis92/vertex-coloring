@@ -6,7 +6,7 @@ namespace VertexColoring.Graphs
 {
     public class InducedSubgraph
     {
-        public InducedSubgraph(GraphAdjacency adjacency, IEnumerable<Vertex> removedVertices)
+        public InducedSubgraph(VertexAdjacency adjacency, IEnumerable<Vertex> removedVertices)
         {
             OriginalGraph = adjacency.Graph;
             OriginalAdjacency = adjacency;
@@ -19,7 +19,7 @@ namespace VertexColoring.Graphs
 
         public Graph OriginalGraph { get; }
 
-        public GraphAdjacency OriginalAdjacency { get; }
+        public VertexAdjacency OriginalAdjacency { get; }
 
         public Graph Subgraph { get; }
 

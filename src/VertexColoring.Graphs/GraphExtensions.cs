@@ -4,19 +4,61 @@ using System.Linq;
 
 namespace VertexColoring.Graphs
 {
+    /// <summary>
+    /// Contains useful extension methods to simplify using <see cref="Graph"/>s and rest of the family
+    /// from this namespace.
+    /// </summary>
     public static class GraphExtensions
     {
-        public static GraphAdjacency Adjacency(this Graph graph) => new GraphAdjacency(graph);
-        public static GraphAdjacency Adjacency(this InducedSubgraph graph) => new GraphAdjacency(graph);
+        /// <summary>
+        /// Transforms this mutable instance (as well as it's properties) to immutable copy.
+        /// </summary>
+        /// <param name="coloring">Instance to transform.</param>
+        /// <returns>Immutable copy of provided instance.</returns>
+        public static GraphColoring ToImmutable(this MutableGraphColoring coloring)
+        {
+            return new GraphColoring(coloring.Graph, coloring.VertexColors.ToImmutableDictionary());
+        }
 
-        public static GraphDegree Degrees(this Graph graph, GraphAdjacency adjacency) => new GraphDegree(graph, adjacency);
+        /// <summary>
+        /// Calculates count of unique colors used in <paramref name="coloring"/>.
+        /// </summary>
+        /// <param name="coloring">Coloring to count colors in.</param>
+        /// <returns>Count of unique colors.</returns>
+        public static int ColorsUsed(this GraphColoring coloring)
+        {
+            return coloring.VertexColors.Values.Distinct().Count();
+        }
 
-        public static Vertex MaxDegreeVertex(this Graph graph, GraphDegree degrees)
+        /// <summary>
+        /// Creates an adjacency instance for the <paramref name="graph"/>.
+        /// </summary>
+        /// <param name="graph">Graph to create adjacency for.</param>
+        /// <returns>Graph's adjacency.</returns>
+        public static VertexAdjacency Adjacency(this Graph graph) => new VertexAdjacency(graph);
+
+        /// <summary>
+        /// Creates an adjacency instance for the <paramref name="graph"/>.
+        /// It's optimized in comparison to creating adjacency directly from an actual <see cref="InducedSubgraph.Subgraph"/>
+        /// of <paramref name="graph"/>.
+        /// </summary>
+        /// <param name="graph">Graph to create adjacency for.</param>
+        /// <returns>Graph's adjacency.</returns>
+        public static VertexAdjacency Adjacency(this InducedSubgraph graph) => new VertexAdjacency(graph);
+
+        /// <summary>
+        /// Creates container for graph's vertex degrees.
+        /// </summary>
+        /// <param name="adjacency"></param>
+        /// <returns></returns>
+        public static VertexDegrees VertexDegrees(this VertexAdjacency adjacency) => new VertexDegrees(adjacency);
+
+        public static Vertex MaxDegreeVertex(this Graph graph, VertexDegrees degrees)
         {
             return graph.Vertices.Aggregate((v1, v2) => degrees[v1] > degrees[v2] ? v1 : v2);
         }
 
-        public static Vertex MinDegreeVertex(this Graph graph, GraphDegree degrees)
+        public static Vertex MinDegreeVertex(this Graph graph, VertexDegrees degrees)
         {
             return graph.Vertices.Aggregate((v1, v2) => degrees[v1] < degrees[v2] ? v1 : v2);
         }
@@ -51,22 +93,22 @@ namespace VertexColoring.Graphs
 
         public static GraphIndex Index(this Graph graph) => new GraphIndex(graph);
 
-        public static InducedSubgraph InducedSubgraphByRemovingVertices(this GraphAdjacency adjacency, IEnumerable<Vertex> removedVertices)
+        public static InducedSubgraph InducedSubgraphByRemovingVertices(this VertexAdjacency adjacency, IEnumerable<Vertex> removedVertices)
         {
             return new InducedSubgraph(adjacency, removedVertices);
         }
 
-        public static InducedSubgraph InducedSubgraphByRemovingVertices(this Graph graph, GraphAdjacency adjacency, IEnumerable<Vertex> removedVertices)
+        public static InducedSubgraph InducedSubgraphByRemovingVertices(this Graph graph, VertexAdjacency adjacency, IEnumerable<Vertex> removedVertices)
         {
             return adjacency.InducedSubgraphByRemovingVertices(removedVertices);
         }
 
-        public static InducedSubgraph InducedSubgraph(this GraphAdjacency adjacency, ImmutableSortedSet<Vertex> vertices)
+        public static InducedSubgraph InducedSubgraph(this VertexAdjacency adjacency, ImmutableSortedSet<Vertex> vertices)
         {
             return new InducedSubgraph(adjacency, adjacency.Graph.Vertices.Except(vertices));
         }
 
-        public static InducedSubgraph InducedSubgraph(this Graph graph,  GraphAdjacency adjacency, ImmutableSortedSet<Vertex> vertices)
+        public static InducedSubgraph InducedSubgraph(this Graph graph,  VertexAdjacency adjacency, ImmutableSortedSet<Vertex> vertices)
         {
             // old
             // new Graph(vertices.ToImmutableSortedSet(), graph.Edges.Where(e => e.IsInInduced(vertices)).ToImmutableSortedSet())
@@ -87,6 +129,6 @@ namespace VertexColoring.Graphs
             return false;
         }
 
-        public static int Degree(this Vertex vertex, GraphAdjacency adjacency) => adjacency.AdjacentVertices[vertex].Count;
+        public static int Degree(this Vertex vertex, VertexAdjacency adjacency) => adjacency.AdjacentVertices[vertex].Count;
     }
 }

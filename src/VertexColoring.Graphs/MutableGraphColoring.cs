@@ -2,6 +2,10 @@
 
 namespace VertexColoring.Graphs
 {
+    /// <summary>
+    /// A mutable version of <see cref="GraphColoring"/>. Easily transformable to immutable instance
+    /// using the <see cref="GraphColoringExtensions.ToImmutable(MutableGraphColoring)"/>
+    /// </summary>
     public sealed class MutableGraphColoring
     {
         public MutableGraphColoring(Graph graph)

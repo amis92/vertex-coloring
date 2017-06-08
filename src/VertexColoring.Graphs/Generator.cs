@@ -1,32 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace VertexColoring.Graphs
 {
+    /// <summary>
+    /// Provides methods for creating graphs, including random graphs.
+    /// </summary>
     public static class Generator
     {
+        /// <summary>
+        /// Adds to <paramref name="graph"/> new edges connecting each of <paramref name="vertices"/> with every other.
+        /// </summary>
+        /// <param name="graph">Graph to add edges to.</param>
+        /// <param name="vertices">Vertices to connect with new edges.</param>
         public static void ConnectAll(this MutableGraph graph, params MutableVertex[] vertices)
         {
             graph.Edges.AddRange(vertices.SelectMany(v1 => vertices.Select(v2 => v1.Id != v2.Id ? v1.Connecting(v2) : null).Where(e => e != null)));
         }
 
+        /// <summary>
+        /// Adds to <paramref name="graph"/> new edges connecting each of <paramref name="vertices"/> with every other.
+        /// </summary>
+        /// <param name="graph">Graph to add edges to.</param>
+        /// <param name="vertices">Vertices to connect with new edges.</param>
         public static void ConnectAll(this MutableGraph graph, IEnumerable<MutableVertex> vertices)
         {
             graph.ConnectAll(vertices.ToArray());
         }
 
+        /// <summary>
+        /// Creates new edge connecting given vertices.
+        /// </summary>
+        /// <param name="v1">Vertex to be connected be new edge.</param>
+        /// <param name="v1">Other vertex to be connected be new edge.</param>
+        /// <returns>Created edge.</returns>
         public static MutableEdge Connecting(this MutableVertex v1, MutableVertex v2)
         {
             return new MutableEdge { Vertex1 = v1, Vertex2 = v2, Label = $"e{v1.Id}:{v2.Id}" };
         }
 
+        /// <summary>
+        /// Creates a list of <paramref name="count"/> vertices with ids starting from <paramref name="start"/>.
+        /// </summary>
+        /// <param name="start">Starting id.</param>
+        /// <param name="count">Number of vertices to create.</param>
+        /// <returns>Created list.</returns>
         public static List<MutableVertex> VerticesInIdRange(int start, int count)
         {
             return Enumerable.Range(start, count).Select(id => new MutableVertex { Id = id, Label = $"v{id}" }).ToList();
         }
 
+        /// <summary>
+        /// Creates new random connected graph with <paramref name="vertexCount"/> vertices
+        /// and up to <paramref name="edgeCount"/> connecting them. Some edges may be duplicates
+        /// on creation and as a result, be lost (duplicate edges are ignored).
+        /// </summary>
+        /// <param name="vertexCount">Number of vertices to create.</param>
+        /// <param name="edgeCount">Number of edges to create.</param>
+        /// <returns>Created graph.</returns>
         public static Graph RandomConnectedGraph(int vertexCount, int edgeCount)
         {
             CheckRandomArguments(vertexCount, edgeCount);
@@ -34,6 +66,16 @@ namespace VertexColoring.Graphs
             return RandomConnectedGraphInternal(vertexCount, edgeCount, random);
         }
 
+
+        /// <summary>
+        /// Creates new random connected graph with <paramref name="vertexCount"/> vertices
+        /// and up to <paramref name="edgeCount"/> connecting them. Some edges may be duplicates
+        /// on creation and as a result, be lost (duplicate edges are ignored).
+        /// </summary>
+        /// <param name="vertexCount">Number of vertices to create.</param>
+        /// <param name="edgeCount">Number of edges to create.</param>
+        /// <param name="random">Random to use while randomizing edge associations.</param>
+        /// <returns>Created graph.</returns>
         public static Graph RandomConnectedGraph(int vertexCount, int edgeCount, Random random)
         {
             CheckRandomArguments(vertexCount, edgeCount);
@@ -43,7 +85,7 @@ namespace VertexColoring.Graphs
             }
             return RandomConnectedGraphInternal(vertexCount, edgeCount, random);
         }
-
+        
         private static void CheckRandomArguments(int vertexCount, int edgeCount)
         {
             if (vertexCount < 0)

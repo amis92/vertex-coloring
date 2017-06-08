@@ -15,7 +15,7 @@ namespace VertexColoring.Cli
 
         public Graph Graph { get; private set; }
 
-        public GraphAdjacency Adjacency { get; private set; }
+        public VertexAdjacency Adjacency { get; private set; }
 
         public string Filename => string.Format(FilenameFormat, Index, VertexCount, EdgeCount);
 

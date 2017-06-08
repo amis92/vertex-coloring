@@ -2,16 +2,32 @@
 
 namespace VertexColoring.Graphs
 {
+    /// <summary>
+    /// Represents a vertex with an Id that identifies vertex as unique, and an arbitrary label.
+    /// The Id defines vertex and two different instances with same Id are considered equal
+    /// for all operations (Labels have no meaning).
+    /// </summary>
     [Record]
     public sealed partial class Vertex : IEquatable<Vertex>, IComparable<Vertex>
     {
+        /// <summary>
+        /// Gets the numeric identifier of this vertex.
+        /// </summary>
         public long Id { get; }
 
+        /// <summary>
+        /// Gets an arbitrary label of this vertex.
+        /// </summary>
         public string Label { get; }
 
+        /// <summary>
+        /// Compares vertices based on their <see cref="Id"/>s.
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns>Result of identifier comparison or a positive value if <paramref name="other"/> is null.</returns>
         public int CompareTo(Vertex other)
         {
-            return Id.CompareTo(other?.Id ?? 0);
+            return other == null ? 1 : Id.CompareTo(other.Id);
         }
 
         public bool Equals(Vertex other)
